@@ -84,6 +84,8 @@ akkorde = \chordmode {
 \markup \vspace #2 % space between header and score
 
 \score {
+%\unfoldRepeats %commet this line in to unfold all repeats for midi generation
+{
 <<
   
   \new ChordNames
@@ -96,7 +98,6 @@ akkorde = \chordmode {
     } 
     { 
     \clef "treble"
-%\unfoldRepeats % MIDIGENERATION: comment in this line
     \transpose d c
     \relative c'' {
     \global
@@ -115,7 +116,6 @@ akkorde = \chordmode {
     instrumentName = "Clarinet (B)"
   } { 
     \clef "treble"
-%    \unfoldRepeats % MIDIGENERATION: comment in this line
     \transpose  d d  % clarinet in B --> d will be a c  
     \relative c' {
     \global
@@ -124,11 +124,10 @@ akkorde = \chordmode {
   }
 
   \new Staff \with {
-    midiInstrument = "Acoustic Grand Piano"
+    midiInstrument = "Acoustic Grand"
     instrumentName = "Akkordeon"
   } { 
     \clef "bass"
-%    \unfoldRepeats % MIDIGENERATION: comment in this line
     \transpose d c  
     \relative c {
     \global
@@ -136,11 +135,11 @@ akkorde = \chordmode {
     }  
   }
 >>
-
+} % unfoldrepeats
 
 
 \layout { }
   \midi {
     \tempo 4=100
   }
-}
+} % score
