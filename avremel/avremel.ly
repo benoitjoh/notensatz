@@ -1,11 +1,12 @@
 \version "2.20.0"
 
 \header {
-  title = \markup \caps  {"Avremel"}
+  title = \markup \caps  {"Avremel der Maghiker"}
   composer = "Mordechai Gibirtig"
   tagline = \markup {
-  \tiny jb. \tiny #(strftime "%d. %b %Y" (localtime (current-time)))
-  }
+  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilipond"  #(strftime "%d. %B %Y" (localtime (current-time)))}
+  } 
+  
 }
 global = { 
   \time 2/4 
@@ -25,14 +26,15 @@ melodie =
     e2~ e gis8 ( a b4) d'8 (c' b a) gis8 a4.~ a2 a8 (d e f ) gis (a f gis) e2~ e4 r4  \bar "|." 
      }
 
-akkorde = \chordmode {
-    e2 s s s s a:m e s s s s s e s s s s f e s d:m e s s a:m s e s d:m e:7
-    a:m s s a:7 d:m s d:m f e a:m s s 
-    e s s s a:m s s a:7 d:m s s e:7 a:m s e s s s s s e s d:m a:m s s d:m e
+akkorde = \chordmode 
+  { \override ChordName.font-size = #0
+    e2 s e s e a:m e s s e s s e s e s e f e s d:m e s s a:m s e s d:m e:7
+    a:m s a:m a:7 d:m s d:m f e a:m a:m s 
+    e s e s a:m s a:m a:7 d:m s s e:7 a:m s e s e s e s e s d:m a:m a:m s d:m e e
     }
 
 text = \lyricmode 
-  { \set fontSize = #-3
+  { \set fontSize = #-2
     On8 a heym4 bin8 ikh yung8. ge16 -- bli8 -- bn2..      s'hot8 di8 noyt4 mikh8 a -- roys ge -- 
     tri -- bn2.     ven8 ikh hob nokh8. keyn16 dray8 -- tsn your ge -- hat1
     in8 der fremd4 vayt8 fun ma8. -- mes16 oy8 -- gn2.     8 hot8 in shmuts4 mikh8  di gas der -- 
@@ -50,14 +52,21 @@ text = \lyricmode
 
 
 
-\score {
+\score {\header {
+    piece = ""
+  }
+  
 <<
-    
-  \new ChordNames
+  \new ChordNames \with {
+    midiInstrument = "Acoustic Grand Piano"
+  }
     \transpose a f 
     \akkorde
 
-  \new Staff 
+  \new Staff \with {
+    midiInstrument = "acoustic guitar (nylon)"
+    instrumentName = "Vocal"
+  }
   {
    \global
    \clef treble
@@ -65,9 +74,8 @@ text = \lyricmode
    \melodie
   }
  
-\new Lyrics 
-   
-  \text
+  \new Lyrics 
+    \text
 
 >>
 
@@ -75,5 +83,6 @@ text = \lyricmode
   \layout { }
   \midi {
     \tempo 4=100
+    
   }
 }

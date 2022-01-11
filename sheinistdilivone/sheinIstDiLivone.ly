@@ -3,10 +3,10 @@
 \header {
   title = "Shein is di Livone"
   composer = "Katharina Müther"
-  copyright = "(c) Johannes Benoit"
-  arranger = "Johannes"
+  copyright = ""
+  arranger = "(Johannes)"
   tagline = \markup {
-    \tiny #(strftime "%Y-%b-%d" (localtime (current-time)))
+  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilipond"  #(strftime "%d. %B %Y" (localtime (current-time)))}
   }
 }
 
@@ -19,7 +19,7 @@ intro_git = {
   a2.~ a8 d16 e    f2.  d8 e16 f   g2~ g8 e8 f g  as2~ as8 f e8. bes'16 a4~ 8 f8 e bes' a g e d cis bes a}
  
 akkorde = \chordmode { 
-    r1  d:m g:m %as:7 
+    s1  d:m g:m %as:7 
     }
 
 
@@ -47,7 +47,7 @@ intro_akk = {
   }
 
   \new PianoStaff \with {
-    midiInstrument = "Akkordeon"
+    midiInstrument = "Piano"
     instrumentName = "Piano"
   } { 
       \clef "treble"
