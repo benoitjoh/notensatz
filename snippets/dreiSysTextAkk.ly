@@ -63,13 +63,15 @@ akkorde = \chordmode {
 
 stanza_one = \lyricmode 
 { 
+  \set fontSize = #-2
   \set stanza = "1. "
   dies1 ist Text
 }
 stanza_two = \lyricmode 
 { 
+  \set fontSize = #-2
   \set stanza = "2. "
-  dies1 ist Text
+  dies1 i2. -- st Text
 }
 
 

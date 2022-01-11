@@ -13,7 +13,6 @@
 global = {
   \key d \minor
   \time 2/4
-
 }
 
 % -- data ------------------------------------------------
@@ -31,8 +30,9 @@ melodie = {
   }
   \alternative {
      { d'2~ | d8 r a  a }
-     { d,4 r4  }
+     { d,4 r4 \bar "|."  }
     }
+   
 }
 
 clarinet = {
@@ -65,6 +65,7 @@ akkordeon = {
 }
 
 words = \lyricmode { 
+  \set stanza = "1."
   Shtil4. di8 Nakht8 is ois -- ge -- ster2 -- nt 
   un4. der8 frozt hat shtark ge -- brent2 4 tsi8 ge
   denks4 -- tu8 vi ikh hob dikh ge -- le2 -- rnt
