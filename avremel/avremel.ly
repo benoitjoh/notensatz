@@ -4,7 +4,7 @@
   title = \markup \caps  {"Avremel"}
   composer = "Mordechai Gibirtig"
   tagline = \markup {
-  \tiny j.b. \tiny #(strftime "%Y-%b-%d" (localtime (current-time)))
+  \tiny jb. \tiny #(strftime "%d. %b %Y" (localtime (current-time)))
   }
 }
 global = { 
