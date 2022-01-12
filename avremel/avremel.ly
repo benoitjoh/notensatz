@@ -1,8 +1,12 @@
 \version "2.20.0"
-
+\paper {
+  system-system-spacing.padding = #1.7 
+}
 \header {
   title = \markup \caps  {"Avremel der Maghiker"}
   composer = "Mordechai Gibirtig"
+  arranger = " "
+
   tagline = \markup {
   \halign #-13  \abs-fontsize #8 \italic { "jb. / lilipond"  #(strftime "%d. %B %Y" (localtime (current-time)))}
   } 
@@ -34,7 +38,8 @@ akkorde = \chordmode
     }
 
 text = \lyricmode 
-  { \set fontSize = #-2
+  { 
+    \set fontSize = #-2
     On8 a heym4 bin8 ikh yung8. ge16 -- bli8 -- bn2..      s'hot8 di8 noyt4 mikh8 a -- roys ge -- 
     tri -- bn2.     ven8 ikh hob nokh8. keyn16 dray8 -- tsn your ge -- hat1
     in8 der fremd4 vayt8 fun ma8. -- mes16 oy8 -- gn2.     8 hot8 in shmuts4 mikh8  di gas der -- 
@@ -70,11 +75,14 @@ text = \lyricmode
   {
    \global
    \clef treble
+   \tempo "Adagio"
    \transpose a f' 
    \melodie
   }
  
-  \new Lyrics 
+  \new Lyrics \with {    
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
+  }
     \text
 
 >>
