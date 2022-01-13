@@ -1,14 +1,23 @@
 % tepmlate for a three parts Staff with lyrices and a repeat in it
-
 \version "2.20.0"
+
+\paper {
+  system-system-spacing.padding = #5.5
+  #(set-paper-size "a4")
+}
 
 \header {
   title = \markup \caps  {"Titel"}
   composer = "Komponist (Jahr)"
+  copyright = ""
+  arranger = " "
+  meter = \markup \italic {""}
   tagline = \markup {
-  j.b. \tiny #(strftime "%Y-%b-%d" (localtime (current-time)))
+  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
   }
 }
+
+\markup \vspace #1 % space between header and score
 
 global = {
   \key d \minor
@@ -18,7 +27,7 @@ global = {
 % -- data ------------------------------------------------
 
 melodie = {
-  a1-"Sopran"
+  a1 -"Sopran"
   \repeat volta 2 {
   d4\p c a g
   }
@@ -80,8 +89,6 @@ stanza_two = \lyricmode
 % -- container ---------------------------------------------
 
 
-\markup \vspace #1 % space between header and score
-
 
 
 \score 
@@ -100,13 +107,13 @@ stanza_two = \lyricmode
     instrumentName = "Vocal"
     } 
     { 
-    \clef "treble"
-    \transpose c c
-    \relative c'' {
-    \global
-    \melodie
-    }  
-  }
+      \clef "treble"
+      \transpose c c
+      {
+        \global
+        \melodie
+      }  
+    }
   
 % textstrophen
   \new Lyrics {
@@ -122,26 +129,28 @@ stanza_two = \lyricmode
   \new Staff \with {
     midiInstrument = "Clarinet"
     instrumentName = "Clarinet (B)"
-  } { 
-    \clef "treble"
-%    \transpose  c b  % clarinet in B  
-    \relative c' {
-    \global
-    \clarinet
-    }  
-  }
+    } 
+    { 
+      \clef "treble"
+  %    \transpose  c b  % clarinet in B  
+      {
+      \global
+      \clarinet
+      }  
+    }
 
   \new Staff \with {
     midiInstrument = "acoustic grand"
     instrumentName = "Bass"
-  } { 
-    \clef "bass"
-    \transpose c c  
-    \relative c {
-    \global
-    \akkordeon
-    }  
-  }
+    } 
+    { 
+      \clef "bass"
+      \transpose c c  
+      {
+        \global
+        \akkordeon
+      }  
+    }
 
 >>
 } % unfoldRepeats

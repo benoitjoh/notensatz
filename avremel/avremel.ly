@@ -1,17 +1,20 @@
 \version "2.20.0"
 \paper {
-  system-system-spacing.padding = #1.7 
+  system-system-spacing.padding = #1.1 
 }
 \header {
   title = \markup \caps  {"Avremel der Maghiker"}
   composer = "Mordechai Gibirtig"
+  copyright = ""
   arranger = " "
-
+  meter = \markup \italic {""}
   tagline = \markup {
-  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilipond"  #(strftime "%d. %B %Y" (localtime (current-time)))}
+  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
   } 
-  
 }
+
+\markup \vspace #1 % space between header and score
+
 global = { 
   \time 2/4 
   \key f \minor  }

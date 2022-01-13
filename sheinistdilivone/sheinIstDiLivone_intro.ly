@@ -8,12 +8,14 @@
   title = "Shein Vi Di Livone"
   composer = "Katharina Müther"
   copyright = ""
-  meter = "Intro"
   arranger = " "
+  meter = \markup \italic {""}
   tagline = \markup {
-  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilipond"  #(strftime "%d. %B %Y" (localtime (current-time)))}
+  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
   }
 }
+
+\markup \vspace #1 % space between header and score
 
 global = {
   \key d' \minor
