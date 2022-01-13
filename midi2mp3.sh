@@ -21,11 +21,14 @@ do
     rawfile=${file:0:pos}
     wav=/tmp/midi/$rawfile.wav
     mp3=out/$rawfile.mp3
+    pdfin=$folder/$rawfile.pdf
+    pdfout=out/$rawfile.pdf
     echo "...   $path --> $wav --> $mp3" 
 
 
     timidity $path -OwM -o $wav
-    lame -hb128 $wav $mp3  
+    lame -hb128 $wav $mp3
+    gs -q -dNOPAUSE -dBATCH -sDEVICE=pdfwrite -sOutputFile=$pdfout $pdfin
     
 #echo "[$(tput setaf 2)ok$(tput sgr 0)] processed files:  $(ls out/* | wc -w)"
  
