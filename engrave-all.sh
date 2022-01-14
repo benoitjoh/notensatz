@@ -20,6 +20,7 @@ do
     pos=$(strindex $file ".")
     rawfile=${file:0:pos}
     ly=$folder/$rawfile.ly
+    midi=$folder/$rawfile.midi
     wav=/tmp/midi/$rawfile.wav
     mp3=out/$rawfile.mp3
     pdfin=$folder/$rawfile.pdf
@@ -29,11 +30,11 @@ do
     lilypond -dno-point-and-click -ddelete-intermediate-files --pdf -o$folder/$rawfile $ly
 
     cp $pdfin $pdfout
-    timidity $path -OwM -o $wav
+    timidity $midi -OwM -o $wav
     lame -hb128 $wav $mp3
     
 #echo "[$(tput setaf 2)ok$(tput sgr 0)] processed files:  $(ls out/* | wc -w)"
  
 done;
-rm -rf /tmp/midi    
+#rm -rf /tmp/midi    
 
