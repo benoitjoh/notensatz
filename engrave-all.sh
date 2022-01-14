@@ -11,7 +11,7 @@ ls -1 [^_]*/[^_]*.ly
 
 sleep 3
 
-LANG=en
+export LANG=DE
 
 mkdir _out
 mkdir /tmp/midi
@@ -50,7 +50,9 @@ do
     grep -v "%MIDIOFF%" $ly >$lyformidi
     sed -i 's/%MIDION%//' $lyformidi
     lilypond -dno-point-and-click -ddelete-intermediate-files --pdf -o$folder/$rawfile $lyformidi 
-    
+    # copy the good pdf back... 
+    cp $pdfout $pdfin   
+
     # transformation to mp3
     timidity $midi -OwM -o $wav
     lame -hb128 $wav $mp3
