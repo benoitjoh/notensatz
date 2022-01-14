@@ -1,6 +1,6 @@
 \version "2.20.0"
 \paper {
-  system-system-spacing.padding = #1.1 
+  system-system-spacing.padding = #1.3 
 }
 \header {
   title = \markup \caps  {"Avremel der Maghiker"}
@@ -13,7 +13,7 @@
   } 
 }
 
-\markup \vspace #1 % space between header and score
+\markup \vspace #0 % space between header and score
 
 global = { 
   \time 2/4 

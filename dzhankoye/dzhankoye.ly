@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \paper {
-  system-system-spacing.padding = #2.5 % spacer between the staff group
+  system-system-spacing.padding = #3 % spacer between the staff group
   #(set-paper-size "a4")
 }
 \header {
@@ -15,7 +15,7 @@
   }
 }
 
-\markup \vspace #1 % space between header and score
+\markup \vspace #0 % space between header and score
 
 global = {
   \key d \minor
@@ -32,7 +32,7 @@ melodie = {
    g8 r g r c' c' c' bes a f f a c' bes a g  \break
    d f e f g-. r e-. r a r r4 r2 \break
    g8 r g r c' c' c' bes a f f a c' bes a g \break
-   d f e f g r e r d2. r8 d8-"(2.)" 
+   d f e f g r e r d2. r8 d8 
    
    \bar "|."
   }
@@ -80,7 +80,7 @@ stanza_two = \lyricmode
   mu -- me Ley bay der ko -- sil -- ke Bey -- le bay der mo -- lo -- til -- ke
   \set stanza = "2." 
   In Dzhan -- ko -- ye, dzahn,4 dzahn,4 dzahn1
-   1 1 1 1 1 1 1 2 4 8 "2. Ver"
+   1 1 1 1 1 1 1 2 4 8 \set stanza = "3." Ver
 }
 stanza_three = \lyricmode 
 { 

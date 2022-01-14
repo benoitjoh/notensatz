@@ -4,7 +4,7 @@
   title = \markup \caps  {"Shtil di Nakht is oysgeshternt"}
   composer = "Hirsh Glick (1942)"
   tagline = \markup {
-  j.b. \tiny #(strftime "%Y-%b-%d" (localtime (current-time)))
+  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
   }
 }
 

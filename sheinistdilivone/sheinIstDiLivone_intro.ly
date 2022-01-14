@@ -6,6 +6,7 @@
 
 \header {
   title = "Shein Vi Di Livone"
+  subtitle = "Intro"
   composer = "Katharina Müther"
   copyright = ""
   arranger = " "
@@ -25,7 +26,7 @@ global = {
 intro_git = {
   a,2. d8 e    f2.~ f8 d8  e f   g2.~ g8 e8 f g  as2~ as4. f8 e4.~e16 bes16 a2~ 8 g8 e d cis bes, a,2.~ a,2 r2 \break
   \chordmode {
-  d,2:m a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,1 \break
+  d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,1 \break
   g,2:m d,2 g,2.:m r4 g,1:m7 s1 c,1~ c,2. c,4 f,2 g,4 gis,4 a,1 \break
   }
 }
@@ -37,7 +38,7 @@ akkorde = \chordmode {
 
 intro_akk = {
   r1 <d, a, f d>2.  r4 r4 <g, bes, d bes >2. r2 gis, r1 <a, cis e a >1 r1 r2. r8 a8 \break
-  a4. f'8 cis'4.  e'8 d'2. r8 a8 
+  a4.\f  f'8 cis'4.  e'8 d'2. r8 a8 
   a4. f'8 cis'4.  e'8 d'1  (e'4) e'8 d' cis'4 bes a1  \break
   d4. bes8 fis4.  a8  g1 g4 d2 bes,8 a,8 g,1 g4 g e d c2 bes2 a1~ a2 r2  \break
 }
