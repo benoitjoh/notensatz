@@ -4,4 +4,4 @@
 *.mid
 *.log
 *~
-out/*
+_out/*

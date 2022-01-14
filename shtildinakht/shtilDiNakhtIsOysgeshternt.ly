@@ -3,63 +3,61 @@
 \header {
   title = \markup \caps  {"Shtil di Nakht is oysgeshternt"}
   composer = "Hirsh Glick (1942)"
-  %copyright = "(c) Johannes Benoit"
-  %arranger = "Johannes"
   tagline = \markup {
   j.b. \tiny #(strftime "%Y-%b-%d" (localtime (current-time)))
   }
 }
 
 global = {
-  \key d \minor
+  \key c \minor
   \time 2/4
 }
 
 % -- data ------------------------------------------------
 
 melodie = {
-  a4. f8 bes a g f g4. f16e f4. r8
+  g4. es8 as g f es f4. es16 d es4. r8
   \break
-  c'4. a8 d c f, g a2~ a8 r8 a a
+  bes4. g8 c' bes es f g2~ g8 r8 g g
   \break
   
   \repeat volta 2 {
-  d4  c8 d bes bes a d, g4. f16 e f4. r8
+  c'4  bes8 c' as as g c f4. es16 d es4. r8
   \break
-  e4 a8 a c bes a g 
+  d4 g8 g bes as g f 
   }
   \alternative {
-     { d'2~ | d8 r a  a }
-     { d,4 r4 \bar "|."  }
+     { c'2~ c'8 r g  g }
+     { c4 r4 \bar "|."  }
     }
    
 }
 
 clarinet = {
-  d4. d8 e2 e2 f
-  a4. f8  bes8 a f g a2 r 
+  c4. c8 d2 d2 es
+  g4. es8  as8 g es f g2 r 
   \repeat volta 2 {
-    f2 d  e  a  
-    c4 r d4 a 
+    es2 c  d  g  
+    bes,4 r c4 g 
   }
   \alternative {
-     { d2~ | d8 r f,  f }
-     {f2}
+     { c2~ | c8 r es,  es }
+     {es2}
     }  
   
 }
 
 
 akkordeon = {
-  <d f a d>4 r   <g, d' g bes> r  <c e g c> r  <c f a c> r
-  <c f a c> r <bes d f bes> r <c f a c> r r2
+  <c es g c'>4 r   <f, c' f as> r  <bes, d f bes> r  <bes, es g bes> r
+  <bes, es g bes> r <as, c es as> r <bes, es g bes> r r2
   \repeat volta 2 {
-    <d f a d>4 r <g, d' g bes> r  <c e g c> r <f a c f> r 
-    <a, c e a> r <g d' g bes>4 <a c e g a> 
+    <c es g c'>4 r <f, c f as> r  <bes, d f bes> r <es g bes> r 
+    <g, bes, d g> r <f, c' f as>4 <g, bes d f g> 
   }
   \alternative {
-     {<d f a d>4 r | d4 r  }
-     {<d f a d>2}
+     {<c, es g c>4 r | c4 r  }
+     {<c, es g c>2}
     }  
   
 }
@@ -74,7 +72,7 @@ words = \lyricmode {
 }
 
 akkorde = \chordmode { 
-    d2:m g:m c f f bes f f  d:m g:m c f a g4:m a4:7 d1:m d2:m 
+    c2:m f:m bes es es as es es  c:m f:m bes es g f4:m g4:7 c1:m c2:m 
     }
 
 
@@ -85,12 +83,12 @@ akkorde = \chordmode {
 \markup \vspace #2 % space between header and score
 
 \score {
-%\unfoldRepeats %commet this line in to unfold all repeats for midi generation
-{
+  
+%MIDION%  \unfoldRepeats { %directive do this only on midigenreration
+
 <<
   
   \new ChordNames
-    \transpose d c 
     \akkorde
     
   \new Staff \with {
@@ -99,8 +97,8 @@ akkorde = \chordmode {
     } 
     { 
     \clef "treble"
-    \transpose d c
-    \relative c'' {
+    \transpose c c'
+    {
     \global
     \melodie
     }  
@@ -117,8 +115,9 @@ akkorde = \chordmode {
     instrumentName = "Clarinet (B)"
   } { 
     \clef "treble"
-    \transpose  d d  % clarinet in B --> d will be a c  
-    \relative c' {
+       \transpose c c'
+       \transpose c b  %MIDIOFF% % directive to do not do this on midi generation!
+     {
     \global
     \clarinet
     }  
@@ -129,14 +128,14 @@ akkorde = \chordmode {
     instrumentName = "Akkordeon"
   } { 
     \clef "bass"
-    \transpose d c  
-    \relative c {
+    {
     \global
     \akkordeon
     }  
   }
 >>
-} % unfoldrepeats
+%MIDION% } % directive do this only on midigenreration
+
 
 
 \layout { }
