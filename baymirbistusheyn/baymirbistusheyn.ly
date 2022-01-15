@@ -110,7 +110,6 @@ stanza_one = \lyricmode
   { 
     \clef "treble" 
     \tempo "Moderate"
-    \transpose c c
     {
     \global
     \melodie
