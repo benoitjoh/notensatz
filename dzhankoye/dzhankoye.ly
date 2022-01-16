@@ -6,9 +6,9 @@
 }
 \header {
   title = "Dzhankoye"
-  composer = "trad. (Ukraine)"
+  composer = "traditionel"
   copyright = ""
-  arranger = " "
+  arranger = \markup \italic "(around 1925)"
   meter = \markup \italic {""}
   tagline = \markup {
   \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
