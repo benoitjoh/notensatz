@@ -1,7 +1,7 @@
 \version "2.20.0"
 
 \paper {
-  system-system-spacing.padding = #2
+  system-system-spacing.padding = #1.3
   #(set-paper-size "a4")
 }
 \header {
@@ -23,7 +23,7 @@ global = {
 }
 
 melodie = {
-   \override TupletBracket.bracket-visibility = ##t
+   \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
    \tupletUp
    s4.^"Stanza" b16 b16 g'8 8 8  fis'16 e' 
    b'8 fis' r16 b16 e' fis' g'8 8 8 fis'16 e'  \break
@@ -36,10 +36,13 @@ melodie = {
    g'8 e' fis' b e'2 a'8 8 a'16 g' fis' e' fis'2
    c''8 8 16 b' a' g' b'4. b8 \break
    \repeat volta 2 {
-     g'4^"Refrain" fis'8 e' g'4.^\markup \italic{"...slower"}  b8 g'4 fis'8 e' g'4. 8 fis' dis'4 b8 fis'4 g'8 fis' e'4 r4r r8 b g'4 fis'8 e' \break
-     g'4. b8 g'4 fis'8 e' g'4. 8 fis' dis'4 b8 fis'4 g'8 fis'e'2~ 8 8 fis'g' a' r e' a'~ \break
+     \mark \markup { \bold \fontsize #-1 \circle a }
+     g'4^"Refrain" fis'8 e' g'4.  b8 g'4 fis'8 e' g'4. 8 
+     fis' dis'4 b8 fis'4 g'8 fis' e'4 r4r r8  b^\markup { \bold \circle a } g'4 fis'8 e' \break
+     g'4. b8 g'4 fis'8 e' g'4. 8 fis' dis'4 b8 
+     fis'4 g'8 fis'e'2~ 8 8 fis'^\markup { \bold \circle b } g' a' r e' a'~ \break
      8 8 g' fis' g' r e' 8 8 8 8 fis' g' a' r e' a'~ 8 8 g' a' \break
-     b' r b b b4 r8 b g'4 fis'8 e' g'4. b8 g'4 fis'8 e' \break
+     b' r b b b4 r8 b^\markup { \bold \circle a }  g'4 fis'8 e' g'4. b8 g'4 fis'8 e' \break
      g'4.  8 fis' dis'4 b8 fis'4 g'8 fis'
    }
    \alternative {
