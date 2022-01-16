@@ -56,7 +56,7 @@ akkordeon = {
     <g, bes, d g> r <f, c' f as>4 <g, bes d f g> 
   }
   \alternative {
-     {<c, es g c>4 r | c4 r  }
+     {<c es g c'>2~  | <c es g c'>4 r  }
      {<c, es g c>2}
     }  
   
