@@ -2,6 +2,7 @@
 *.ps
 *.midi
 *.mid
+*.mp3
 *.log
 *~
 _out/*
