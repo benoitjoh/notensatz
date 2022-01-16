@@ -31,11 +31,11 @@ melodie = {
    
 }
 akkorde = \chordmode { 
-    b1:m e:m fis b:m 
-    b1:m e:m a d 
-    g2 cis:m fis1:m 
+    b1:m e:m fis:7 b:m 
+    b1:m e:m a:7 d2. d4:7 
+    g2 cis:7 fis1:m 
     g2 a:7 d1
-    e1:m b:m e:m fis b:m
+    e1:m b:m e:m fis:7 b:m fis:7
     }
 
 
