@@ -1,46 +1,29 @@
 \version "2.20.0"
 
-
-\header {
-  title = "Shein is di Livone"
-  composer = "Katharina Müther"
-  tagline = \markup {
-    \tiny #(strftime "%Y-%b-%d" (localtime (current-time)))
-  }
+flute = \relative {
+  s4 s4 e'' g
 }
+\addQuote "flute" {s1  s4 s4 e'' g'' }
 
-global = {
-  \key d \minor
-  \time 4/4
+pianoRH = {
+  \once \override Slur #'direction = #DOWN
+  d'2-4  (d'2)
+  c''4. g8
+  % position name of cue-ing instrument just before the cue notes,
+  % and above the staff
+  <>^\markup { \right-align { \tiny "Flute" } }
+  \cueDuring "flute" #UP { g'4 bes'4 }
 }
-
-intro = {
-  r2 a4 d8 e 
-  f8 f4. e4 f8 g
-  \tuplet 3/4 { g16 (a bes }
-  \tuplet 3/4 { g16 a bes }
-  \tuplet 3/4 { g16 a bes }
-  \tuplet 3/4 { g16 a bes) }
-}
-
-classicalGuitar = 
-  \relative c' {
-  \global
-  \intro
-}
+pianoLH = \relative { d2 d2 c4 <c' e> e, <g c> }
 
 \score {
-  \new Staff \with {
-    midiInstrument = "acoustic guitar (nylon)"
-    instrumentName = "Guitar"
-  } { 
-    \clef "treble_8"
-    
-    \classicalGuitar 
-  
-  }
-  \layout { }
-  \midi {
-    \tempo 4=100
-  }
+  \new PianoStaff <<
+    \new Staff {
+      \pianoRH
+    }
+    \new Staff {
+      \clef "bass"
+      \pianoLH
+    }
+  >>
 }
