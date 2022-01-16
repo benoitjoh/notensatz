@@ -3,6 +3,8 @@
 \paper {
   system-system-spacing.padding = #1.3
   #(set-paper-size "a4")
+%WITHEMPTYSTAFF-ON% system-system-spacing.padding = #8
+
 }
 \header {
   title = "Bay mir bistu sheyn"
@@ -127,6 +129,7 @@ stanza_one = \lyricmode
     \stanza_one
   }
 
+%WITHEMPTYSTAFF-ON% \new Staff {\clef "moderntab" s2 * 55 }  % empty staff
 
 
 >>

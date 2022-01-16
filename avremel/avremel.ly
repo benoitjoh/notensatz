@@ -1,6 +1,7 @@
 \version "2.20.0"
 \paper {
   system-system-spacing.padding = #1.3 
+%WITHEMPTYSTAFF-ON% system-system-spacing.padding = #8
 }
 \header {
   title = \markup \caps  {"Avremel der Maghiker"}
@@ -86,6 +87,7 @@ text = \lyricmode
   }
     \text
     
+%WITHEMPTYSTAFF-ON%  \new Staff {\clef "moderntab" s2 * 72 }  % empty staff
 
 >>
 
