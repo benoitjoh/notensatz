@@ -20,24 +20,24 @@ global = {
   \key f \minor  }
 
 melodie = 
-  { e8 f e4 gis8 a gis8. f16 f8 e4.~ e4. r8 gis8 a b4 c'8 b c' a \break
-    b gis4.~ gis4 r8 e gis a gis8. e16 gis8 a b c' b2~ b4. r8 \break
-    e8 f e4 gis8 a gis8. f16 f8 e4.~ e4. r8 gis8 a b4 c'8 b c' a \break
-    b8 gis4.~ gis4 r8 gis8 a d e f gis a f gis e2~ e8 e a b \break
-    c'4 b8. a16 c'8 c' b a gis b4.~ b8 e8 b c'  d'4 b d'8 d' c' b  \break
-    d' c'4.~ c'8 a c' d' e'4  d'8 c' e' d' f' e' d'2~ d'8 e b c' \break 
-    d'4 b8. b16 c'8 b c' d' e' r8 d' r c' e a b c'4 b8. a16 c'8 c' b a \break 
-    gis 8 b4.~ b8 e b c' d'4 b d'8 d' c' b d' c'4.~ c'8 a c' d' \break 
-    e'4 d'8 c' e' g' f' e' d'2~ d'8 a b c' d'4 e' d'8 c' b c' \break 
-    a2~ a4 r4 gis8 (a b4) b8 (a gis a)  c'8 b4.~ b2 gis8 (a b4) b8 ( a gis f) \break
-    e2~ e gis8 ( a b4) d'8 (c' b a) gis8 a4.~ a2 a8 (d e f ) gis (a f gis) e2~ e4 r4  \bar "|." 
+  { c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
+    g' e'4.~ e'4 r8 c' e' f' e'8. c'16 e'8 f' g' as' g'2~ g'4. r8 \break
+    c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
+    g'8 e'4.~ e'4 r8 e'8 f' bes c' des' e' f' des' e' c'2~ c'8 c' f' g' \break
+    as'4 g'8. f'16 as'8 as' g' f' e' g'4.~ g'8 c'8 g' as'  bes'4 g' bes'8 bes' as' g'  \break
+    bes' as'4.~ as'8 f' as' bes' c''4  bes'8 as' c'' bes' des'' c'' bes'2~ bes'8 c' g' as' \break 
+    bes'4 g'8. g'16 as'8 g' as' bes' c'' r8 bes' r as' c' f' g' as'4 g'8. f'16 as'8 as' g' f' \break 
+    e' 8 g'4.~ g'8 c' g' as' bes'4 g' bes'8 bes' as' g' bes' as'4.~ as'8 f' as' bes' \break 
+    c''4 bes'8 as' c'' es'' des'' c'' bes'2~ bes'8 f' g' as' bes'4 c'' bes'8 as' g' as' \break 
+    f'2~ f'4 r4 e'8 (f' g'4) g'8 (f' e' f')  as'8 g'4.~ g'2 e'8 (f' g'4) g'8 ( f' e' des') \break
+    c'2~ c' e'8 ( f' g'4) bes'8 (as' g' f') e'8 f'4.~ f'2 f'8 (bes c' des' ) e' (f' des' e') c'2~ c'4 r4  \bar "|." 
      }
 
 akkorde = \chordmode 
   { \override ChordName.font-size = #0
-    e2 s e s e a:m e s s e s s e s e s e f e s d:m e s s a:m s e s d:m e:7
-    a:m s a:m a:7 d:m s d:m f e a:m a:m s 
-    e s e s a:m s a:m a:7 d:m s s e:7 a:m s e s e s e s e s d:m a:m a:m s d:m e e
+    c2 s c s c f:m c s s c s s c s c s c des c s bes:m c s s f:m s c s bes:m c:7
+    f:m s f:m f:7 bes:m s bes:m des c f:m f:m s 
+    c s c s f:m s f:m f:7 bes:m s s c:7 f:m s c s c s c s c s bes:m f:m f:m s bes:m c c
     }
 
 text = \lyricmode 
@@ -68,7 +68,6 @@ text = \lyricmode
   \new ChordNames \with {
     midiInstrument = "Acoustic Grand Piano"
   }
-    \transpose a f 
     \akkorde
 
   \new Staff \with {
@@ -79,7 +78,6 @@ text = \lyricmode
    \global
    \clef treble
    \tempo "Adagio"
-   \transpose a f' 
    \melodie
   }
  
@@ -87,6 +85,7 @@ text = \lyricmode
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
   }
     \text
+    
 
 >>
 
