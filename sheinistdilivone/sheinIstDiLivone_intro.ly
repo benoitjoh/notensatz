@@ -41,12 +41,15 @@ concha_base = {
 
 intro_git = {
   \set Score.currentBarNumber = #13
+  \tempo "Adagio ad libitum"
   a,2. d8 e    f2~ f8 d8  e f   g2~ g8 e8 f g  as4~ as8 f8 e4.~e16 bes16 a4~ 8 g8 e d cis bes, a,1 \break  
   \chordmode {
   d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m as,4 a,1 \break
   g,2:m d,2 g,2.:m r4 g,1:m7 s1 c,1~ c,2. c,4 f,2 g,4 gis,4 a,1 \break
-  d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,2 g,2:m~ g,1:m}
-  <>^\markup { \right-align { \tiny "Basso" } }
+  d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,2 g,2:m~_> g,1:m}
+  <>^\markup { \right-align  \tiny { "Basso" \italic "(slower)"} }
+  \tempo 4=60 
+
   \cueDuring "basso" #UP { <a, cis e >1 }
 }
  
@@ -57,13 +60,13 @@ akkorde = \chordmode {
 
 
 intro_akk = {
-  
+
   r1 <d' a' f' d''>1\p  (<g d' g' bes' >1  <as c' es' as'>1  <a cis' e' a' >1) r2 r4 r8 a8 
   a4.  f'8 cis'4.  e'8 d'2. r8 a8 
   a4. f'8 cis'4.  e'8 d'1  (e'4) e'8 d' cis'4 bes a2. r8 d'8 
   d'4. bes'8 fis'4.  a'8  g'1 g'4 d'2 bes8 a8 g1 g'4 g' e' d' c'2 bes'2 a'1~ a'2 r4 r8 a8 
   a4.  f'8 cis'4.  e'8 d'2. r8 a8 
-  a4. f'8 cis'4.  e'8 d'1  (e'4) e'8 d' cis'4 bes a2 bes'~ \f  bes'  \fermata e'4. e'8 a'1 \fermata
+  a4. f'8 cis'4.  e'8 d'1  (e'4) e'8 d' cis'4 bes a2 bes'~^> bes'  \fermata e'4. e'8 a'1 \fermata
 }
 
 \score {
@@ -74,7 +77,7 @@ intro_akk = {
   <<
     \new Voice= "second"  
         \clef "treble_8"
-        \tempo "Largo (ad libitum)"
+        \tempo "Adagio (ad libitum)"
 
          { \voiceTwo \concha_base }
   >>
@@ -108,7 +111,6 @@ intro_akk = {
     instrumentName = "Guitar"
   } { 
     \clef "treble_8"
-    \tempo "Largo (ad libitum)"
      {
     \global
     \intro_git
@@ -120,6 +122,5 @@ intro_akk = {
 
 \layout { }
   \midi {
-    \tempo 4=120
   }
 }
