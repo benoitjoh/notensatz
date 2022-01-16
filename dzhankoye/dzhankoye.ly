@@ -53,7 +53,7 @@ akkorde = \chordmode {
 
 stanza_one = \lyricmode 
 { 
-  \set fontSize = #-0
+  \set fontSize = #-1
   \set stanza = "1."
   Az8 men fort keyn Sé -- vas -- top -- ol iz nit vayt fun Sím -- fer -- op -- ol 
   \set stanza = "1."
@@ -71,7 +71,7 @@ stanza_one = \lyricmode
 }
 stanza_two = \lyricmode 
 { 
-  \set fontSize = #-0
+  \set fontSize = #-1
   \set stanza = "2."
   En8 -- fert yi -- dn oyf8 mayn ka -- she Vu'z mayn bru -- der, vu'z A -- bra -- she
   \set stanza = "2." 
@@ -84,7 +84,7 @@ stanza_two = \lyricmode
 }
 stanza_three = \lyricmode 
 { 
-  \set fontSize = #-0
+  \set fontSize = #-1
   \set stanza = "3."
   zogt8 as yi -- dn konen8 nor hand -- len Es -- n fe -- te yoykh mit mand -- len 
   \set stanza = "3."
