@@ -6,7 +6,7 @@
 }
 
 \include "avremel-header.ily"
-\include "avremel-include-music.ily"
+\include "avremel-music.ily"
 
 \markup \vspace #0 % space between header and score
 

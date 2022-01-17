@@ -41,8 +41,8 @@ concha_base = {
 
 intro_git = {
   \set Score.currentBarNumber = #13
-  \tempo "Adagio ad libitum"
-  a,2. d8 e    f2~ f8 d8  e f   g2~ g8 e8 f g  as4~ as8 f8 e4.~e16 bes16 a4~ 8 g8 e d cis bes, a,1 \break  
+  \tempo "Adagio ad libitum" 
+  a,2. \f d8 e    f2~ f8 d8  e f   g2~ g8 e8 f g  as4~ as8 f8 e4.~e16 bes16 a4~ 8 g8 e d cis bes, a,1 \break  
   \chordmode {
   d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m as,4 a,1 \break
   g,2:m d,2 g,2.:m r4 g,1:m7 s1 c,1~ c,2. c,4 f,2 g,4 gis,4 a,1 \break
@@ -83,9 +83,7 @@ intro_akk = {
   >>
   
 \layout { }
-  \midi {
-    \tempo 4=120
-  }
+  \midi { \tempo 4=120 }
 }
 
 \markup \vspace #1 % space between header and score
@@ -121,6 +119,5 @@ intro_akk = {
 
 
 \layout { }
-  \midi {
-  }
+  \midi { \tempo 4=120 }
 }
