@@ -1,5 +1,10 @@
 \version "2.20.0"
 
+\paper {
+  system-system-spacing.padding = #1
+  #(set-paper-size "a4")
+}
+
 \header {
   title = \markup \caps  {"Shtil di Nakht is oysgeshternt"}
   composer = "Hirsh Glick (1942)"
@@ -105,8 +110,7 @@ akkorde = \chordmode {
   }
   
   \new Lyrics {
-      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #4
-      \override VerticalAxisGroup.nonstaff-unrelatedstaff-spacing.padding = #3
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1
       \words
     }
 
@@ -143,3 +147,32 @@ akkorde = \chordmode {
     \tempo 4=100
   }
 } % score
+
+\markup \vspace #1 % space score and table
+
+\markup \fontsize #0 {
+  \fill-line {
+    \hspace #1
+    \column {
+      \line { \bold {2.} A moyd, a peltsl un a béret, }
+      \line { un halt in hant fest a nagán, }
+      \line { a moyd mit a sámetenem pónim, }
+      \line { hit op dem sóynes karaván. }
+    }
+    \hspace #1
+    \column  {
+      \line { \bold {3.} Getsílt, geshósn un getrófn }
+      \line { hot ir kléyninker pistóyl, }
+      \line { an óyto a fúlinke mit vofn  }
+      \line {farháltn hot zi mit eyn koyl. }
+    }
+    \hspace #1
+    \column  {
+      \line { \bold {4.} Far tog fun vald aroysgekrókhn }
+      \line { mit shneygirlándn oyf di hor, }
+      \line { gemútikt fun kléyninkn nitsókhn }
+      \line { far úndzer náyem fráyen dor. }
+   }
+    \hspace #1
+  }
+}
