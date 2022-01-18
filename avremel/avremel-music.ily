@@ -4,8 +4,9 @@ global = {
   \time 2/4 
   \key f \minor  }
 
-melodie = 
-  { c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
+voice_vocal = 
+  { \clef treble 
+    c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
     g' e'4.~ e'4 r8 c' e' f' e'8. c'16 e'8 f' g' as' g'2~ g'4. r8 \break
     c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
     g'8 e'4.~ e'4 r8 e'8 f' bes c' des' e' f' des' e' c'2~ c'8 c' f' g' \break
@@ -14,18 +15,18 @@ melodie =
     bes'4 g'8. g'16 as'8 g' as' bes' c'' r8 bes' r as' c' f' g' as'4 g'8. f'16 as'8 as' g' f' \break 
     e' 8 g'4.~ g'8 c' g' as' bes'4 g' bes'8 bes' as' g' bes' as'4.~ as'8 f' as' bes' \break 
     c''4 bes'8 as' c'' es'' des'' c'' bes'2~ bes'8 f' g' as' bes'4 c'' bes'8 as' g' as' \break 
-    f'2~ f'4 r4 e'8 (f' g'4) g'8 (f' e' f')  as'8 g'4.~ g'2 e'8 (f' g'4) g'8 ( f' e' des') \break
+    f'2~ f'4 r4 e'8^\markup\italic"Epilog" (f' g'4) g'8 (f' e' f')  as'8 g'4.~ g'2 e'8 (f' g'4) g'8 ( f' e' des') \break
     c'2~ c' e'8 ( f' g'4) bes'8 (as' g' f') e'8 f'4.~ f'2 f'8 (bes c' des' ) e' (f' des' e') c'2~ c'4 r4  \bar "|." 
      }
 
-akkorde = \chordmode 
+voice_chords = \chordmode 
   { \override ChordName.font-size = #0
     c2 s c s c f:m c s s c s s c s c s c des c s bes:m c s s f:m s c s bes:m c:7
     f:m s f:m f:7 bes:m s bes:m des c f:m f:m s 
     c s c s f:m s f:m f:7 bes:m s s c:7 f:m s c s c s c s c s bes:m f:m f:m s bes:m c c
     }
 
-text = \lyricmode 
+stanza_one = \lyricmode 
   { 
     \set fontSize = #-2
     On8 a heym4 bin8 ikh yung8. ge16 -- bli8 -- bn2..      s'hot8 di8 noyt4 mikh8 a -- roys ge -- 

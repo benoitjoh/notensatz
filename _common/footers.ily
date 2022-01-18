@@ -3,10 +3,11 @@
 % simple line with pagenumbers in the center
 footer_common_with_pagenum = \paper {
   
-   oddFooterMarkup =  \markup {
+   oddFooterMarkup =  \markup { 
+     \vspace #2
      \fill-line  { \fontsize #-2 \italic 
                    { "jb. / lilypond.org" 
-                     \concat { "p. " \fromproperty #'page:page-number-string }  
+                     \concat { "- " \fromproperty #'page:page-number-string  " - "}  
                      #(strftime "%d. %B %Y" (localtime (current-time))) } }
         
     }

@@ -4,8 +4,7 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #1.3 
-%WITHEMPTYSTAFF-ON% system-system-spacing.padding = #8 % bigger spacings on this variant
+  system-system-spacing.padding = #0.9 
 }
 
 \include "avremel-header.ily"
@@ -13,15 +12,16 @@
 
 \markup \vspace #0 % space between header and score
 
-\score {\header {
+\score {
+  \header {
     piece = ""
-  }
+    }
   
 <<
   \new ChordNames \with {
     midiInstrument = "Acoustic Grand Piano"
-  }
-    \akkorde
+    }
+    \voice_chords
 
   \new Staff \with {
     midiInstrument = "acoustic guitar (nylon)"
@@ -29,15 +29,14 @@
   }
   {
    \global
-   \clef treble
    \tempo "Adagio"
-   \melodie
+   \voice_vocal
   }
  
   \new Lyrics \with {    
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
-  }
-    \text
+    }
+    \stanza_one
     
 %WITHEMPTYSTAFF-ON%  \new Staff {\clef "moderntab" s2 * 72 }  % empty staff variant
 >>
