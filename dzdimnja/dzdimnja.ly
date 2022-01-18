@@ -1,5 +1,8 @@
 \version "2.20.0"
 
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
+
 \paper {
   system-system-spacing.padding = #4
   #(set-paper-size "a4")

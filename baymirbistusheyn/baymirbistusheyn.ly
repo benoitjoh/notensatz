@@ -1,4 +1,6 @@
 \version "2.20.0"
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
 
 \paper {
   system-system-spacing.padding = #1.3
@@ -12,9 +14,6 @@
   copyright = ""
   arranger = "Jacob Jacobs (1932)"
   meter = \markup \italic {""}
-  tagline = \markup {
-  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
-  }
 }
 
 \markup \vspace #0 % space between header and score

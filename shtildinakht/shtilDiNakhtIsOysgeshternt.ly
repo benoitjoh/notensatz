@@ -1,5 +1,9 @@
 \version "2.20.0"
 
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
+
+
 \paper {
   system-system-spacing.padding = #1
   #(set-paper-size "a4")
@@ -8,9 +12,6 @@
 \header {
   title = \markup \caps  {"Shtil di Nakht is oysgeshternt"}
   composer = "Hirsh Glick (1942)"
-  tagline = \markup {
-  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
-  }
 }
 
 global = {

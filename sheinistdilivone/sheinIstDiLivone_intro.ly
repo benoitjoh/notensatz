@@ -1,19 +1,19 @@
 \version "2.20.0"
 
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
+
 \paper {
   system-system-spacing.padding = #5
+  first-page-number = #1
 }
 
 \header {
   title = "Shein Vi Di Livone"
-  subtitle = "- Intro -"
+  subtitle = "[ Intro ]"
   composer = "Katharina Müther"
   copyright = ""
   arranger = "(Orakel)"
-  meter = \markup \italic {""}
-  tagline = \markup {
-  \halign #-13  \abs-fontsize #8 \italic { "jb. / lilypond.org"  #(strftime "%d. %B %Y" (localtime (current-time)))}
-  }
 }
 
 \markup \vspace #1 % space between header and score
@@ -70,6 +70,7 @@ intro_akk = {
 }
 
 \score {
+  
   \new Staff  \with {
     midiInstrument = "acoustic guitar (nylon)"
     instrumentName = "Guitar"
