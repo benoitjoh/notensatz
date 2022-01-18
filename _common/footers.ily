@@ -5,7 +5,7 @@ footer_common_with_pagenum = \paper {
    #(set-paper-size "a4")
 
    oddFooterMarkup =  \markup { 
-     \vspace #2
+     \vspace #1
      \fill-line  { \fontsize #-2 \italic 
                    { "jb. / lilypond.org" 
                      \concat { "- " \fromproperty #'page:page-number-string  " - "}  

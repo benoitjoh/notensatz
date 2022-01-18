@@ -4,7 +4,7 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #0.9 
+  system-system-spacing.padding = #1.2
 }
 
 \include "avremel-header.ily"
@@ -30,7 +30,7 @@
       }
    
     \new Lyrics \with {    
-      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #0.2  %spacer before textlines
       }
       \stanza_one
   >>

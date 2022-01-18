@@ -30,6 +30,7 @@ bass_spacer =  { s1*27 }
   }
   <<
     \new Voice= "second"  
+        \global
         \clef "treble_8"
         \tempo "Adagio (ad libitum)"
 
