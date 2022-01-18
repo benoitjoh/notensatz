@@ -3,9 +3,8 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #1 % spacer between systems
+  system-system-spacing.padding = #8 % spacer between systems
   #(set-paper-size "a4")
-%WITHEMPTYSTAFF-ON% system-system-spacing.padding = #8
 }
 \include "baymirbistusheyn-header.ily"
 
@@ -15,12 +14,9 @@
 \include "baymirbistusheyn-lyrics.ily"
 
 \score {
-%MIDION% \unfoldRepeats { %directive do this only on midigenreration  
 <<
-  \new ChordNames \with { 
-    \override ChordName.font-size = #-0
-    }
-  \voice_chords
+  \new ChordNames \with {  \override ChordName.font-size = #-0 }
+    \voice_chords
 
   \new Staff \with { instrumentName = "Vocal" } 
     { 
@@ -34,7 +30,8 @@
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
     }
     \stanza_one
-%WITHEMPTYSTAFF-ON% \new Staff {\clef "moderntab" s2 * 55 }  % empty staff
+    
+  \new Staff {\clef "moderntab" s2 * 55 }  % empty staff
 >>
   \layout { }
 }

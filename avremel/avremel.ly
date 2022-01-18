@@ -13,33 +13,27 @@
 \markup \vspace #0 % space between header and score
 
 \score {
-  \header {
-    piece = ""
-    }
+  \header { piece = "" }
+  <<
+    \new ChordNames \with {
+      midiInstrument = "Acoustic Grand Piano"
+      }
+      \voice_chords
   
-<<
-  \new ChordNames \with {
-    midiInstrument = "Acoustic Grand Piano"
-    }
-    \voice_chords
-
-  \new Staff \with {
-    midiInstrument = "acoustic guitar (nylon)"
-    instrumentName = "Vocal"
-  }
-  {
-   \global
-   \tempo "Adagio"
-   \voice_vocal
-  }
- 
-  \new Lyrics \with {    
-    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
-    }
-    \stanza_one
-    
-%WITHEMPTYSTAFF-ON%  \new Staff {\clef "moderntab" s2 * 72 }  % empty staff variant
->>
+    \new Staff \with {
+      midiInstrument = "acoustic guitar (nylon)"
+      instrumentName = "Vocal" }
+      {
+        \global
+        \tempo "Adagio"
+        \voice_vocal
+      }
+   
+    \new Lyrics \with {    
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
+      }
+      \stanza_one
+  >>
 
  \layout { }
  \midi { \tempo 4=100 }

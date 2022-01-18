@@ -4,13 +4,13 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #3 % spacer between the staff group
+  system-system-spacing.padding = #8 % spacer between the staff group
   #(set-paper-size "a4")
 }
 
 \include "dzhankoye-header.ily"
 
-\markup \vspace #0 % space between header and score
+\markup \vspace #2 % space between header and score
 
 \include "dzhankoye-music.ily"
 \include "dzhankoye-lyrics.ily"
@@ -30,17 +30,13 @@
       }
       
     \new Lyrics \with {    
-      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1.3  %spacer before first textlines
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2  %spacer before first textlines
         }
       \stanza_one
-      
-    \new Lyrics  
-      \stanza_two
-    
-    \new Lyrics 
-      \stanza_three
+   % empty staff for notes
+  \new Staff {
+    \clef "moderntab" s1 * 16 }  
+     
   >>
-
   \layout { }
-  \midi { \tempo 4=120 }
 }

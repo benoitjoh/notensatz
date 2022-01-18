@@ -32,7 +32,6 @@
   % empty staff for notes
   \new Staff {
     \clef "moderntab" s2 * 72 }  
-
 >>
 
  \layout { }

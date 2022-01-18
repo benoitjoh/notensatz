@@ -2,7 +2,8 @@
 
 % simple line with pagenumbers in the center
 footer_common_with_pagenum = \paper {
-  
+   #(set-paper-size "a4")
+
    oddFooterMarkup =  \markup { 
      \vspace #2
      \fill-line  { \fontsize #-2 \italic 
