@@ -7,7 +7,7 @@
   system-system-spacing.padding = #2
 }
 
-bass_spacer =  { s1*38 }
+bass_spacer =  { s1*38 } % pause for basso voice from the beginning to last bar
 
 \include "sheinIstDiLivone-header.ily"
 \include "sheinIstDiLivone-music.ily"
