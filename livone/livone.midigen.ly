@@ -1,18 +1,9 @@
 \version "2.20.0"
 
-\include "../_common/footers.ily"
-\footer_common_with_pagenum 
-
-\paper {
-  system-system-spacing.padding = #2
-}
-
 bass_spacer =  { s1*38 } % pause for basso voice from the beginning to last bar
 
-\include "sheinIstDiLivone-header.ily"
-\include "sheinIstDiLivone-music.ily"
-\include "sheinIstDiLivone-lyrics.ily"
-\include "sheinIstDiLivone-music-intros.ily"
+\include "livone-music.ily"
+\include "livone-music-intros.ily"
 
 \score {
   \header { piece =  "for midi generation only" }

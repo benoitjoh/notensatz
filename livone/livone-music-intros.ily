@@ -33,7 +33,6 @@ voice_intro_guitar =
     g,2:m d,2 g,2.:m r4 g,1:m7 s1 c,1~ c,2. c,4 f,2 g,4 gis,4 a,1 \break
     d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,2 g,2:m~_> g,1:m}
     <>^\markup { \right-align  \tiny { "Basso" \italic "(slower)"} }
-    \tempo 4=60 
   
     \cueDuring "voice_intro_basso" #UP 
       { <a, cis e >1 }

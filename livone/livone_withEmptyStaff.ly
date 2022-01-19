@@ -7,12 +7,12 @@
   system-system-spacing.padding = #5.2
 }
 
-\include "sheinIstDiLivone-header.ily"
+\include "livone-header.ily"
 
 \markup \vspace #1 % space between header and score
 
-\include "sheinIstDiLivone-music.ily"
-\include "sheinIstDiLivone-lyrics.ily"
+\include "livone-music.ily"
+\include "livone-lyrics.ily"
 
 \score {
   <<
