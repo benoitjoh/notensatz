@@ -5,20 +5,26 @@ echo "*  converts to mp3 and renders the pdf      *"
 echo "*  put all results in _out                  *" 
 echo "*********************************************" 
 echo ""
-echo "This will convert the following files: "
-echo ""
 
-if [ -d $1 ];
-then 
-  if [[ $1 =~ "/" ]];
-  then
-    searchpath=$1;
-  else
-    searchpath=$1/ 
-  fi;
+if [ -z $1];
+then
+  searchpath=[^_]*/;
 else
-  searchpath=$1[^_]*/;
+  if [ -d $1 ];
+  then 
+    if [[ $1 =~ "/" ]];
+    then
+      searchpath=$1;
+    else
+      searchpath=$1/ 
+    fi;
+  else
+    searchpath=$1[^_]*/;
+  fi;
 fi;
+
+echo "This will process the following files: "
+echo ""
 
 ls -1 $searchpath[^_]*.ly
 
