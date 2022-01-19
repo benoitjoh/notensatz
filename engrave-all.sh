@@ -7,7 +7,20 @@ echo "*********************************************"
 echo ""
 echo "This will convert the following files: "
 echo ""
-ls -1 [^_]*/[^_]*.ly
+
+if [ -d $1 ];
+then 
+  if [[ $1 =~ "/" ]];
+  then
+    searchpath=$1;
+  else
+    searchpath=$1/ 
+  fi;
+else
+  searchpath=$1[^_]*/;
+fi;
+
+ls -1 $searchpath[^_]*.ly
 
 sleep 3
 
@@ -20,7 +33,7 @@ strindex() {
   [[ "$x" = "$1" ]] && echo -1 || echo "${#x}"
 }
 
-for path in $(ls [^_]*/[^_]*.ly)
+for path in $(ls $searchpath[^_]*.ly)
 do
     
     pos=$(strindex $path "/")
