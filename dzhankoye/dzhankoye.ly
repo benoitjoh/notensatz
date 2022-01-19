@@ -5,7 +5,6 @@
 
 \paper {
   system-system-spacing.padding = #3 % spacer between the staff group
-  #(set-paper-size "a4")
 }
 
 \include "dzhankoye-header.ily"
