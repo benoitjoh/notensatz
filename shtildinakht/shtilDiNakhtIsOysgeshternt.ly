@@ -56,7 +56,6 @@
 >>
 
   \layout { }
-  \midi { \tempo 4=100 }
 } 
 \markup \vspace #1 % space score and table
 \lyrics_tabloid
