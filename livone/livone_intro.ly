@@ -10,7 +10,7 @@
 \include "header.ily"
 \header {
   subtitle = "- Intros -"
-  arranger = \markup \italic"Katharina Müther / Orakel"
+  arranger = \markup \italic"Katharina Müther & Orakel"
 }
 \markup \vspace #1 % space between header and score
 
@@ -22,19 +22,12 @@ bass_spacer =  { s1*27 } % pause for basso voice from the beginning to last bar
 
 \score {
   \header { piece = "Concha" }
-
-  \new Staff  \with {
-    midiInstrument = "acoustic guitar (nylon)"
-    instrumentName = "Guitar"
-  }
-  <<
-    \new Voice= "second"  
-        \global
-        \clef "treble_8"
-        \tempo "Adagio (ad libitum)"
-
-         { \voiceTwo \voice_concha_base }
-  >>
+  \new Staff {
+    \global
+    \clef "treble_8"
+    \tempo "Adagio (ad libitum)"
+    \voice_concha_base 
+    }
   \layout { }
 }
 
@@ -46,26 +39,18 @@ bass_spacer =  { s1*27 } % pause for basso voice from the beginning to last bar
     \new ChordNames    
       \voice_intro_chords
   
-    \new Staff \with {
-      midiInstrument = "Acoustic Grand Piano"
-      instrumentName = "Accordion" }
-      { 
-        {
-        \global
-        \voice_intro_accordion
-        }  
-      }
-   
-    \new Staff \with {
-      midiInstrument = "acoustic guitar (nylon)"
-      instrumentName = "Guitar"
-    } { 
-      \clef "treble_8"
-       {
+    \new Staff {
       \global
+      \tempo "Adagio ad libitum" 
+      \voice_intro_accordion
+      }  
+    
+    \new Staff { 
+      \global
+      \clef "treble_8"
       \voice_intro_guitar
       }
-    }
+    
   >>
   \layout {  }
 

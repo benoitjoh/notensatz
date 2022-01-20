@@ -26,12 +26,11 @@ voice_concha_base =
 voice_intro_guitar = 
   {
     \set Score.currentBarNumber = #13
-    \tempo "Adagio ad libitum" 
-    a,2. \f d8 e    f2~ f8 d8  e f   g2~ g8 e8 f g  as4~ as8 f8 e4.~e16 bes16 a4~ 8 g8 e d cis bes, a,1 \break  
+    a,2. d8 e    f2~ f8 d8  e f   g2~ g8 e8 f g  as4~ as8 f8 e4.~e16 bes16 a4~ 8 g8 e d cis bes, a,1 \break  
     \chordmode {
-    d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m as,4 a,1 \break
+    d,2:m a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m as,4 a,1 \break
     g,2:m d,2 g,2.:m r4 g,1:m7 s1 c,1~ c,2. c,4 f,2 g,4 gis,4 a,1 \break
-    d,2:m \p a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,2 g,2:m~_> g,1:m}
+    d,2:m a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,2 g,2:m~_> g,1:m}
     <>^\markup { \right-align  \tiny { "Basso" \italic "(slower)"} }
   
     \cueDuring "voice_intro_basso" #UP 
@@ -50,7 +49,7 @@ voice_intro_accordion =
   {
     \clef "treble"
   
-    r1 <d' a' f' d''>1\p  (<g d' g' bes' >1  <as c' es' as'>1  <a cis' e' a' >1) r2 r4 r8 a8 
+    r1 <d' a' f' d''>1  (<g d' g' bes' >1  <as c' es' as'>1  <a cis' e' a' >1) r2 r4 r8 a8 
     a4.  f'8 cis'4.  e'8 d'2. r8 a8 
     a4. f'8 cis'4.  e'8 d'1  (e'4) e'8 d' cis'4 bes a2. r8 d'8 
     d'4. bes'8 fis'4.  a'8  g'1 g'4 d'2 bes8 a8 g1 g'4 g' e' d' c'2 bes'2 a'1~ a'2 r4 r8 a8 
