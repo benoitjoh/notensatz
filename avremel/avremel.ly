@@ -16,8 +16,7 @@
   \header { piece = "" }
   <<
     \new ChordNames \with {
-      midiInstrument = "Acoustic Grand Piano"
-      }
+      midiInstrument = "acoustic grand" }
       \voice_chords
   
     \new Staff \with {
