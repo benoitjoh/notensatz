@@ -78,9 +78,21 @@ do
       timidity $midifile -OwM -o $wavfile
       lame -hb128 $wavfile $mp3file
       # cleanup
-      rm $midifile
       rm $wavfile
     fi;
+     
+    for clenupextension in pdf midi
+    do
+      for mypath in $(ls $myfolder/*.$clenupextension 2> /dev/null);
+        do
+        if [ -e $mypath ];
+          then 
+            echo " --- cleanup:  $mypath";
+            rm $mypath;
+        fi;
+      done;
+    done;
+    
 
 done;
 
