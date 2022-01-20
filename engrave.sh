@@ -32,7 +32,10 @@ sleep 3
 
 export LANG=DE
 
-mkdir _out
+if [ ! -d _out ]
+then
+  mkdir _out
+fi;
 
 strindex() { 
   x="${1%%$2*}"
@@ -81,7 +84,7 @@ do
       rm $wavfile
     fi;
      
-    for clenupextension in pdf midi
+    for clenupextension in pdf midi ly~ ily~
     do
       for mypath in $(ls $myfolder/*.$clenupextension 2> /dev/null);
         do
