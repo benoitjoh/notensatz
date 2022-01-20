@@ -1,0 +1,32 @@
+\version "2.20.0"
+
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
+
+\paper {
+  system-system-spacing.padding = #1
+}
+
+\include "header.ily"
+\include "music.ily"
+
+\markup \vspace #3 % space between header and score
+
+\score {
+  
+<<
+  \new ChordNames
+    \voice_chords
+ 
+  \new Staff \with {
+    midiInstrument = "Clarinet"
+    instrumentName = "Clarinet (B)" } 
+    { 
+      \transpose c b {
+        \global
+        \voice_clarinet
+        }  
+    }
+>>
+  \layout { }
+} 
