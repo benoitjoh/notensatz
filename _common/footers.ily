@@ -7,7 +7,11 @@ footer_common_with_pagenum = \paper {
    oddFooterMarkup =  \markup { 
      \vspace #1
      \fill-line  { \fontsize #-2 \italic 
-                   { "jb. / lilypond.org" 
+                   { \concat {
+                        \with-url #"https://github.com/benoitjoh/notensatz" "jb." 
+                        " / " 
+                        \with-url #"http://lilypond.org/" "lilypond.org" 
+                       }
                      \concat { "- " \fromproperty #'page:page-number-string  " - "}  
                      #(strftime "%d. %B %Y" (localtime (current-time))) } }
         
