@@ -7,12 +7,12 @@
   system-system-spacing.padding = #3 % spacer between the staff group
 }
 
-\include "dzhankoye-header.ily"
+\include "header.ily"
 
 \markup \vspace #0 % space between header and score
 
-\include "dzhankoye-music.ily"
-\include "dzhankoye-lyrics.ily"
+\include "music.ily"
+\include "lyrics.ily"
 
 \score {
   <<

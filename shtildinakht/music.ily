@@ -8,7 +8,10 @@ global = {
 voice_chords = 
   \chordmode 
     { 
-    c2:m f:m bes es es as es es  c:m f:m bes es g f4:m g4:7 c1:m c2:m 
+    c2:m f:m bes es \break
+    es as es es \break
+    c:m f:m bes es \break
+    g f4:m g4:7 c1:m c2:m 
     }
 
 
@@ -35,7 +38,7 @@ voice_vocal =
 voice_clarinet = 
   \transpose c c' {
     \clef "treble"
-    c4. c8 d2 d2 es
+    c4. c8 d2 d2 es 
     g4. es8  as8 g es f g2 r 
     \repeat volta 2 {
       es2 c  d  g  

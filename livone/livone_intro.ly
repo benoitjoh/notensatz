@@ -7,18 +7,18 @@
   system-system-spacing.padding = #2
 }
 
-\include "livone-header.ily"
+\include "header.ily"
 \header {
   subtitle = "- Intros -"
   arranger = \markup \italic"Katharina Müther / Orakel"
 }
 \markup \vspace #1 % space between header and score
 
-\include "livone-music.ily"
+\include "music.ily"
 
 bass_spacer =  { s1*27 } % pause for basso voice from the beginning to last bar
 
-\include "livone-music-intros.ily"
+\include "music-intros.ily"
 
 \score {
   \header { piece = "Concha" }

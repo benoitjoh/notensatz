@@ -1,10 +1,6 @@
 \version "2.20.0"
 
-\include "baymirbistusheyn-header.ily"
-
-\markup \vspace #0 % space between header and score
-
-\include "baymirbistusheyn-music.ily"
+\include "music.ily"
 
 \score { \header { piece = "unfolded version just for midigeneration... " }
   \unfoldRepeats { 

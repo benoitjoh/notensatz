@@ -8,12 +8,12 @@
   #(set-paper-size "a4")
 }
 
-\include "dzhankoye-header.ily"
+\include "header.ily"
 
 \markup \vspace #2 % space between header and score
 
-\include "dzhankoye-music.ily"
-\include "dzhankoye-lyrics.ily"
+\include "music.ily"
+\include "lyrics.ily"
 
 \score {
   <<

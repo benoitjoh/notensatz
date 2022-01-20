@@ -2,35 +2,32 @@
 
 bass_spacer =  { s1*38 } % pause for basso voice from the beginning to last bar
 
-\include "livone-music.ily"
-\include "livone-music-intros.ily"
+\include "music.ily"
+\include "music-intros.ily"
 
 \score {
   \header { piece =  "for midi generation only" }
   <<
     \new ChordNames 
       {
-        s1 * 11 % concha
-        \voice_intro_chords
-        \voice_chords
+        s1 * 39 % concha / intro no chords
+       \voice_chords
       }
       
     \new Staff \with {
         midiInstrument = "acoustic guitar (nylon)"
         instrumentName = "guitar" } 
       {
-        \tempo "Moderato"
         \global
         \clef "treble_8"
         \voiceTwo \voice_concha_base
-        
         \voice_intro_guitar
         \voice_vocal
       }
       
     \new Staff \with {
-        midiInstrument = "piano"
-        instrumentName = "accorion" } 
+        midiInstrument = "acoustic grand"
+        instrumentName = "accordion" } 
       {
         s1 * 11 % concha
         \voice_intro_accordion

@@ -7,17 +7,17 @@
   system-system-spacing.padding = #2.4
 }
 
-\include "livone-header.ily"
+\include "header.ily"
 
 \markup \vspace #1 % space between header and score
 
-\include "livone-music.ily"
-\include "livone-lyrics.ily"
+\include "music.ily"
+\include "lyrics.ily"
 
 
 bass_spacer =  { s1*27 }
 
-\include "livone-music-intros.ily"
+\include "music-intros.ily"
 
 
 % stanza ... 

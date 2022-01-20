@@ -6,12 +6,12 @@
   system-system-spacing.padding = #8 % spacer between systems
   #(set-paper-size "a4")
 }
-\include "baymirbistusheyn-header.ily"
+\include "header.ily"
 
 \markup \vspace #0 % space between header and score
 
-\include "baymirbistusheyn-music.ily"
-\include "baymirbistusheyn-lyrics.ily"
+\include "music.ily"
+\include "lyrics.ily"
 
 \score {
 <<

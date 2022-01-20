@@ -15,8 +15,8 @@
 
 \markup \vspace #4 % space between header and score
 
-\include "dzdimnja-music.ily"
-\include "dzdimnja-lyrics.ily"
+\include "music.ily"
+\include "lyrics.ily"
 
 \score {
 <<

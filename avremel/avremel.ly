@@ -7,8 +7,8 @@
   system-system-spacing.padding = #1.2
 }
 
-\include "avremel-header.ily"
-\include "avremel-music.ily"
+\include "header.ily"
+\include "music.ily"
 
 \markup \vspace #0 % space between header and score
 

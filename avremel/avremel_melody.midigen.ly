@@ -1,7 +1,6 @@
 \version "2.20.0"
 
-\include "avremel-header.ily"
-\include "avremel-music.ily"
+\include "music.ily"
 
 \markup \vspace #0 % space between header and score
 
@@ -12,6 +11,6 @@
         \global
         \voice_vocal
   >>
-% \layout { }
+ \layout { }
  \midi { \tempo 4=100 }
 }
