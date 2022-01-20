@@ -1,5 +1,5 @@
 \version "2.20.0"
-\include "shtilDiNakhtIsOysgeshternt-music.ily"
+\include "shtilDiNakht-music.ily"
 
 \score {
   \header { piece = "only midi generation " }

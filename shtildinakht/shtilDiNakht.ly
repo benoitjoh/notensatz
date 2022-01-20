@@ -7,9 +7,9 @@
   system-system-spacing.padding = #1
 }
 
-\include "shtilDiNakhtIsOysgeshternt-header.ily"
-\include "shtilDiNakhtIsOysgeshternt-music.ily"
-\include "shtilDiNakhtIsOysgeshternt-lyrics.ily"
+\include "shtilDiNakht-header.ily"
+\include "shtilDiNakht-music.ily"
+\include "shtilDiNakht-lyrics.ily"
 
 \markup \vspace #0 % space between header and score
 
