@@ -13,7 +13,7 @@ voice_vocal = {
   d8 e fis2 d4 fis8 e g2. g4. fis8 g4. a8 fis2. g8 a \break 
   b4. b8 cis'4. cis'8 a1 g4. fis8 g4. a8 fis1 \break
   e8 fis8 g2 b4 b,8 cis d2. cis2. b,4 cis2 d2 b,1 r1
-  \break
+  \bar "|."
   
   
    
