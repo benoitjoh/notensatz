@@ -21,6 +21,7 @@
   <<
   \new ChordNames {\voice_chords \voice_chords_refrain}
   
+  \new Staff \with { instrumentName = "Vocal" }
   \new Voice = "stanza" { 
     { \global \voice_vocal } 
     \new Voice = "refrain" { \voice_refrain} 

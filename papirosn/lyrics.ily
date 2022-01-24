@@ -24,7 +24,7 @@ refrain_first = \lyricmode {
   koyft she,  koyft she pa -- pi -- ro -- sn, 
   tru -- ke -- ne fun re -- gn nisht far -- go - zn. 
   Koyft she bi -- lik be -- ne -- mo -- nes, 
-  koyft un hot oyf mir rakh -- mo --nes 
+  koyft un hot oyf mir rakh -- mo -- nes 
   ra -- te -- ve fun hun -- ger mikh a tzind. Ku -- pit ye
 }
 
