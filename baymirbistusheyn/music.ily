@@ -1,4 +1,5 @@
 \version "2.20.0"
+\include "../_common/makros.ily"
 
 global = {
   \key e \minor
@@ -19,13 +20,13 @@ voice_vocal= {
    g'8 e' fis' b e'2 a'8 8 a'16 g' fis' e' fis'2
    c''8 8 16 b' a' g' b'4. b8 \break
    \repeat volta 2 {
-     \mark \markup { \bold \fontsize #-1 \box A }
+     \mark \box_a
      g'4^"Refrain" fis'8 e' g'4.  b8 g'4 fis'8 e' g'4. 8 
-     fis' dis'4 b8 fis'4 g'8 fis' e'4 r4r r8  b^\markup { \bold \box A } g'4 fis'8 e' \break
+     fis' dis'4 b8 fis'4 g'8 fis' e'4 r4r r8  b^\box_a g'4 fis'8 e' \break
      g'4. b8 g'4 fis'8 e' g'4. 8 fis' dis'4 b8 
-     fis'4 g'8 fis'e'2~ 8 8 fis'^\markup { \bold \box B } g' a' r e' a'~ \break
+     fis'4 g'8 fis'e'2~ 8 8 fis'^\box_b g' a' r e' a'~ \break
      8 8 g' fis' g' r e' 8 8 8 8 fis' g' a' r e' a'~ 8 8 g' a' \break
-     b' r b b b4 r8 b^\markup { \bold \box A }  g'4 fis'8 e' g'4. b8 g'4 fis'8 e' \break
+     b' r b b b4 r8 b^\box_a  g'4 fis'8 e' g'4. b8 g'4 fis'8 e' \break
      g'4.  8 fis' dis'4 b8 fis'4 g'8 fis'
    }
    \alternative {
