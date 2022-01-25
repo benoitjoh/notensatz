@@ -1,7 +1,6 @@
 % tepmlate for a three parts Staff with lyrices and a repeat in it
 \version "2.20.0"
 
-\include "../_common/makros.ily"
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 

@@ -31,7 +31,7 @@
   
   % empty staff for notes
   \new Staff {
-    \clef "moderntab" s2 * 72 }  
+    \clef "vaticana-do2" s2 * 72 }  
 >>
 
  \layout { }

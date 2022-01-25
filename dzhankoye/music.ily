@@ -5,9 +5,7 @@ global = {
   \time 4/4
 }
 
-voice_vocal = 
-  \transpose c c'
-   {
+voice_vocal = \fixed c'{
    \clef "treble" 
    d8 d d f a a a f g g g e f f e d\break 
    f f e f g (g) f (e) d2. r8 d8 \break

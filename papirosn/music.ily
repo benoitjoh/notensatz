@@ -1,4 +1,5 @@
 \version "2.20.0"
+\include "../_common/makros.ily"
 
 global = {
   \key a \minor
@@ -6,7 +7,7 @@ global = {
 }
 
 \addQuote "variant" { s1*7 s2. s8 s16 d'16 } % the small "b" in bar eight
-voice_vocal = \transpose c c' { 
+voice_vocal = \fixed c' { 
    \clef treble
    s8*7 
    \mark \box_a 
@@ -27,11 +28,11 @@ voice_vocal = \transpose c c' {
    %refrain
 }
 
-voice_refrain = \transpose c c'{
+voice_refrain = \fixed c'{
    \set melismaBusyProperties = #'() % detach slurs from text!
    \mark \box_b
    \repeat volta 2
-   { c'4.^\markup \italic "Refr." b8 c' b a gis a4 e2. a8 gis a gis a g f e \break
+   { c'4.^\mark_refrain b8 c' b a gis a4 e2. a8 gis a gis a g f e \break
    e (f) d2. 
    d8 e e b b a a gis gis f f e e d d c c d d c e d c b, } 
    \alternative { { e2~ 8 e a b   } { a,1 }} 

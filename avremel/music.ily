@@ -11,7 +11,7 @@ voice_vocal =
     <>^\box_a c'8  des'^\markup \italic"Recitativo" c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
     g' e'4.~ e'4 r8 c' e' f' e'8. c'16 e'8 f' g' as' g'2~ g'4. r8 \break
     c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
-    g'8 e'4.~ e'4 r8 e'8 f' bes c' des' e' f' des' e' c'2~ c'8 c'^\box_b f'^\markup \italic"Refrain"  g' \break
+    g'8 e'4.~ e'4 r8 e'8 f' bes c' des' e' f' des' e' c'2~ c'8 c'^\box_b f'^\mark_refrain  g' \break
     as'4 g'8. f'16 as'8 as' g' f' e' g'4.~ g'8 c'8 g' as'  bes'4 g' bes'8 bes' as' g'  \break
     bes' as'4.~ as'8 f' as' bes' c''4  bes'8 as' c'' bes' des'' c'' bes'2~ bes'8 c' g' as' \break 
     bes'4 g'8. g'16 as'8 g' as' bes' c'' r8 bes' r as'-. c' (f' g') as'4 g'8. f'16 as'8 as' g' f' \break 

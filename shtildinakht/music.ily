@@ -15,8 +15,7 @@ voice_chords =
     }
 
 
-voice_vocal =     
-  \transpose c c' {
+voice_vocal = \fixed c' {
     \clef "treble"
     g4. es8 as g f es f4. es16 d es4. r8
     \break
@@ -35,8 +34,7 @@ voice_vocal =
      
   }
 
-voice_clarinet = 
-  \transpose c c' {
+voice_clarinet = \fixed c' {
     \clef "treble"
     c4. c8 d2 d2 es 
     g4. es8  as8 g es f g2 r 

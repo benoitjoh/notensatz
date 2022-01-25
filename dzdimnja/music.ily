@@ -7,8 +7,8 @@ global = {
 
 % -- data ------------------------------------------------
 
-voice_vocal = {
-
+voice_vocal = \fixed c' {
+  \clef "treble"
   b,8 cis d2 b,4 d8 cis e2. e4. cis8 e4. d8 d1 \break
   d8 e fis2 d4 fis8 e g2. g4. fis8 g4. a8 fis2. g8 a \break 
   b4. b8 cis'4. cis'8 a1 g4. fis8 g4. a8 fis1 \break

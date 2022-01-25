@@ -38,9 +38,10 @@
 
   \new Staff \with {
     midiInstrument = "Clarinet"
-    instrumentName = "Clarinet (B)" } 
+    instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
+    }
     { 
-      \transpose c b {
+      \transpose a b {
         \global
         \voice_clarinet
         }  
@@ -48,7 +49,7 @@
 
   \new Staff \with {
     midiInstrument = "Acoustic Grand"
-    instrumentName = "Akkordeon" }
+    instrumentName = "Akkordion" }
     {
       \global
       \voice_accordion

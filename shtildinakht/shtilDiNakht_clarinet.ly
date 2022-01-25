@@ -20,9 +20,9 @@
  
   \new Staff \with {
     midiInstrument = "Clarinet"
-    instrumentName = "Clarinet (B)" } 
+    instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  } 
     { 
-      \transpose c b {
+      \transpose a b {
         \global
         \voice_clarinet
         }  

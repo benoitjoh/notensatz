@@ -3,7 +3,7 @@
 
 \addQuote "voice_concha_melodie"  
   {
-    %\once \override Slur #'direction = #DOWN %% does not work :(
+    %\override Tie #'direction = #DOWN does not work...
     r4 a2.~ a8 a a a a bes c' bes a1~ a8 a a a a bes c' bes \break
     \stemUp a16 bes a8~ a2.~ a2 \tuplet 3/2 {a4 bes a}  g16 f g8~ g2.~ g2~ g8 g g g g g f g \break
      a g  \tuplet 3/2{f8 g a} a2~ a8 a a a a bes c' bes a16 bes a8~ a2.\fermata r1
@@ -20,7 +20,7 @@ voice_concha_base =
 
 
 \addQuote "voice_intro_basso" 
-  { \bass_spacer %s1*27 
+  { \bass_spacer %s1*27 defined by layout file
     a8. a16 g4 f4 e }
 
 voice_intro_guitar = 

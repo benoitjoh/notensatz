@@ -14,7 +14,7 @@ global = {
   \time 4/4
 }
 \parallelMusic voiceA, voiceB, voiceC 
-  \transpose c c'{
+  \fixed c'{
   % Bar 1
   s8 g16 c' e' g c' e'      s8 g16 c' e' g c' e'      |
   r16 e8.~   4              r16 e8.~   4              |
@@ -31,7 +31,11 @@ global = {
 
 \new StaffGroup 
   <<
-    \new Staff << \voiceA \\ \voiceB >>
+    \new Staff 
+    << 
+      \new Voice {\voiceA} 
+      \new Voice {\voiceB}  
+    >>
     \new Staff { \clef bass \voiceC }
   >>
 

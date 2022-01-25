@@ -5,7 +5,6 @@
 
 \paper {
   system-system-spacing.padding = #4
-  #(set-paper-size "a4")
 }
 
 \header {
@@ -28,10 +27,7 @@
     instrumentName = "Vocal" } 
     { 
      \global
-     \clef "treble"
-     \transpose c c' {
-       \voice_vocal 
-       }
+     \voice_vocal 
     }
   
   \new Lyrics {
@@ -41,7 +37,7 @@
 >>
 
 \layout { }
-  \midi { \tempo 4=120 }
+\midi { \tempo 4=120 }
 } 
 
 \markup \vspace #4 

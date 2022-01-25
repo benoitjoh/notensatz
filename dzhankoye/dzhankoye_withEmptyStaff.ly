@@ -35,7 +35,7 @@
       \stanza_one
    % empty staff for notes
   \new Staff {
-    \clef "moderntab" s1 * 16 }  
+    \clef "vaticana-do2" s1 * 16 }  
      
   >>
   \layout { }
