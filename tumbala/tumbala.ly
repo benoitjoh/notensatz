@@ -6,7 +6,7 @@
 \footer_common_with_pagenum 
 
 \header {
-  title = \markup \caps  {"Tumbalalaika"}
+  title = \markup \caps  {"Titel"}
   composer = "Komponist (Jahr)"
   copyright = ""
   arranger = " "
@@ -16,25 +16,23 @@
 
 % -- music and text ------------------------------------------------
 global = {
-  \key a \minor
-  \time 3/4
+  \key d \minor
+  \time 4/4
 }
 
-voice_vocal = \fixed c' { 
-  \tieDashed \slurDashed
-  e4~ e e e2 e4 e (d4.) c8 b,2~ b,4 d2 d4 d2 d4 d (c4.) b,8 a,2.
-  a,4 c e a2 a4 c' b4. a8 e2. g4 (f4.) d8 b,2 (b,4) d c4. b,8 a,2. 
-}
+voice_vocal = 
+  { as c d8 es8 es4 }
 
 stanza_one = \lyricmode 
   {\set fontSize = #-2 
-   Schteijt2 a bo -- cher } 
+   Ich4 stand a -- nd2 } 
 
 
 % -- container ---------------------------------------------
 \score {
   <<
   \new Staff 
+    \relative c'' 
     {
      \global
      \voice_vocal
@@ -44,5 +42,5 @@ stanza_one = \lyricmode
     \stanza_one
   >>
   \layout { }
-  \midi { \tempo 4=140 }
+  \midi { \tempo 4=100 }
 }
