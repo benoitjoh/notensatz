@@ -6,7 +6,16 @@ echo "*  put all results in _out                  *"
 echo "*********************************************" 
 echo ""
 
-if [ -z $1];
+red=`tput setaf 1`
+green=`tput setaf 2`
+yellow=`tput setaf 3`
+reset=`tput sgr0` # No Color
+export err="[${red} ERR ${reset}]"
+export inf="[${green} INF ${reset}]"
+export wrn="[${yellow} WRN ${reset}]"
+
+
+if [ -z $1 ];
 then
   searchpath=[^_]*/;
 else
@@ -23,7 +32,7 @@ else
   fi;
 fi;
 
-echo "This will process the following files: "
+echo "${inf} This will process the following files: "
 echo ""
 
 ls -1 $searchpath[^_]*.ly
@@ -65,18 +74,24 @@ do
     sleep 2
     # conversion pdf
     lilypond -dno-point-and-click -ddelete-intermediate-files --pdf -o$myfolder/$rawfilename $lyfile
+    if [[ ! $? -eq 0 ]]
+    then
+      echo "${err} Error during processing in lilypond! See messages above." 
+      echo "Press key to continue"
+      read dummy
+    fi;
 
     if [ -f $pdffile ]; 
     then 
       if [[ ! $lyfile =~ '.midigen.' ]]; # dont use pdf if the file is just for midigeneration... 
       then
-        echo " [ok] pdf file found. "; 
+        echo "${inf}  pdf file found. "; 
         cp $pdffile $pdfoutfile; 
       fi;
     fi;
 
     if [ -f $midifile ]; 
-    then echo " [ok] midi file found. "; 
+    then echo "${inf}  midi file found. "; 
       # transformation to mp3
       timidity $midifile -OwM -o $wavfile
       lame -hb128 $wavfile $mp3file
@@ -90,7 +105,7 @@ do
         do
         if [ -e $mypath ];
           then 
-            echo " --- cleanup:  $mypath";
+            echo "${inf}  --- cleanup:  $mypath";
             rm $mypath;
         fi;
       done;
@@ -99,4 +114,4 @@ do
 
 done;
 
-echo "... done. "
+echo "${inf} ... done. "
