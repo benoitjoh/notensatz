@@ -8,3 +8,7 @@ box_c = \markup { \override #'(box-padding . 0.4) \bold \box "C" }
 
 mark_refrain = \markup \italic "Refr."
 mark_stanza = \markup \italic "Stanza"
+
+% lyrics: sylable alignements
+align_l = \once \override LyricText.self-alignment-X = #LEFT
+\override LyricText.
