@@ -27,19 +27,18 @@ voice_vocal = \fixed c' {
   
 }
 
-voice_refrain_second= \fixed c'
-  \magnifyMusic 0.8  
-  {
-  s4*3*16 
-  d4 d d d d d d d4 b,4 cis2 cis4 cis4 4 4 4 4 4 4 4 fis,  b,2 b,4 
-  d4 d cis b,2 b,4 b, d4. fis8 b2 b4 g g4. cis8 fis2 fis4 fis,4 gis,4. ais,8 b,2.
-  }
-
 voice_refrain = \fixed c' {  
   fis4^\box_b fis^\mark_refrain fis fis fis fis fis e4. d8 cis2 cis4 e e e  \break
   e e e e d4.cis8  b,2 4 b, d fis b2 4  \break
   d'4 cis'4. b8 fis2 4 a g4. e8 cis2 4 e d4. cis8 b,2. \bar "|."
 }
+
+voice_refrain_second= \fixed c'
+  {
+  d4 d d d d d d d4 b,4 cis2 cis4 cis4 4 4 4 4 4 4 4 fis,  b,2 b,4 
+  d4 d cis b,2 b,4 b, d4. fis8 b2 b4 g g4. cis8 fis2 fis4 fis,4 gis,4. ais,8 b,2.
+  }
+
 
 voice_chords = \chordmode {
   \override ChordName.font-size = #-1
@@ -52,7 +51,7 @@ stanza_one = \lyricmode
    \set stanza = "1. "
    \align_syllables_left	
    
-   Schtejt2 " a"4 bo2 -- cher,4 shtejt8*5 un8 tracht,2. 
+   Schtejt2 "  a"4 bo2 -- cher,4 shtejt8*5 un8 tracht,2. 
    tracht2 un4 | tracht2 " a"4 | "gan__"8*5 -- ze8 | Nacht2.
    wemn2 zu4 ne2 -- mn4 un4 nit4. far8 schemn,2.
    wem8*5 tsu8 nemmn2. un4 nit4. far8 -- schemn.2.
@@ -97,12 +96,18 @@ refrain =
       midiInstrument = "acoustic grand" }
       \voice_chords
       
-    \new Staff  <<
-      \new Voice = "lead" { \voiceOne {\global \voice_vocal \voice_refrain} }
-      \new Voice = "second" {\voiceTwo \voice_refrain_second}
-    >>
-     
-    \new Lyrics {
+    \new Staff  
+      \new Voice = "lead" { 
+           \oneVoice {\global \voice_vocal }  % stanza with one single voice
+            <<
+              \new Voice  = "refr_one" {
+                  \voiceOne \voice_refrain }  % refrain, 2 voices
+              \new Voice = "refr_second" {
+                  \voiceTwo \magnifyMusic 0.8 \voice_refrain_second}  % second voice smaller notes
+            >> 
+       }
+
+\new Lyrics {
       \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1
       \stanza_one
       \refrain
@@ -112,8 +117,6 @@ refrain =
       
     \new Lyrics 
       \stanza_three
-
-    
   >>
   \layout { }
   \midi { \tempo 4=220 }
