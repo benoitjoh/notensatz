@@ -16,47 +16,60 @@
 
 % -- music and text ------------------------------------------------
 global = {
-  \key a \minor
+  \key b \minor
   \time 3/4
 }
 
 voice_vocal = \fixed c' { 
   \tieDashed \slurDashed
-  <>~^\box_a e4 e e e2 e4 e (d4.) c8 b,2~ b,4 d2 d4 d2 d4 d (c4.) b,8 a,2. \break
-  a,4 (c) e a2 a4 c' b4. a8 e2. g4 (f4.) d8 b,2 (b,4) d4 c4. b,8 a,2.\bar "||" \break
-  e4^\box_b e^\mark_refrain e e e e e d4. c8 b,2 b,4 d d d  \break
-  d d d d c4.b,8 a,2 4 a, c e a2 4  \break
-  c'4 b4. a8 e2 4 g f4. d8 b,2 4 d c4. b,8 a,2. \bar "|."
+  <>~^\box_a fis4 fis fis fis2 fis4 fis (e4.) d8 cis2~ cis4 e2 e4 e2 e4 e (d4.) cis8 b,2. \break
+  b,4 (d) fis b2 b4 d' cis'4. b8 fis2. a4 (g4.) e8 cis2 (cis4) e4 d4. cis8 b,2.\bar "||" \break
+  
+}
+
+voice_refrain_second= \fixed c'
+  \magnifyMusic 0.8  
+  {
+  s4*3*16 
+  d4 d d d d d d d4 b,4 cis2 cis4 cis4 4 4 4 4 4 4 4 fis,  b,2 b,4 
+  d4 d cis b,2 b,4 b, d4. fis8 b2 b4 g g4. cis8 fis2 fis4 fis,4 gis,4. ais,8 b,2.
+  }
+
+voice_refrain = \fixed c' {  
+  fis4^\box_b fis^\mark_refrain fis fis fis fis fis e4. d8 cis2 cis4 e e e  \break
+  e e e e d4.cis8  b,2 4 b, d fis b2 4  \break
+  d'4 cis'4. b8 fis2 4 a g4. e8 cis2 4 e d4. cis8 b,2. \bar "|."
 }
 
 voice_chords = \chordmode {
   \override ChordName.font-size = #-1
-   a2.:m s4*6 a2.:m e e:7 s2. a2.:m
-   s4*12 d2.:m e:7 s2. a:m
+   b2.:m s2. b2.:m s2.fis fis:7 s2. b2.:m
+   s4*12 e2.:m fis:7 s2. b:m
 }
 
 stanza_one = \lyricmode 
-  {\set fontSize = #-1 
+  {\set fontSize = #-2 
    \set stanza = "1. "
    \align_syllables_left	
    
    Schtejt2 " a"4 bo2 -- cher,4 shtejt8*5 un8 tracht,2. 
-   tracht2 un4 | tracht2 " a"4 | "gan"8*5 __  -- ze8 | Nacht2.
+   tracht2 un4 | tracht2 " a"4 | "gan__"8*5 -- ze8 | Nacht2.
    wemn2 zu4 ne2 -- mn4 un4 nit4. far8 schemn,2.
    wem8*5 tsu8 nemmn2. un4 nit4. far8 -- schemn.2.
   }
   
 stanza_two = \lyricmode 
-  {\set fontSize = #-1 
+  {\set fontSize = #-2 
    \set stanza = "2. "
    \align_syllables_left	
-   Mai2 -- dl4 Mai2 -- dl4 chwell bay4. dir8 fregn2. 
+   "Mej__"2 -- dl4 Mai2 -- dl4 chwell bay4. dir8 fregn2. 
    was2 ken4 | wach2 -- sen4 | wach -- sen4. on8 | regn,2.
-   wos2 ken4 bre2 -- nen4 un nit4. oif8 -- hern,2. 
-   wos8*5 ken8 ben2 -- kn,4 wej -- nen4. on8 trern?2.
+   "wos__"2 ken4 bre2 -- nen4 un nit4. oif8 -- hern,2. 
+   "wos__"8*5 ken8 ben2 -- kn,4 wej -- nen4. on8 trern?2.
    }
+   
 stanza_three = \lyricmode 
-  {\set fontSize = #-1 
+  {\set fontSize = #-2 
    \set stanza = "3. "
    \align_syllables_left	
    Na4 -- ri -- sher bo2 -- cher,4 wos darst4. du8 fregn.2 " A"4
@@ -68,7 +81,7 @@ stanza_three = \lyricmode
   
 refrain =   
   \lyricmode 
-  {\set fontSize = #-1 
+  {\set fontSize = #-2 
    \set stanza = "Refr. "
    \align_syllables_left	
    Tum4 -- ba -- la tum4 -- ba -- la tum4 -- ba4. -- la8 -- lai2 -- ka4
@@ -83,15 +96,14 @@ refrain =
     \new ChordNames \with {
       midiInstrument = "acoustic grand" }
       \voice_chords
-    
-    \new Staff 
-      \relative c'' 
-      {
-       \global
-       \voice_vocal
-      }
+      
+    \new Staff  <<
+      \new Voice = "lead" { \voiceOne {\global \voice_vocal \voice_refrain} }
+      \new Voice = "second" {\voiceTwo \voice_refrain_second}
+    >>
      
     \new Lyrics {
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1
       \stanza_one
       \refrain
     }
