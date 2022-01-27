@@ -22,8 +22,16 @@
     % empty staff for notes
     
     \new Staff {
-      \magnifyStaff #1.1
+      \magnifyStaff #1.0
       \clef "vaticana-do2" s4 * 3 * 32 }  
+    
+    \new Staff \with {instrumentName= "Guitar"}
+      <<
+        \clef "treble_8"
+        
+        \new Voice {\voiceOne { \global \voice_guitar_one}} 
+        \new Voice {\voiceTwo \voice_guitar_two }
+      >>
   >>
   \layout { }
 }

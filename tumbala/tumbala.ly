@@ -23,24 +23,26 @@
             >> 
        }
  
-\new Lyrics {
+    \new Lyrics {
       \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1
       \stanza_one
       \refrain
     }
+
     \new Lyrics 
       \stanza_two
       
     \new Lyrics 
       \stanza_three
-         \new Staff \with {instrumentName= "Guitar"}
+         
+    \new Staff \with {instrumentName= "Guitar"}
         <<
           \clef "treble_8"
-          
           \new Voice {\voiceOne { \global \voice_guitar_one}} 
           \new Voice {\voiceTwo \voice_guitar_two }
         >>
   >>
+  
   \layout {#(layout-set-staff-size 18.1) }
   \midi { \tempo 4=200 }
 }
