@@ -32,7 +32,7 @@
       
     % empty staff for notes
     \new Staff {
-      \clef "moderntab" s1 * 32 
+      \clef "vaticana-do2" s1 * 32 
       }  
   >>
 

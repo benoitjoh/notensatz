@@ -31,7 +31,7 @@
     }
     \stanza_one
     
-  \new Staff {\clef "moderntab" s2 * 55 }  % empty staff
+  \new Staff {\clef "vaticana-do2" s2 * 55 }  % empty staff
 >>
   \layout { }
 }
