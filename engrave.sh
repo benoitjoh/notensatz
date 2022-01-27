@@ -6,6 +6,7 @@ echo "*  put all results in _out                  *"
 echo "*********************************************" 
 echo ""
 
+# colors for console output
 red=`tput setaf 1`
 green=`tput setaf 2`
 yellow=`tput setaf 3`
@@ -14,12 +15,35 @@ export err="[${red} ERR ${reset}]"
 export inf="[${green} INF ${reset}]"
 export wrn="[${yellow} WRN ${reset}]"
 
+# helper function
+strindex() { 
+  x="${1%%$2*}"
+  [[ "$x" = "$1" ]] && echo -1 || echo "${#x}"
+}
 
-if [ -z $1 ];
+# check for installed components
+if [[ ! -x $(which lilypond) ]]
+then
+  echo -e "${err} lilypond processor ist not installed. \nplease install from https://lilypond.org/unix.html" 
+  exit -1
+fi;
+if [[ ! -x $(which timidity) ]]
+then
+  echo -e "${err} timidity processor ist not installed. \nplease install with:\nsudo apt install timidity" 
+  exit -1
+fi;
+if [[ ! -x $(which lame) ]]
+then
+  echo -e "${err} lame media encoder ist not installed. \nplease install with:\nsudo apt install lame" 
+  exit -1
+fi;
+
+# interpret commandline
+if [[ -z $1 ]];
 then
   searchpath=[^_]*/;
 else
-  if [ -d $1 ];
+  if [[ -d $1 ]];
   then 
     if [[ $1 =~ "/" ]];
     then
@@ -32,8 +56,15 @@ else
   fi;
 fi;
 
+# start
 echo -e "${inf} This will process the following files: "
 ls -1 $searchpath[^_]*.ly
+if [[ ! $? -eq 0 ]]
+then
+  echo "${err} No processable *.ly files in subfolders found." 
+  exit -1
+fi;
+
 sleep 3
 
 export LANG=DE
@@ -41,12 +72,11 @@ export LANG=DE
 if [ ! -d _out ]
 then
   mkdir _out
+else
+  rm _out/*
 fi;
 
-strindex() { 
-  x="${1%%$2*}"
-  [[ "$x" = "$1" ]] && echo -1 || echo "${#x}"
-}
+
 
 for path in $(ls $searchpath[^_]*.ly)
 do
