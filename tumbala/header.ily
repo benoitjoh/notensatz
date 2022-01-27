@@ -3,5 +3,5 @@
 \header {
   title = \markup \caps  {"Tumbalalaika"}
   composer = "traditionel"
-  arranger = " "
+  arranger = \markup \italic "(Orakel)"
   }

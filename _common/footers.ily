@@ -5,7 +5,7 @@ footer_common_with_pagenum = \paper {
    #(set-paper-size "a4")
 
    oddFooterMarkup =  \markup { 
-     \vspace #1
+     \vspace #0.5
      \fill-line  { \fontsize #-2 \italic 
                    { \concat {
                         \with-url #"https://github.com/benoitjoh/notensatz" "jb." 
