@@ -13,7 +13,7 @@ pianoRH = \fixed c' {
   \cueDuring "flute" #UP { g4 b4 b2 (b)}
   
 }
-pianoLH = \fixed c { b2 d2 c4 <c' e> e, <g c> b, <d g b> b,, <d g b>}
+pianoLH = \fixed c { b2 d2 \grace {d16 (e16 d)} c4 <c' e> e, <g c> b, <d g b> b,, <d g b>}
 
 \score {
   \new PianoStaff  <<
@@ -23,7 +23,7 @@ pianoLH = \fixed c { b2 d2 c4 <c' e> e, <g c> b, <d g b> b,, <d g b>}
     }
     \new Staff {
       \clef "bass"
-      \magnifyStaff 0.6 { \pianoLH }
+      \magnifyStaff 0.8 { \pianoLH }
     }
   
   >>

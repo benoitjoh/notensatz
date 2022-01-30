@@ -2,6 +2,7 @@
 
 \header {
   title = \markup \caps  {"Tumbalalaika"}
-  composer = "traditionel"
-  arranger = \markup \italic "(Orakel)"
+  subtitle = \markup \small "(Vocal & Guitar)"
+  composer = \markup { "traditional" \italic \tiny"(arr. Benoit)" } 
+  %arranger = \markup \italic ""
   }

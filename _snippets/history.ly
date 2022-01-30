@@ -19,7 +19,10 @@ align_syllables_left = <<
 \magnifyMusic 0.8
 \tieDashed... 
 \slurDashed .. 
+\grace {d16 (e16 d)} 
+\relative { a'4\rest d4\rest }
 
 %%%%%%%%%%%%%%% staff
 \new Staff \with {\magnifyStaff #5/7}
 #(layout-set-staff-size 14)
+systems-per-page = 6  % force nr. of systems

@@ -13,6 +13,7 @@ voice_vocal = \fixed c' {
    \mark \box_a 
    a,8 
    \tempo "Allegro"
+   \set Score.currentBarNumber = #1
    \repeat volta 2 {
      a, c c e e a a b c' c' b a e4. r8
      c'8 b b a a g g f \break 

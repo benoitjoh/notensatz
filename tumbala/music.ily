@@ -64,7 +64,7 @@ voice_guitar_one =
 voice_guitar_two = 
   \fixed c {
   b,2. b, b, fis, cis fis, cis2 (fis,4)  b,2.
-  b,2. a, gis, g, e, fis, cis2 fis,4 b,2. 
+  b,2. a,-3 gis, g, e, fis, cis2 fis,4 b,2. 
   b,2. b, b, fis, cis fis, cis2 (fis,4)  b,2.
   b,2. a, gis, g, e, fis, cis2. b,2. 
   }

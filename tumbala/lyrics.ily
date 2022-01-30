@@ -1,7 +1,9 @@
 \version "2.20.0"
 
+font = \set fontSize = #-1
+
 stanza_one = \lyricmode  {
-  \set fontSize = #-2 
+  \font 
   \set stanza = "1. "
   \align_syllables_left	
   Schtejt2 "  a"4 bo2 -- cher,4 shtejt8*5 un8 tracht,2. 
@@ -11,7 +13,7 @@ stanza_one = \lyricmode  {
   }
   
 stanza_two = \lyricmode {
-  \set fontSize = #-2 
+  \font 
   \set stanza = "2. "
   \align_syllables_left	
   "Mej__"2 -- dl4 Mai2 -- dl4 chwell bay4. dir8 fregn2. 
@@ -21,7 +23,7 @@ stanza_two = \lyricmode {
   }
    
 stanza_three = \lyricmode {
-  \set fontSize = #-2 
+  \font 
   \set stanza = "3. "
   \align_syllables_left	
   Na4 -- ri -- sher bo2 -- cher,4 wos darst4. du8 fregn.2 " A"4
@@ -31,7 +33,7 @@ stanza_three = \lyricmode {
   }
   
 refrain = \lyricmode {
-  \set fontSize = #-2 
+  \font 
   \set stanza = "Refr. "
   \align_syllables_left	
   Tum4 -- ba -- la tum4 -- ba -- la tum4 -- ba4. -- la8 -- lai2 -- ka4
