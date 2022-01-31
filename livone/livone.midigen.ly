@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-bass_spacer =  { s1*38 } % pause for basso voice from the beginning to last bar
+bass_spacer =  { s1*39 } % pause for basso voice from the beginning to last bar
 
 \include "music.ily"
 \include "music-intros.ily"
@@ -10,17 +10,22 @@ bass_spacer =  { s1*38 } % pause for basso voice from the beginning to last bar
   <<
     \new ChordNames 
       {
-        s1 * 39 % concha / intro no chords
+        s1 * 40 % concha / intro no chords
        \voice_chords
       }
       
     \new Staff \with {
         midiInstrument = "acoustic guitar (nylon)"
         instrumentName = "guitar" } 
+       
       {
         \global
         \clef "treble_8"
-        \voiceTwo \voice_concha_base
+        <<
+          \new Voice \with { midiInstrument = "acoustic guitar (nylon)" } \voiceOne \voice_concha_melodie
+          \new Voice \with { midiInstrument = "acoustic guitar (nylon)" } \voiceTwo \voice_concha_base
+        >>
+        \oneVoice 
         \voice_intro_guitar
         \voice_vocal
       }
@@ -29,7 +34,7 @@ bass_spacer =  { s1*38 } % pause for basso voice from the beginning to last bar
         midiInstrument = "acoustic grand"
         instrumentName = "accordion" } 
       {
-        s1 * 11 % concha
+        s1 * 12 % concha
         \voice_intro_accordion
         s1 * 32 % stanza
       }
