@@ -4,7 +4,7 @@ piecename_footerline = "Tumbalalaika"
 
 \header {
   title = \markup \caps  {"Tumbalalaika"}
-  subtitle = \markup \small "(Vocal & Guitar)"
+  instrument = \markup \small "(Vocal & Guitar)"
   composer = \markup { "traditional" \italic \tiny"(arr. J.Benoit)" } 
   %arranger = \markup \italic ""
   }

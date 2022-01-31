@@ -28,7 +28,7 @@ bass_spacer =  { s1*27 } % pause for basso voice from the beginning to last bar
         \global
         \clef "treble_8"
         \tempo "Adagio (ad libitum)"
-        \magnifyMusic #0.7
+        \magnifyMusic #0.8
         \voice_concha_melodie
         }
     \new Voice { 
@@ -56,12 +56,17 @@ bass_spacer =  { s1*27 } % pause for basso voice from the beginning to last bar
       }  
     
     \new Staff  \with { instrumentName = "Guitar" }
-      { 
-      \global
-      \clef "treble_8"
-      \voice_intro_guitar
-      }
-    
+      <<
+      \new Voice { 
+        \global
+        \clef "treble_8"
+        \voice_intro_guitar
+        }
+      \new Voice { \voiceOne
+        \magnifyMusic 0.6 {s1*27 \cue_intro_basso }
+        }
+      
+      >>
   >>
   \layout {  }
 

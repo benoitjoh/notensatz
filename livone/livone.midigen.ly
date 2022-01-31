@@ -22,12 +22,15 @@ bass_spacer =  { s1*39 } % pause for basso voice from the beginning to last bar
         \global
         \clef "treble_8"
         <<
-          \new Voice \with { midiInstrument = "acoustic guitar (nylon)" } \voiceOne \voice_concha_melodie
-          \new Voice \with { midiInstrument = "acoustic guitar (nylon)" } \voiceTwo \voice_concha_base
+          \new Voice \with { midiInstrument = "acoustic guitar (nylon)" } 
+            \voiceOne {
+              \voice_concha_melodie 
+              \voice_intro_guitar 
+              \voice_vocal
+            }
+          \new Voice \with { midiInstrument = "acoustic bass" } 
+            \voiceTwo {  s1*39 \cue_intro_basso }
         >>
-        \oneVoice 
-        \voice_intro_guitar
-        \voice_vocal
       }
       
     \new Staff \with {
