@@ -23,7 +23,7 @@ voice_intro_guitar =
   {
      a,2. d8 e    f2~ f8 d8  e f   g2~ g8 e8 f g  as4~ as8 f8 e4.~e16 bes16 a4~ 8 g8 e d cis bes, a,1 \break  
     \chordmode {
-    d,2:m a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m as,4 a,1 \break
+    d,2:m a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,1 \break
     g,2:m d,2 g,2.:m r4 g,1:m7 s1 c,1~ c,2. c,4 f,2 g,4 gis,4 a,1 \break
     d,2:m a,2 d,2.:m r4 d,2:m a,2 d,1:m g,2.:m gis,4 a,2 g,2:m~_> g,1:m}
     <>^\markup { \right-align  \tiny { "Basso" \italic "(slower)"} }
@@ -35,7 +35,7 @@ voice_intro_guitar =
 voice_intro_chords = 
   \chordmode 
     { 
-      s1  d1:m  g1:m as,1 a s1 d2:m a2 d1:m d2:m a2 d1:m   g2.:m as4 a1
+      s1  d1:m  g1:m gis,1 a s1 d2:m a2 d1:m d2:m a2 d1:m   g2.:m gis4 a1
       g2:m d2:7 g1:m g:m7 s1 c1 s2 c2 f2 g4 gis4 a1  d2:m a2 d1:m d2:m a2 d1:m g2.:m gis4 a2 g1.:m a1:7
     }
 
