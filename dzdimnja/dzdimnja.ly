@@ -1,4 +1,6 @@
 \version "2.20.0"
+piecename_footerline = "Жди меня"
+
 
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 

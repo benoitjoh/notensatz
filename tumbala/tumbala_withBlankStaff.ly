@@ -1,11 +1,12 @@
 \version "2.20.0"
 
+\include "header.ily"
 \include "../_common/makros.ily"
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
-\include "header.ily"
 \include "music.ily"
+\include "lyrics.ily"
 
 \markup \vspace #1 % space between header and score
 
@@ -18,6 +19,11 @@
       \new Voice = "lead" { 
            \oneVoice {\global \voice_vocal \voice_refrain } 
        }
+       
+    \new Lyrics {
+      \stanza_one
+      \refrain
+    }
 
     % empty staff for notes
     

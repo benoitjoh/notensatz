@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "header.ily"
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
@@ -8,7 +9,6 @@
   #(set-paper-size "a4")
 }
 
-\include "header.ily"
 
 \markup \vspace #2 % space between header and score
 

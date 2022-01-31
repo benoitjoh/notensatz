@@ -1,5 +1,6 @@
 \version "2.20.0"
 
+\include "header.ily"
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
@@ -7,7 +8,6 @@
   system-system-spacing.padding = #5 % bigger spacings on this variant
 }
 
-\include "header.ily"
 \include "music.ily"
 
 \markup \vspace #0 % space between header and score

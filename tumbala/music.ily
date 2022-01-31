@@ -10,7 +10,7 @@ global = {
 
 voice_vocal = \fixed c' { 
   \slurDashed
-  fis4~ fis fis fis2 fis4 fis (e4.) d8 \tieDashed cis2~ cis4 e2 e4 e2 e4 e (d4.) cis8 b,2. \break
+  fis4~ fis fis fis2 fis4 fis (e4.) d8 \tieDashed cis2~ cis4 e2 e4 e2 e4 e (d4.) cis8 b,2. 
   b,4 (d) fis b2 b4 d' cis'4. b8 fis2. a4 (g4.) e8 cis2 (cis4) e4 d4. cis8 b,2.\bar "||" \break
   
 }

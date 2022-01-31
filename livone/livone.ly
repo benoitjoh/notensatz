@@ -1,13 +1,13 @@
 \version "2.20.0"
 
+\include "header.ily"
+
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
 \paper {
   system-system-spacing.padding = #2.4
 }
-
-\include "header.ily"
 
 \markup \vspace #1 % space between header and score
 
