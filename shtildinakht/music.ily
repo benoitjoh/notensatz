@@ -9,7 +9,7 @@ voice_chords =
   \chordmode 
     { 
     c2:m f:m bes es \break
-    es as es es \break
+    es as4 bes es2 es \break
     c:m f:m bes es \break
     g f4:m g4:7 c1:m c2:m 
     }
@@ -52,11 +52,11 @@ voice_clarinet = \fixed c' {
 voice_accordion = {
   \clef "bass"
 
-  <c es g c'>4 r   <f, c' f as> r  <bes, d f bes> r  <bes, es g bes> r
-  <bes, es g bes> r <as, c es as> r <bes, es g bes> r r2
+  <c es g c'>2   (<f, c' f as>  <bes, d f bes>  <bes, es g bes>)
+  <bes, es g bes> as4 bes4 <bes, es g bes>2 r 
   \repeat volta 2 {
-    <c es g c'>4 r <f, c f as> r  <bes, d f bes> r <es g bes> r 
-    <g, bes, d g> r <f, c' f as>4 <g, bes d f g> 
+    <c es g c'>2 (<f, c f as>   <bes, d f bes> <es g bes>)
+    <g, bes, d g>4 r <f, c' f as>4 <g, bes d f g> 
     }
   \alternative {
       {<c es g c'>2~  | <c es g c'>4 r  }

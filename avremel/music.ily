@@ -8,7 +8,7 @@ global = {
 
 voice_vocal = 
   { \clef treble 
-    <>^\box_a c'8  des'^\markup \italic"Recitativo" c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
+    <>^\box_a c'8  des'^\markup \bold \italic"Recitativo" c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
     g' e'4.~ e'4 r8 c' e' f' e'8. c'16 e'8 f' g' as' g'2~ g'4. r8 \break
     c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
     g'8 e'4.~ e'4 r8 e'8 f' bes c' des' e' f' des' e' c'2~ c'8 c'^\box_b f'^\mark_refrain  g' \break
