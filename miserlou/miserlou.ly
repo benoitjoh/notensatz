@@ -27,5 +27,5 @@ piecename_footerline="Miserlou"
   >>
 
 \layout { }
-  \midi { \tempo 4=140 }
+  %\midi { \tempo 4=140 }
 }

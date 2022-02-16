@@ -25,6 +25,7 @@ voice_vocal = \fixed c' {
   \alternative {
     { e1~ e8 e dis e f fis g gis }{ e1~ 1 }
     }
+    % \bar "||"      r8^\markup \italic"Coda" e dis e f fis g gis r1
   \bar "|."
 }
 
@@ -37,7 +38,7 @@ voice_chords = \chordmode {
       { e1 s  }{ e1 s  }
     }
     \repeat volta 2 { 
-      a1:m s g s g g:7 e s d:m s e s d:m s
+      a1:m s g s f f:7 e s d:m s e s d:m s
     }
     \alternative {
       { e1 s  }{ e1 s  }
