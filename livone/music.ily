@@ -21,7 +21,15 @@ voice_vocal =
     f c a8 g f4 f c a8 g f4 r4 c'2 d'4 a g f e 
     \mark \box_a \break
     d f e d g f2. d4 f e d g f2 f4 \break
-    f8 (a) g4 g g g2 g f8 e d4 g g d2. r4 \bar "|."
+    f8 (a) g4 g g g2 g f8 e d4 g g d2. r4 \bar "|." 
+    \clef "treble_8"
+    <>^\markup \italic "polyphonic voices"
+    <d,    f,   f,   d   d> 
+    <d,    f,   a,   d   f> 
+    <c,    g,   f,   bes, e> 
+    <bes,, f,   f,   bes, d> 
+    <bes,, bes, bes, g,   g> 
+    <a,,   a,   a,   a,   f>2. \fermata \bar "."
     }
 
  

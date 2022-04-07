@@ -41,7 +41,7 @@ voice_intro_accordion =
   {
     \clef "treble"
   
-    r1 <d' a' f' d''>1  (<g d' g' bes' >1  <as c' es' as'>1  <a cis' e' a' >1) r2 r4 r8 a8 
+    r1 <d' a' f' d''>1  (<g d' g' bes' >1  <gis c' dis' gis'>1  <a cis' e' a' >1) r2 r4 r8 a8 
     a4.  f'8 cis'4.  e'8 d'2. r8 a8 
     a4. f'8 cis'4.  e'8 d'1  (e'4) e'8 d' cis'4 bes a2. r8 d'8 
     d'4. bes'8 fis'4.  a'8  g'1 g'4 d'2 bes8 a8 g1 g'4 g' e' d' c'2 bes'2 a'1~ a'2 r4 r8 a8 

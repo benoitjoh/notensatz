@@ -12,6 +12,7 @@ stanza_one = \lyricmode
   Dai4 -- ne tzen8 -- de -- lach4 vai -- se pe8 -- re -- lach4 " " mit4 dei -- ne schei -- ne oi -- gn
   dei -- ne cheyn8 -- de -- lach4 dei -- ne he8 -- re -- lach4 " " host2 mich4 tzu -- ge -- tzoi -- gn 
   shein vi di li -- vo -- ne2. lich4 -- tig vi di shte -- rn2 fun4
-   hi4 -- mkl a4 ma -- to2 -- ne hos8 -- tu mich4 tzu -- ge -- shikt2.
+   hi4 -- mkl a4 ma -- to2 -- ne hos8 -- tu mich4 tzu -- ge -- shikt2. ""4
+   Shein4 vi di li -- vo -- ne2.
   
 }
