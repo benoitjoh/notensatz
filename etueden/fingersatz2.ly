@@ -74,6 +74,7 @@ bass_lh =  {
     
   }
   >>
+  \layout { }
 
 }
 
