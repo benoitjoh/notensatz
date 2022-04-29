@@ -46,8 +46,8 @@ stanza_tabloid =
         \line { \bold {2.} Mayn tate in milkhome hot farloyrn zayne hent, }
         \line { mayn mame hot di tsores mer oyshaltn nisht gekent. }
         \line { Yung in keyver zi getribn, }
-        \line { ungliklekh un elnt vi a shteyn. }
         \line { bin ikh oyf der velt farblibn, }
+        \line { ungliklekh un elnt vi a shteyn. }
         \line { Breklekh klayb ikh oyf tsum ezn oyf dem kaltn mark, }
         \line { a harte bank iz mayn geleger in dem kaltn park. }
         \line { In dertsu di politziantn, shlog mikh shvern kantn, }
@@ -57,7 +57,7 @@ stanza_tabloid =
       \column  {
         \line { \bold {3.} Ikh hob gehat a shvesterl, a kind fun der natur, }
         \line { mit mir tsusamen zikh geshlept hot zi a gants yor. }
-        \line { Mit ir geven iz mir fil gringer, laykhter vern flegt }
+        \line { Mit ir geven iz mir fil gringer, }
         \line { laykhter vern flegt der hunger, }
         \line { ven ikh fleg a kuk ton nor oyf ir.  }
         \line { Mit amol gevorn iz zi shvakh un zeyer krank, }
