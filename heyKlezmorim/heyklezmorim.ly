@@ -11,7 +11,6 @@
 
 \include "music.ily"
 
-
 \include "lyrics.ily"
 
 \markup \vspace #0 % space between header and score
@@ -21,7 +20,7 @@
   <<
     \new ChordNames \with {
       midiInstrument = "acoustic grand" }
-      \voice_chords
+     \voice_chords
   
     \new Staff \with {
       midiInstrument = "acoustic guitar (nylon)"
@@ -33,14 +32,20 @@
       }
    
     \new Lyrics \with {    
-      %\override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #0.2  %spacer before textlines
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #0.8  %spacer before textlines
       }
       \stanza_one
       
       % empty staff for notes
-  \new Staff {
-    \clef "vaticana-do2" s1 * 12 }  
-  \new Staff {
+  \new Staff \with {
+      midiInstrument = "acoustic guitar (nylon)"
+      instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } }
+    {
+      \key d \minor 
+      \transpose g a \voice_vocal 
+    }
+
+\new Staff {
     \clef "vaticana-do2" s1 * 12 }  
 
   >>
