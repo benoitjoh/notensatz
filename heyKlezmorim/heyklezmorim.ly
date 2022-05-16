@@ -52,7 +52,7 @@
 
 
  \layout { }
- \midi { \tempo 4=100 }
+ 
 }
 
 \stanza_tabloid_a
