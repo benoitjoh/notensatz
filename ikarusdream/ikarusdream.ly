@@ -90,7 +90,7 @@ voice_ostinato = \fixed c {
  \repeat unfold 4 { \ostinato_one_g \ostinato_two_g }
 
  %[A] clarinet
- ^"(0:24) Cla 24T" 
+ %^"(0:24) Cla 24T" 
  \ostinato_one_g \ostinato_two_g
  \ostinato_one_es \ostinato_two_es
  \ostinato_one_g \ostinato_two_g
@@ -117,7 +117,7 @@ voice_ostinato = \fixed c {
  
  % [a] bass solo 2:00
  \break
- g_"jeweils Begleitung die 24 Takte aus dem A-Teil" 
+ g2_"jeweils Begleitung die 24 Takte aus dem A-Teil" 
  ^"(5.40) Cla Acc [C Teil] (12T)"
  ^"(4:53) Cla Acc [B Teil] (24T)"
  ^"(4:20) Piano Cla (24T)"
@@ -125,9 +125,9 @@ voice_ostinato = \fixed c {
  ^"(3:09) Acc (24T)"
  ^"(2:32) Mandoline (24T)"
  ^"(2:00) Bass solo (24T)"
- g es' es' g g f f es' f g g \break
+ g2 es' es' g g f f es' f g g \break
  
- ""^"(5.40) Cla Acc [C Teil] (12T)"
+ r2^"(5.40) Cla Acc [C Teil] (12T)"
  ^"(4:53) Cla Acc [B Teil] (24T)"
  ^"Schluss: "
 }
