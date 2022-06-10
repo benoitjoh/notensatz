@@ -55,7 +55,7 @@ voice_accordion= \fixed c {
   d''2~d''4. a''8 f''2~f''4. bes''8 
   g''2~g''4. es'''16 d''' c'''2~c'''4 r4 R2*2
   
-   r4.  g''32 f'' g'' es''~ es''4.~16 d''32 es'' d''2~2~2 
+   r4.  g''32 f'' g'' es''~ es''4.^\box_c ~16 d''32 es'' d''2~2~2 
    R2*3
    r4.  g''32 f'' g'' es''~ es''4.~16 d''32 es'' d''2~2~2
 
@@ -118,8 +118,6 @@ voice_ostinato = \fixed c {
  % [a] bass solo 2:00
  \break
  g2_"jeweils Begleitung die 24 Takte aus dem A-Teil" 
- ^"(5.40) Cla Acc [C Teil] (12T)"
- ^"(4:53) Cla Acc [B Teil] (24T)"
  ^"(4:20) Piano Cla (24T)"
  ^"(3:45) Piano (24T)"
  ^"(3:09) Acc (24T)"
