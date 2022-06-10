@@ -24,8 +24,8 @@ voice_vocal =
 voice_chords = \chordmode 
   { \override ChordName.font-size = #0
     c2 s c s c f:m c s s c s s c s c s c des c s bes:m s c  s f:m s c s bes:m c:7
-    f:m s f:m f:7 bes:m s bes:m des4 des c c f:m r f2:m s 
-    c s bes:m c f:m s f:m f:7 bes:m s s c:7 f:m s c s c s c s c s bes:m f:m f:m s bes:m c c
+    f:m s f:7 f:7 bes:m s bes:m des4 des c c f:m r f2:m s 
+    c s bes:m c f:m s f:7 f:7 bes:m s s c:7 f:m s c s c s c s c s bes:m f:m f:m s bes:m c c
     }
 
 stanza_one = \lyricmode 
