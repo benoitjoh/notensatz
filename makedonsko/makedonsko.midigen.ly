@@ -14,12 +14,13 @@ piecename_footerline = "Makedonsko"
 \include "music.ily"
 
 
-\include "lyrics.ily"
-
 % -- container ---------------------------------------------
 \score {
-  <<
-  \new ChordNames {
+    \header { piece = "only midi generation " }
+
+  \unfoldRepeats { 
+   <<
+ \new ChordNames {
     \voice_chords
   }
   \new Staff \with {
@@ -31,16 +32,10 @@ piecename_footerline = "Makedonsko"
      \voice_ref_a_one
     }
    
-  \new Lyrics 
-    \stanza_one
-  \new Lyrics 
-    \stanza_two
-  \new Lyrics 
-    \stanza_three
-  \new Lyrics 
-    \stanza_four
-  
+ 
   >>
+  }
   \layout { }
   \midi { \tempo 4=140 }
 }
+
