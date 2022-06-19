@@ -14,6 +14,7 @@
    <<
      \new ChordNames {
         \voice_chords
+        \voice_chords_ref_b
       }
       \new Staff \with {
           midiInstrument = "acoustic guitar (nylon)"
@@ -22,6 +23,7 @@
          \global
          \voice_vocal
          \voice_ref_a_one
+         \voice_ref_b
         }
     >>
   }

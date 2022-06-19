@@ -18,11 +18,23 @@ voice_vocal = \fixed c' {
 }
 
 voice_ref_a_one = \fixed c' { 
-  \repeat volta 2 { g'4.^"Refrain" d'4 (f'4) es'4 (d'8) c'4. 8 
+  \repeat volta 2 { g'4.^"Refrain A1" d'4 (f'4) es'4 (d'8) \once  \slurDashed c'4. (c'8) 
   es'4 d'8 c'4 es'4 d'2.. \break
   es'4 d'8 c'4 es'4 d'8 c'4 bes4 (c'4) 
   d'4 c'8 bes4 a g2..}
 }
 
 voice_ref_a_two = {
+}
+
+voice_ref_b = \fixed c' { 
+  bes8^"Refrain B" a8 g8 g4 d'8 d'8 d'4. c'2 
+  r4 f8 f  a bes c' c'4 bes8 bes 4 a4  \break
+  bes8 a8 g8 g4 d'8 d'8 d'4. c'4  bes8 c'
+  d'4. d'8 e'8 fis'4 g'2..
+}
+voice_chords_ref_b = \chordmode {
+  g2..:m c2..:m f2..  bes2..
+  g2..:m c2..:m d2..:7  g2..:m
+  
 }

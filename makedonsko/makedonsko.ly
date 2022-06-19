@@ -21,6 +21,7 @@ piecename_footerline = "Makedonsko"
   <<
   \new ChordNames {
     \voice_chords
+    \voice_chords_ref_b
   }
   \new Staff \with {
       midiInstrument = "acoustic guitar (nylon)"
@@ -28,7 +29,8 @@ piecename_footerline = "Makedonsko"
     {
      \global
      \voice_vocal
-     \voice_ref_a_one
+     \voice_ref_a_one \break
+     \voice_ref_b
     }
    
   \new Lyrics 
