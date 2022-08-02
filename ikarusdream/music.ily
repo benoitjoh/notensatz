@@ -58,15 +58,17 @@ voice_chords = \chordmode {
 
 }
 
-ostinato_one_g = { g8._"*Gm" 16~ 8 d' g'8. 16~ g'8 d'  }
-ostinato_two_g = {                                     g8._"Gm" 16~ 8 d' g'2 }
+% the ostinato figures
 
-ostinato_one_es = { es8._"*Es" 16~ 8 es' g'8. 16~ g'8 es' }
-ostinato_two_es = {                                      es8._"Es" 16~ 8 es' g'2 }
+ostinato_one_g = { g8._"Gm" 16~ 8 d' g'8. 16~ g'8 d'  }
+ostinato_two_g = {                                       g8._"*Gm" 16~ 8 d' g'2 }
+
+ostinato_one_es = { es8._"Es" 16~ 8 es' g'8. 16~ g'8 es' }
+ostinato_two_es = {                                      es8._"*Es" 16~ 8 es' g'2 }
 
 
-ostinato_one_f =  { f8._"*F" 16~ 8 c' g'8. 16~ g'8 c' }
-ostinato_two_f = {                                       f8._"F" 16~ 8 c' g'2 }
+ostinato_one_f =  { f8._"F" 16~ 8 c' g'8. 16~ g'8 c' }
+ostinato_two_f = {                                       f8._"*F" 16~ 8 c' g'2 }
 
 ostinato_bass_g = { 
   g8. 16~ 8 d' g'8. 16~ g'8 d' g8. 16~ 8 d' g'4. d8
@@ -104,13 +106,13 @@ voice_ostinato = \fixed c {
  
  % [a] bass solo 2:00
  \break
- g2_"jeweils Begleitung die 24 Takte aus dem A-Teil" 
- ^"(4:20) Piano Cla (24T)"
+ g2^"(4:20) Piano Cla (24T)"_"G"
  ^"(3:45) Piano (24T)"
  ^"(3:09) Acc (24T)"
  ^"(2:32) Mandoline (24T)"
  ^"(2:00) Bass solo (24T)"
- g2 es' es' g g f f es' f g g \break
+ ^"jeweils Begleitung die 24 Takte aus dem A-Teil" 
+ g2_"*G" es'_"Es" es'_"*Es" g_"G" g_"*G" f_"F" f_"*F" es'_"Es" f_"*F" g_"G" g_"*G..." \break
  
  r2^"(5.40) Cla Acc [C Teil] (12T)"
  ^"(4:53) Cla Acc [B Teil] (24T)"
