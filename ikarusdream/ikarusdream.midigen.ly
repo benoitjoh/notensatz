@@ -20,9 +20,7 @@
       midiInstrument = "accordion"}
     {
      \global
-     \key g \minor
-     \clef "treble"
-         \voice_accordion
+     \voice_accordion
      \bar "|."
     }
  
