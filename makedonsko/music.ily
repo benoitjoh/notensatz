@@ -33,6 +33,12 @@ voice_ref_b = \fixed c' {
   bes8 a8 g8 g4 d'8 d'8 d'4. c'4  bes8 c'
   d'4. d'8 e'8 fis'4 g'2..
 }
+
+voice_ref_b_second = \fixed c { 
+  s2.. r8 r8 es'8 8 d' d' c' c'2 s4. r8 r8 f' f' es' es' d' 
+  d'2 s4. r8 r8 es'8 8 d' d' c' d'4 8 e'4 fis'4 g'2.. 
+  
+}
 voice_chords_ref_b = \chordmode {
   g2..:m c2..:m f2..  bes2..
   g2..:m c2..:m d2..:7  g2..:m

@@ -21,9 +21,18 @@
           instrumentName = "Vocal" }
         {
          \global
-         \voice_vocal
-         \voice_ref_a_one
+         \voice_vocal \break
+         \voice_ref_a_one \break
+         
          \voice_ref_b
+        }
+     \new Staff \with {
+          midiInstrument = "grand Piano"
+          instrumentName = "Second" }
+        {
+         \global
+         s1 * 21
+         \voice_ref_b_second
         }
     >>
   }

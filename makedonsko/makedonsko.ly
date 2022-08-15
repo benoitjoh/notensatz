@@ -16,6 +16,8 @@ piecename_footerline = "Makedonsko"
 
 \include "lyrics.ily"
 
+
+
 % -- container ---------------------------------------------
 \score {
   <<
@@ -27,10 +29,20 @@ piecename_footerline = "Makedonsko"
       midiInstrument = "acoustic guitar (nylon)"
       instrumentName = "Vocal" }
     {
-     \global
-     \voice_vocal
-     \voice_ref_a_one \break
-     \voice_ref_b
+           \new Voice = "lead" { 
+     \oneVoice {\global 
+                \voice_vocal 
+                \voice_ref_a_one \break
+     }  % stanza with one single voice
+     
+         << 
+              \new Voice  = "refr_b_first" {
+                  \voiceOne \voice_ref_b }  % refrain, 2 voices
+              \new Voice = "refr_b_second" {
+                  \voiceTwo \magnifyMusic #0.8 
+                  \voice_ref_b_second}  % second voice smaller notes
+            >> 
+    }
     }
    
   \new Lyrics 
