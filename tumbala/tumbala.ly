@@ -8,9 +8,24 @@
 \include "lyrics.ily"
 
 \paper {
+  system-system-spacing.padding = #2
      systems-per-page = 6  % force nr. of systems
   }
-  
+
+\score {
+  <<
+    \new ChordNames 
+    \chordmode
+     {b2.:m  e2.:m  a d:7maj g e:m fis:7 b:m  }
+      
+    \new Staff \with {instrumentName = "Intro " 
+                      midiInstrument = "Acoustic Guitar (Nylon)"}
+    
+    {\global d'2. R2. * 7}
+  >>
+}
+
+
 \score {
   <<
     \new ChordNames \voice_chords
