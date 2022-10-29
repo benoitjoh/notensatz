@@ -42,6 +42,8 @@
   \midi { \tempo 4=120 }
 }
 
-\markup \vspace #2 % space between header and score
 
-\stanza_tabloid
+\markup \vspace #2 % space between header and score
+  \markup \fontsize #-1 {
+    \stanza_tabloid 
+  }
