@@ -1,4 +1,4 @@
-% tepmlate for a three parts Staff with lyrices and a repeat in it
+% template for a melody with chords and text... 
 \version "2.20.0"
 
 
