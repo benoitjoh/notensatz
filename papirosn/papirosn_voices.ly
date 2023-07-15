@@ -14,14 +14,7 @@
 
 \markup \vspace #0 % space between header and score
 
-voice_bass = \fixed c {
-  \clef "bass"
-  s1
-  \repeat volta 2 { a1 a a2 g f2 f, e1 e, f,2 e,} 
-  \alternative {{a1} {a,1}}
-    \repeat volta 2 { a1 a a2 g f1 e e, f,2 e,} 
-  \alternative {{a1} {a,1}}
-}
+
 
 \score 
 {
@@ -39,13 +32,15 @@ voice_bass = \fixed c {
     \magnifyStaff #1.0
     \clef "vaticana-do2" s1 *19 }  
 
-  \new Staff \with { instrumentName = "Basso" midiInstrument = "Contrabass"}
-    \voice_bass
+  \new Staff \with { instrumentName = "Basso" midiInstrument = "acoustic bass"}
+   { \voice_bass
+     \voice_bass_refrain
+   }
    
  >>
 
 %}
   \layout { }
-  %\midi { \tempo 4=120 }
+  \midi { \tempo 4 = 120 }
 }
 

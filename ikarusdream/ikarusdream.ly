@@ -22,9 +22,9 @@ piecename_footerline = "Ikarus Dream"
       instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  }
     {
      \global
-     \key a  \minor
+     \key g  \minor
      \clef "treble_8"
-     \transpose g a, 
+     %\transpose g a, 
          \voice_clarinet
      \bar "|."
     }

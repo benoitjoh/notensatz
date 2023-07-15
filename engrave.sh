@@ -73,7 +73,7 @@ if [ ! -d _out ]
 then
   mkdir _out
 else
-  rm _out/*
+  rm _out/xxxxx*
 fi;
 
 

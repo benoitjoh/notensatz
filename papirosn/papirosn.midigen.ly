@@ -15,7 +15,12 @@
     { \global \voice_vocal } 
     \new Voice = "refrain" { \voice_refrain} 
     }
-  >>
+    
+  \new Staff \with { instrumentName = "Basso" midiInstrument = "acoustic bass"}
+   { \voice_bass
+     \voice_bass_refrain
+   }
+   >>
 
 }
   \layout { }

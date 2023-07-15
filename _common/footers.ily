@@ -33,8 +33,9 @@ footer_common_with_pagenum = \paper {
        \fontsize #-3 \italic
          \concat {
            \piecename_footerline
-           " / " 
-             #(strftime "(%m.%Y)" (localtime (current-time))) 
+           " / "
+           \version_date
+             %#(strftime "(%m.%Y)" (localtime (current-time))) 
            } 
          
                    

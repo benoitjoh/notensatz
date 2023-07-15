@@ -1,5 +1,6 @@
 \version "2.20.0"
 piecename_footerline = "Жди меня"
+version_date = "1.2022"
 
 
 \include "../_common/footers.ily"

@@ -40,6 +40,18 @@ voice_refrain = \fixed c'{
    \unset melismaBusyProperties
 }
 
+voice_bass = \fixed c {
+  \clef "bass"
+  s1
+  \repeat volta 2 { a2 a,2 a1 a4 g f e d1 e e4 ~e f8 e f e f2 e} 
+  \alternative {{a1} {a,2 r}}
+}
+
+voice_bass_refrain = \fixed c {
+  \repeat volta 2 { a4 a e e a a a a8 e a4 g f e d d d d8 d,  e,4 e e e8 e, e4 e e e8 e,8 f,2 e,  } 
+  \alternative {{a,2 r} {a,1}}
+}
+
 voice_chords = \chordmode {
   s1 
    \repeat volta 2

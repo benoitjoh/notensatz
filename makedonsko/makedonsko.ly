@@ -1,6 +1,6 @@
 % tepmlate for a three parts Staff with lyrices and a repeat in it
 \version "2.20.0"
-
+version_date = "07.2023"
 piecename_footerline = "Makedonsko"
 
 \include "../_common/footers.ily"
