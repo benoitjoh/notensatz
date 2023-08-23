@@ -24,17 +24,13 @@
   
     \new Staff \with {
         midiInstrument = "acoustic guitar (nylon)"
-        instrumentName = "Vocal" 
+    instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
         } 
       {
         \tempo "Moderato"
         \global
         \transpose d e \voice_vocal
       }
-    \new Lyrics \with {    
-      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #3  %spacer before textlines
-      }
-      \stanza_one
   >>
   \layout {}
 
