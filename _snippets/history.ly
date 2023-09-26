@@ -5,6 +5,9 @@
 box_a = \markup { \override #'(box-padding . 0.4) \bold \box "A" }
 mark_refrain = \markup \italic "Refr."
 \markup \caps \bold \italic \tiny ...
+
+% %\paper { annotate-spacing = ##t }
+
 %%%%%%%%%%%%%%% lyrics
 
 % once left aligne

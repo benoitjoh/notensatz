@@ -96,3 +96,22 @@ bass_spacer =  { s1*27 } % pause for basso voice from the beginning to last bar
   \layout {}
 
 }
+\pageBreak
+
+\score {
+  \header { piece =  "" }
+  <<
+  
+    \new Staff \with {
+        midiInstrument = "acoustic guitar (nylon)"
+    instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
+        } 
+      {
+        \tempo "Moderato"
+        \global
+        \transpose d e \voice_vocal
+      }
+  >>
+  \layout {}
+
+}

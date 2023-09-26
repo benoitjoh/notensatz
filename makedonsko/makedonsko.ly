@@ -16,7 +16,7 @@ piecename_footerline = "Makedonsko"
 
 \include "lyrics.ily"
 
-
+% %\paper { annotate-spacing = ##t }
 
 % -- container ---------------------------------------------
 \score {
