@@ -6,13 +6,26 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #3 % spacer between the staff group
+  system-system-spacing.padding = #5 % spacer between the staff group
+  ragged-right = ##f
+  last-bottom-spacing.basic-distance = #15
 }
 
 % ---------------------------------------
 \include "../_common/makros.ily"
 global = {
   \time 3/4
+}
+
+voice_intro = \transpose c c \fixed c' { 
+   \clef treble
+   \key e \minor
+   e2. a g fis e a g fis \bar "."
+   
+}
+
+voice_intro_chords = \transpose c c \chordmode {
+  e:m a:m e:m/+g b:7/+fis e:m a:m e:m/+g b:7/+fis
 }
 
 voice_vocal = \transpose c c \fixed c' { 
@@ -48,13 +61,13 @@ voice_vocal = \transpose c c \fixed c' {
 
 voice_chords = \transpose c c \chordmode {
   \set majorSevenSymbol = \markup { maj-7 }
-  \set slashChordSeparator = \markup \small{ "/" }
+  \set slashChordSeparator = \markup  { "/" }
   \repeat volta 2 { e2.:m s e:m s a:m7 s a:m7 a:m/e b:7 s b:7 s e:m a:m e:m/g }
   \alternative { {s} {s }}  
-  a:m a:m/e a:m d:7 g s g g/b c a:m7 d:7 s b:7 b:7/a e:m/g b:7/fis 
+  a:m a:m/+e a:m d:7 g s g g/+b c a:m7 d:7 s b:7 b:7+/a e:m/+g b:7/+fis 
   e:m s e:m s a:m7 s s s  b:7 s b:7 s e s s s
   e:maj7 s s s e:7 s s s a:maj7 s s s a:m s s s
-  e gis:7 cis:m gis:7 cis:m b e fis:m e s s a  b:7 b:7/a e:m/g b:7/fis
+  e gis:7 cis:m gis:7 cis:m b e fis:m e s s a  b:7 b:7/+a e:m/+g b:7/+fis
   
 
 }  
@@ -67,6 +80,17 @@ voice_chords = \transpose c c \chordmode {
 
 
 \markup \vspace #0 % space between header and score
+
+\score 
+{
+  <<
+  \new ChordNames {\voice_intro_chords }
+  
+  \new Staff \with { instrumentName = "Intro" }
+    { \global \voice_intro } 
+
+  >>
+}
 
 \score 
 {
@@ -98,7 +122,7 @@ voice_chords = \transpose c c \chordmode {
   }
   
   \new Lyrics \lyricsto "stanza" {
-    \stanza_four_second
+    \stanza_sixth_second
   }
 
   >>

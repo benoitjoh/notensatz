@@ -21,7 +21,7 @@ footer_common_with_pagenum = \paper {
        % left side
        \fontsize #-3 \italic
           \concat {
-              \with-url #"https://github.com/benoitjoh/notensatz" "jb." 
+              \with-url #"https://github.com/benoitjoh/notensatz" "j.benoit" 
               " / " 
               \with-url #"http://lilypond.org/" "lilypond.org" 
              }
