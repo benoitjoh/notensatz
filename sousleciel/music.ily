@@ -1,21 +1,5 @@
-% tepmlate for a three parts Staff with lyrices and a repeat in it
 \version "2.20.0"
 
-\include "header.ily"
-\include "../_common/footers.ily"
-\footer_common_with_pagenum 
-
-\paper {
-  system-system-spacing.padding = #5 % spacer between the staff group
-  ragged-right = ##f
-  last-bottom-spacing.basic-distance = #15
-}
-
-% ---------------------------------------
-\include "../_common/makros.ily"
-global = {
-  \time 3/4
-}
 
 voice_intro = \transpose c c \fixed c' { 
    \clef treble
@@ -73,61 +57,3 @@ voice_chords = \transpose c c \chordmode {
 }  
   
  voice_coda = {\key e \minor  a g fis  <e gis b>2. <d fis b>2. <e gis b>2.  <d fis b>2. <e gis b>4 r4 r r1 r1}
-
-\include "lyrics.ily"
-
-% ---------------------------------------
-
-
-\markup \vspace #0 % space between header and score
-
-\score 
-{
-  <<
-  \new ChordNames {\voice_intro_chords }
-  
-  \new Staff \with { instrumentName = "Intro" }
-    { \global \voice_intro } 
-
-  >>
-}
-
-\score 
-{
-
-  <<
-  \new ChordNames {\voice_chords }
-  
-  \new Staff \with { instrumentName = "Vocal" }
-  \new Voice = "stanza" { 
-    { \global \voice_vocal } 
-    }
-
-
-  \new Lyrics \lyricsto "stanza" {
-    \stanza_one_first \stanza_second \stanza_third
-  }
-  \new Lyrics \lyricsto "stanza"
-    \stanza_one_second
-
-  \new Lyrics \lyricsto "stanza" {
-    \stanza_four_first \stanza_fifth \stanza_seventh
-  }
-  \new Lyrics \lyricsto "stanza" {
-    \stanza_four_second
-  }
-    
-  \new Lyrics \lyricsto "stanza" {
-    \stanza_sixth 
-  }
-  
-  \new Lyrics \lyricsto "stanza" {
-    \stanza_sixth_second
-  }
-
-  >>
-
-
-  \layout { }
-  %\midi { \tempo 2=120 }
-}
