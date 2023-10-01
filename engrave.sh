@@ -6,6 +6,8 @@ echo "*  put all results in _out                  *"
 echo "*********************************************" 
 echo ""
 
+export lilypond=/usr/bin/lilypond
+
 # colors for console output
 red=`tput setaf 1`
 green=`tput setaf 2`
@@ -14,6 +16,9 @@ reset=`tput sgr0` # No Color
 export err="[${red} ERR ${reset}]"
 export inf="[${green} INF ${reset}]"
 export wrn="[${yellow} WRN ${reset}]"
+
+
+echo -e "${yellow}   using lilypond from: ${lilypond}\n   Version $(lilypond -v | grep LilyPond)"
 
 # helper function
 strindex() { 
@@ -100,7 +105,7 @@ do
     echo -e "\n${inf} ***** processing: ${lyfile} ******\n" 
     sleep 1
     # conversion pdf
-    lilypond -dno-point-and-click -ddelete-intermediate-files --pdf -o$myfolder/$rawfilename $lyfile
+    $lilypond -dno-point-and-click -ddelete-intermediate-files --pdf -o$myfolder/$rawfilename $lyfile
     if [[ ! $? -eq 0 ]]
     then
       echo "${err} Error during processing in lilypond! See messages above. Fix and run script again." 
