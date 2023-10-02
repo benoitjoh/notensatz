@@ -1,6 +1,33 @@
 \version "2.20.0"
 
 % simple line with pagenumbers in the center
+% left side
+copyrightcol =  \markup { 
+  \fontsize #-3 
+  \italic {
+    \with-url #"https://github.com/benoitjoh/notensatz" "j.benoit" 
+    "/" 
+    \with-url #"http://lilypond.org/" "lilypond.org" 
+    }
+}
+
+% center
+pagenumcol = \markup {
+  \fontsize #-1 
+  \italic { 
+    "- " \fromproperty #'page:page-number-string  " - "
+  } 
+}
+
+% right side
+namecol = \markup {
+  \fontsize #-3 \italic  { 
+    \piecename_footerline "/" \version_date 
+  } 
+}
+    
+
+
 footer_common_with_pagenum = \paper {
   
    % some defaults for page breaking
@@ -14,34 +41,12 @@ footer_common_with_pagenum = \paper {
                        (stretchability . 40))
 
 
-   % footer line
-   print-page-number = ##f %suppress the regular page number
-   oddFooterMarkup =  \markup { 
-     \fill-line  { 
-       % left side
-       \fontsize #-3 \italic
-          \concat {
-              \with-url #"https://github.com/benoitjoh/notensatz" "j.benoit" 
-              " / " 
-              \with-url #"http://lilypond.org/" "lilypond.org" 
-             }
-       % center
-       \italic \concat {
-         "- " \fromproperty #'page:page-number-string  " - "} 
-       
-       % right side
-       \fontsize #-3 \italic
-         \concat {
-           \piecename_footerline
-           " / "
-           \version_date
-             %#(strftime "(%m.%Y)" (localtime (current-time))) 
-           } 
-         
-                   
-      }
-        
-    }
-   evenFooterMarkup = \oddFooterMarkup
+   % footer / head line
+   print-page-number = ##t %suppress the regular page number
+   oddHeaderMarkup = \markup \null
+   evenHeaderMarkup = \markup \null
+   oddFooterMarkup = \markup { \fill-line { \copyrightcol \pagenumcol \namecol } }
+   evenFooterMarkup = \oddFooterMarkup 
 }
+
 
