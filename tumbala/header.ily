@@ -2,6 +2,8 @@
 
 piecename_footerline = "Tumbalalaika"
 
+version_date = "10.20222"
+
 \header {
   title = \markup \caps  {"Tumbalalaika"}
   instrument = \markup \small "(Vocal & Guitar)"

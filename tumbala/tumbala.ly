@@ -1,8 +1,9 @@
 \version "2.20.0"
 
 \include "header.ily"
+
 \include "../_common/footers.ily"
-\footer_common_with_pagenum 
+\footer_common_with_pagenum
 
 \include "music.ily"
 \include "lyrics.ily"
@@ -15,8 +16,10 @@
 \score {
   <<
     \new ChordNames 
-    \chordmode
-     {b2.:m  e2.:m  a d:7maj g e:m fis:7 b:m  }
+    \chordmode {
+      \set majorSevenSymbol = \markup { maj-7 }
+      b2.:m  e2.:m  a d:7maj g e:m fis:7 b:m  
+    }
       
     \new Staff \with {instrumentName = "Intro " 
                       midiInstrument = "Acoustic Guitar (Nylon)"}
