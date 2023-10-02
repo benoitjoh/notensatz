@@ -68,6 +68,6 @@ stanza_sixth_second = \lyricmode
 stanza_seventh = \lyricmode  
   {\set fontSize = #-2 
    \set stanza = "7."
-  Mais le ciel de Pr -- ris n'est pas long -- temps cru -- el hm hm
+  Mais le ciel de Pa -- ris n'est pas long -- temps cru -- el hm hm
   pour se fair par  -- don -- ner il offr'un arc en ci -- el 
   }

@@ -5,10 +5,13 @@
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
+% finetuning
 \paper {
   system-system-spacing.padding = #5 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #15
+  top-margin =  #15
+  bottom-margin =   #8
 }
 
 % ---------------------------------------
@@ -64,7 +67,7 @@ voice_chords = \transpose c c \chordmode {
   \set slashChordSeparator = \markup  { "/" }
   \repeat volta 2 { e2.:m s e:m s a:m7 s a:m7 a:m/e b:7 s b:7 s e:m a:m e:m/g }
   \alternative { {s} {s }}  
-  a:m a:m/+e a:m d:7 g s g g/+b c a:m7 d:7 s b:7 b:7+/a e:m/+g b:7/+fis 
+  a:m a:m/+e a:m d:7 g s g g/+b c a:m7 d:7 s b:7 b:7/+a e:m/+g b:7/+fis 
   e:m s e:m s a:m7 s s s  b:7 s b:7 s e s s s
   e:maj7 s s s e:7 s s s a:maj7 s s s a:m s s s
   e gis:7 cis:m gis:7 cis:m b e fis:m e s s a  b:7 b:7/+a e:m/+g b:7/+fis
