@@ -4,15 +4,27 @@
 piecename_footerline = "Arbetslosemarsh"
 version_date = "10.2022"
 
-\include "../_common/footers.ily"
-\footer_common_with_pagenum 
-
 \header {
   title = \markup \caps  {"Arbetslosemarsh"}
   composer = "Mordechai Gibirtig"
   copyright = ""
   arranger = " "
   }
+
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
+
+% finetuning
+\paper {
+  system-system-spacing.padding = #6 % spacer between the staff group
+  ragged-right = ##f
+  last-bottom-spacing.basic-distance = #15
+  top-margin =  #15
+  bottom-margin =   #8
+  
+}
+
+
 
 \markup \vspace #1 % space between header and score
 
@@ -22,10 +34,10 @@ global = {
   \time 4/4
 }
 
-d_m = { d,8 <a, d f >8}
+d_m = { d,8 <a, d f >8->}
 
 voice_vocal = \fixed c'' { 
-  d4^\markup \italic"Stanza:  (chords on 1,2,3,4)" a, d f e8 f g a  f e d4
+  d4^\markup \small \italic"Stanza:  (chords on 1,2,3,4)" a, d f e8 f g a  f e d4
   d8 e f g a bes a4 \break
   a8 d' c' bes a bes a4
   g8 a bes g f g a f 
@@ -36,7 +48,7 @@ voice_vocal = \fixed c'' {
 }
 
 voice_git_interlude = \fixed c''{
-  <d, d>8^\markup \italic"Interlude  (atacca, 3 or 4 bars)" <a, d f >
+  <d, d>8^\markup \small \italic"Interlude  (atacca, 3 or 4 bars)" <a, d f >->
   \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m  \bar ".|"
   
 }
@@ -49,6 +61,7 @@ voice_chords = \chordmode {
 
 stanza_one = \lyricmode 
   {\set fontSize = #-2 
+   Eyns4 zwei drai vier Ar8 -- beits -- los -- e sin -- nen wir4 
     } 
 
 
@@ -67,8 +80,10 @@ stanza_one = \lyricmode
      \voice_git_interlude
     }
    
-  \new Lyrics 
+  \new Lyrics { 
+    \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2
     \stanza_one
+  }
   >>
   \layout { }
   \midi { \tempo 4=95 }
