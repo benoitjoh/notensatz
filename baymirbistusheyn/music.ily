@@ -4,6 +4,7 @@
 global = {
   \key e \minor
   \time 2/4
+  \set Score.markFormatter = #format-mark-box-alphabet
 }
 
 voice_vocal= {

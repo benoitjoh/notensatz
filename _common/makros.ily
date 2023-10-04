@@ -2,13 +2,14 @@
 
 
 % some useful makros
-box_a = \markup { \override #'(box-padding . 0.3) \bold \box "A" }
-box_as = \markup { \override #'(box-padding . 0.3) \bold \box "A'" }
-box_b = \markup { \override #'(box-padding . 0.3) \bold \box "B" }
-box_c = \markup { \override #'(box-padding . 0.3) \bold \box "C" }
+box_a = \markup { \override #'(box-padding . 0.2) \bold \box "A" }
+box_as = \markup { \override #'(box-padding . 0.2) \bold \box "A'" }
+box_b = \markup { \override #'(box-padding . 0.2) \bold \box "B" }
+box_c = \markup { \override #'(box-padding . 0.2) \bold \box "C" }
 
 mark_refrain = \markup \italic \bold "Refr."
 mark_stanza = \markup \italic \bold "Stanza"
+mark_coda = \markup \italic \bold "Coda"
 
 % lyrics: sylable alignements: 
 
