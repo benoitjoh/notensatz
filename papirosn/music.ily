@@ -1,17 +1,17 @@
 \version "2.20.0"
+
 \include "../_common/makros.ily"
 
 global = {
   \key a \minor
   \time 4/4
-  \set Score.markFormatter = #format-mark-box-alphabet
 }
 
 \addQuote "variant" { s1*7 s2. s8 s16 d'16 } % the small "b" in bar eight
 voice_vocal = \fixed c' { 
    \clef treble
    s8*7 
-   \mark #1
+   \mark \box_a
    a,8 
    \tempo "Allegro"
    \set Score.currentBarNumber = #1
@@ -32,7 +32,7 @@ voice_vocal = \fixed c' {
 
 voice_refrain = \fixed c'{
    \set melismaBusyProperties = #'() % detach slurs from text!
-   \mark#2
+   \mark \box_b
    \repeat volta 2
    { c'4.^\mark_refrain b8 c' b a gis a4 e2. a8 gis a gis a g f e \break
    e (f) d2. 

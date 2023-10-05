@@ -1,5 +1,7 @@
 \version "2.20.0"
 
+\include "../_common/makros.ily"
+
 stanza_one = \lyricmode 
 { 
   \set fontSize = #-1
@@ -10,8 +12,8 @@ stanza_one = \lyricmode
   nit.4 16 Un ven du host8 a na -- ri16 -- shen 
   shmey8 -- chl.8 16 un ven du host8 vay -- zo -- " sos__"
   sey8 -- khl8 16 Ven du bist 
-  \tuplet 3/2 { vild8 vi in } -- di16. -- aner16.   "Bist "32  a32  
-  \tuplet 3/2 { fi8 -- li -- ga } -- lits16. -- ya16. -- "ner "32  Sog32 
+  \triole{ vild8 vi in } -- di16. -- aner16.   "Bist "32  a32  
+  \triole{ fi8 -- li -- ga } -- lits16. -- ya16. -- "ner "32  Sog32 
   ikh8 dos art mikh nit.2 Sog8 mir vi16 er -- klers du dos?2 
   Vil8 dir so16 -- gn bald far -- vos.4. Bay8 
   \repeat volta 2 {

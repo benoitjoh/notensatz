@@ -2,10 +2,11 @@
 
 
 % some useful makros
-box_a = \markup { \override #'(box-padding . 0.2) \bold \box "A" }
-box_as = \markup { \override #'(box-padding . 0.2) \bold \box "A'" }
-box_b = \markup { \override #'(box-padding . 0.2) \bold \box "B" }
-box_c = \markup { \override #'(box-padding . 0.2) \bold \box "C" }
+box_a = \markup { \override #'(box-padding . 0.3) \bold \box "A" }
+box_as = \markup { \override #'(box-padding . 0.3) \bold \box "A'" }
+box_b = \markup { \override #'(box-padding . 0.3) \bold \box "B" }
+box_c = \markup { \override #'(box-padding . 0.3) \bold \box "C" }
+box_d = \markup { \override #'(box-padding . 0.3) \bold \box "D" }
 
 mark_refrain = \markup \italic \bold "Refr."
 mark_stanza = \markup \italic \bold "Stanza"
@@ -20,3 +21,13 @@ align_l = \once \override LyricText.self-alignment-X = #LEFT
 align_syllables_left = <<
   \override LyricText.self-alignment-X = #LEFT  
   \override LyricText.X-offset = #-0.6 >>
+
+
+% helper functions
+triole = #(define-music-function
+  (parser location my-notes)
+  (ly:music?)
+  #{
+    \tuplet 3/2 { #my-notes } 
+  #}
+)

@@ -1,11 +1,12 @@
 \version "2.20.0"
 
+\include "../_common/makros.ily"
 
 voice_concha_melodie = {
 
   r4 a2.~ a8 a a a a bes c' bes a1~ a8 a a a a bes c' bes |
-  a16 bes a8~ a2.~ a2 \tuplet 3/2 {a4 bes a} | g16 f g8~ g2.~  g2~ g8 g g g g g f g 
-  a g  \tuplet 3/2{f8 g a} a2~ a8 a a a | a bes c' bes a16 bes a4.~ a1\fermata \bar "|."
+  a16 bes a8~ a2.~ a2 \triole{a4 bes a} | g16 f g8~ g2.~  g2~ g8 g g g g g f g 
+  a g  \triole{f8 g a} a2~ a8 a a a | a bes c' bes a16 bes a4.~ a1\fermata \bar "|."
   }
 
 voice_concha_base = \fixed c,

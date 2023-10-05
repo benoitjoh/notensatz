@@ -43,7 +43,7 @@
 }
 
 
-\markup \vspace #2 % space between header and score
+  \markup \vspace #2 % space between header and score
   \markup \fontsize #-1 {
     \stanza_tabloid 
   }

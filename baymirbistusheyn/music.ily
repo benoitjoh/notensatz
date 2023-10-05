@@ -1,4 +1,5 @@
 \version "2.20.0"
+
 \include "../_common/makros.ily"
 
 global = {
@@ -13,11 +14,11 @@ voice_vocal= {
    s4.^"Stanza" b16 b16 g'8 8 8  fis'16 e' 
    b'8 fis' r16 b16 e' fis' g'8 8 8 fis'16 e'  \break
    b'8 fis' r16 b e' fis' g'8 8 8 fis'16 e' 
-   a'8 16 16 8 g'16 fis' b'8 8 ais' \tuplet 3/2 {g'16 ais' g'} \break
+   a'8 16 16 8 g'16 fis' b'8 8 ais' \triole{g'16 ais' g'} \break
    fis'4 r16 b16 e'fis' g'8 8 8 fis'16 e' 
    b'8 fis' r16 b16 e'fis' g'8 8 8 fis'16 e' \break
-   b'8 fis' r16 b16 e'fis' \tuplet 3/2 {g'8 g' g'} \tuplet 3/2 {g'8 8 fis'16 e'}
-   \tuplet 3/2 {c''8 8 8} \tuplet 3/2 {c''8 8 b'16 a'} \break
+   b'8 fis' r16 b16 e'fis' \triole{g'8 g' g'} \triole{g'8 8 fis'16 e'}
+   \triole{c''8 8 8} \triole{c''8 8 b'16 a'} \break
    g'8 e' fis' b e'2 a'8 8 a'16 g' fis' e' fis'2
    c''8 8 16 b' a' g' b'4. b8 \break
    \repeat volta 2 {

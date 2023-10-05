@@ -15,8 +15,6 @@
 }
 
 % ---------------------------------------
-\include "../_common/makros.ily"
-
 
 \include "lyrics.ily"
 \include "music.ily"
@@ -74,5 +72,5 @@
 
 
   \layout { }
-  %\midi { \tempo 2=120 }
+  \midi { \tempo 2=120 }
 }
