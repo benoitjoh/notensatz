@@ -19,7 +19,7 @@ version_date = "10.2022"
   system-system-spacing.padding = #6 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #15
-  top-margin =  #15
+  top-margin =  #10
   bottom-margin =   #8
   
 }

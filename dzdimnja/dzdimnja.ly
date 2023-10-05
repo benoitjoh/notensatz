@@ -6,8 +6,14 @@ version_date = "1.2022"
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
+
+% finetuning
 \paper {
-  system-system-spacing.padding = #4
+  system-system-spacing.padding = #4 % spacer between the staff group
+  ragged-right = ##f
+  last-bottom-spacing.basic-distance = #10
+  top-margin = #10
+  bottom-margin = #8
 }
 
 \header {
