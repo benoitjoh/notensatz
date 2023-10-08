@@ -59,10 +59,16 @@ voice_chords = \transpose c c \chordmode {
   \repeat volta 2 { e2.:m s e:m s a:m7 s a:m7 a:m/e b:7 s b:7 s e:m a:m e:m/g }
   \alternative { {s} {s }} 
   
-  a:m a:m/+e a:m d:7 g s g g/+b c a:m7 d:7 s b:7 b:7/+a e:m/+g b:7/+fis 
+  a:m a:m/+e a:m d:7 g s g g/+b c a:m7 a:m6 s b:7 b:7/+a e:m/+g b:7/+fis 
   e:m s e:m s a:m7 s s s  b:7 s b:7 s e s s s
-  e:maj7 s s s e:7 s s s a:maj7 s s s a:m s s s
-  e gis:7 cis:m gis:7 cis:m b e fis:m e s s a  b:7 b:7/+a e:m/+g b:7/+fis
+  e:maj7 s s s 
+  e:7 s s s 
+  %b:m b:m e s 
+  a:maj7 s s s a:m s s s
+  e gis:7 cis:m gis:7 cis:m b e fis:m 
+  %e s s a
+  e s b:dim s
+  b:7 b:7/+a e:m/+g b:7/+fis
   
 
 }  

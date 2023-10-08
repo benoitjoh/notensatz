@@ -1,11 +1,10 @@
-% tepmlate for a three parts Staff with lyrices and a repeat in it
 \version "2.20.0"
 
-piecename_footerline="Miserlou"
+\include "header.ily"
+
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
-\include "header.ily"
 
 \paper {
   system-system-spacing.padding = #4

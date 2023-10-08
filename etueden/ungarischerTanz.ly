@@ -2,6 +2,7 @@
 \version "2.20.0"
 
 piecename_footerline = "Dvorak Ung. Tanz"
+version_date = "4.2022"
 
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 

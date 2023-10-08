@@ -1,6 +1,8 @@
 \version "2.20.0"
 
 piecename_footerline = "Huljet (Chorus)"
+version_date = "05.2022"
+
 
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
