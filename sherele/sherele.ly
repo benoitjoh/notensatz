@@ -122,7 +122,8 @@ voice_chords_d = \chordmode {
       \voice_chords_d
     }
     
-  \new Staff \with {instrumentName = "Violin" }
+  \new Staff \with {instrumentName = "Violin"
+                    midiInstrument = "acoustic guitar (nylon)" }
     {
      \global
      \voice_vocal_intro
@@ -131,6 +132,7 @@ voice_chords_d = \chordmode {
      \voice_vocal_c
      \voice_vocal_d
     }
+
   >>
   \layout { }
   \midi { \tempo 4=120 }

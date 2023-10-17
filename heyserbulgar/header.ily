@@ -5,7 +5,4 @@ version_date = "10.2023"
 
 \header {
   title = \markup \caps  {"Der Heyser Bulgar"}
-  composer = ""
-  copyright = ""
-  arranger = " "
   }

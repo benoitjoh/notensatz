@@ -6,5 +6,5 @@ global = {
   \key e \minor
   \time 4/4
   \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
-}
+  }
 straigt = \markup {\musicglyph "scripts.caesura.straight"} 
