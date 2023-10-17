@@ -34,6 +34,8 @@
   \new Staff \with {instrumentName = "Violin" }
     {
      \global
+     \key g \minor
+
      \voice_vocal_a
      \voice_vocal_b
      \voice_vocal_c
