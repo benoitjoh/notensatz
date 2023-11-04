@@ -8,7 +8,7 @@
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #4.4 % spacer between the staff group
+  system-system-spacing.padding = #3.2 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #10
   top-margin = #8
@@ -20,12 +20,11 @@
 
 
 
-
 voice_vocal_a = \fixed c'' { 
   \set Score.currentBarNumber = #3
   \clef violin
   \mark \box_a 
-   fis8\segno[ g e]  fis4\trill e8 [dis] dis[ e c] dis4 c8[ b,]
+   fis8\segno[ g e]  fis4\prall e8 [dis] dis[ e c] dis4 c8[ b,]
    b,[ c a,] b, [c] dis[ e] \break 
    fis[ g e] fis2 fis8[ g e] fis4 e8[ dis] dis[ e c] dis4 c8[ b,] \break
    b,[ c a,] b,[ c] dis[ a,] b, 4.~2 
@@ -63,10 +62,12 @@ voice_vocal_d = \fixed c'' {
   a4\prall g8 fis4\prall e8[ dis]  | \break
   dis8-> [e c] b,4-> 4 | b,8-> [c a,] b,8-> [c] dis[ e] |
   fis8-> [g e] fis4 r4 | a4\prall g8 fis4\prall e8[ dis] | \break
-  dis8-> [e c] b,4-> 4 | b,8-> [c a,] b,-> [c] dis [e] | fis-> [g e] fis4 r4 | 
-  fis4\prall e8 dis [c]^\markup \bold \italic"Al Coda" b, [c] \bar "||"
-  b,4.~2~4.~2  \bar "||"
-  \clef violin
+  dis8-> [e c] b,4-> 4 | b,8-> [c a,] b,-> [c] dis [e] | fis-> [g e] fis4 r4 | \break
+  fis4\prall e8^\markup \bold \italic"2. Al Coda" dis [c] b, [c] \bar "||"
+  b,4.~2~4.~2  
+  \repeat volta 2 { b,8^\markup \bold \italic"Impro"[ c dis] e [fis] g [a] | 
+                    s4.^\markup \bold \italic"D.S. al coda" s2 | s4. s2 }
+  
   b,8->^\markup \bold \italic"Coda" [dis fis] b-> r8 r4  \bar "."
   
   \break
@@ -95,7 +96,7 @@ voice_chords_c = \chordmode {
 voice_chords_d = \chordmode {
   b4.:7 s2 | s4. s2 | a4.:m s2 | b4.:7 s2 | s4. s2 | s4. s2 |
   a4.:m s2 | b4.:7 s2 | s4. s2 | s4. s2 | a4.:m s2 | b4.:7 s2 | b4.:7 s2 |
-  b4.:7 s2 |
+  s4. s2 | s4. s2| s4. s2 | b4.:7 s2
 }
 
 
@@ -123,4 +124,20 @@ voice_chords_d = \chordmode {
   >>
   \layout { }
   \midi { \tempo 4=90 }
+}
+
+
+\score {
+    \new Staff \with {
+      instrumentName = \markup { \center-column { "Clarinet" \line { "in B" \tiny \flat } } }
+                    midiInstrument = "acoustic guitar (nylon)" }
+    {
+      \transpose d e {
+     \global
+     \voice_vocal_a
+     \voice_vocal_b
+     \voice_vocal_c
+     \voice_vocal_d
+      }
+    }
 }

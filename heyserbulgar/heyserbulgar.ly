@@ -8,7 +8,7 @@
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #4.4 % spacer between the staff group
+  system-system-spacing.padding = #5 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #10
   top-margin = #8
@@ -41,6 +41,8 @@
      \voice_vocal_c
      \voice_vocal_d
     }
+    
+
   >>
   \layout { }
   \midi { \tempo 4=95 }
