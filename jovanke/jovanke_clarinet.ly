@@ -2,13 +2,14 @@
 \version "2.20.0"
 
 \include "header.ily"
+\header { instrument = \markup \concat {"Clarinet in B" \flat }}
 
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #3.2 % spacer between the staff group
+  system-system-spacing.padding = #4.2 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #10
   top-margin = #8
@@ -20,29 +21,20 @@
 
 
 
-
 % -- container ---------------------------------------------
+
+
 \score {
-  <<
-    \new ChordNames {
-      \override ChordName.font-size = #0
-      \voice_chords_a
-      \voice_chords_b
-      \voice_chords_c
-      \voice_chords_d
-    }
-    
-  \new Staff \with {instrumentName = "Violin"
+    \new Staff \with {
+      instrumentName = \markup { \center-column { "Clarinet" \line { "in B" \tiny \flat } } }
                     midiInstrument = "acoustic guitar (nylon)" }
     {
+      \transpose d e {
      \global
      \voice_vocal_a
      \voice_vocal_b
      \voice_vocal_c
      \voice_vocal_d
+      }
     }
-
-  >>
-  \layout { }
-  \midi { \tempo 4=90 }
 }
