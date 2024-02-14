@@ -16,7 +16,7 @@ voice_vocal_a = \fixed c' {
   \mark #1 r8 d8 fis g 
   \set Score.currentBarNumber = #2
   \repeat volta 2 {
-    a \segno a a4 \triole{a8 bes c'} \triole{bes a g} 
+    a a \segno a4 \triole{a8 bes c'} \triole{bes a g} 
     a a fis4   
     r8 d fis g a4
     r8 d'~ \triole{d'8 a c'} \triole{bes a g} \break
@@ -27,9 +27,12 @@ voice_vocal_a = \fixed c' {
     fis g a g fis es d c  
     d8 d fis g a g bes a g fis es d 
     
-    g g c d es2  
+    g g c d es2^\markup\italic\bold"al fine" 
+    |
     \triole{c'8 bes a} \triole{bes a g}
-    \triole{a g fis} \triole{g fis es} d2 | 
+    \triole{a g fis} \triole{g fis es} d2 
+    
+    | 
   }
   \alternative { {r8 d fis g} {r8 d g bes} }  
 }
@@ -92,12 +95,15 @@ voice_vocal_d = \fixed c' {
     } 
     { d8 c g4
       \triole{fis8 g a8} \triole{g8 fis es}
-      d8 d8 fis g^"D.S." \bar "."
+      d8 d8 fis^"D.S." g \bar "||"
     } 
   }
+  c'8^\markup\italic\bold" fine" bes a g fis es d c  d8-> r4.\fermata \bar"|."
 }
 
 voice_chords_d = \chordmode {
   \repeat volta 2 {c2:m s s s s}
   \alternative { {c2:m c4:m g:m d c:m} {c2:m d4 c:m d2} }
+  %fine
+  c2:m g2:m d2
 }
