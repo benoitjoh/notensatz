@@ -8,7 +8,7 @@ global = {
   \set Score.markFormatter = #format-mark-box-alphabet
 
 }
-\bar check
+%\bar check
 
 straigt = \markup {\musicglyph "scripts.caesura.straight"} 
 
@@ -105,5 +105,5 @@ voice_chords_d = \chordmode {
   \repeat volta 2 {c2:m s s s s}
   \alternative { {c2:m c4:m g:m d c:m} {c2:m d4 c:m d2} }
   %fine
-  c2:m g2:m d2
+  c2:m d4 c4:m d2
 }
