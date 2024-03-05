@@ -51,9 +51,9 @@
     {
      \global
        \key g \minor
-       \clef "treble_8"
+       \clef "bass"
 
-     \voice_ostinato
+     \transpose c c, \voice_ostinato
     }
     
   

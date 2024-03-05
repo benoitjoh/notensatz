@@ -81,7 +81,7 @@ voice_ostinato = \fixed c {
  %[A] clarinet
  %^"(0:24) Cla 24T" 
  \ostinato_one_g \ostinato_two_g
- \ostinato_one_es \ostinato_two_es
+ \ostinato_one_f \ostinato_two_f
  \ostinato_one_g \ostinato_two_g
  \ostinato_one_f \ostinato_two_f
  \ostinato_one_es \ostinato_two_f
@@ -90,7 +90,7 @@ voice_ostinato = \fixed c {
  % [b]  Clarinet / Accordion duett 0:54
  ^" (0:54) Cla/Acc (32T)"
  \ostinato_one_g \ostinato_two_g
- \ostinato_one_es \ostinato_two_es
+ \ostinato_one_f \ostinato_two_f
  \ostinato_one_g \ostinato_two_g
  \ostinato_one_f \ostinato_two_f
  \ostinato_one_es \ostinato_two_f
@@ -106,13 +106,16 @@ voice_ostinato = \fixed c {
  
  % [a] bass solo 2:00
  \break
- g2^"(4:20) Piano Cla (24T)"_"G"
+ g2^\box_a_"G"
+ ^"(4:20) Piano Cla (24T)"
  ^"(3:45) Piano (24T)"
  ^"(3:09) Acc (24T)"
  ^"(2:32) Mandoline (24T)"
  ^"(2:00) Bass solo (24T)"
  ^"jeweils Begleitung die 24 Takte aus dem A-Teil" 
- g2_"*G" es'_"Es" es'_"*Es" g_"G" g_"*G" f_"F" f_"*F" es'_"Es" f_"*F" g_"G" g_"*G..." \break
+ 
+ g2_"*G" es'_"F" es'_"*F" g_"G" g_"*G" f_"F" f_"*F" es'_"Es" f_"*F" g_"G" g_"*G" \break
+ g2_"G" g2_"*G" es'_"F" es'_"*F" g_"G" g_"*G" f_"F" f_"*F" es'_"Es" f_"*F" g_"G" g_"*G" \break
  
  r2^"(5.40) Cla Acc [C Teil] (12T)"
  ^"(4:53) Cla Acc [B Teil] (24T)"
