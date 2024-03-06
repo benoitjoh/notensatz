@@ -25,7 +25,6 @@ chords_part_a =  \chordmode {
 }
 
 voice_part_b = \fixed c' { 
-   \key a \minor
    \mark \box_b
    \repeat volta 2 {
      d4 e8 f f d a gis4 f8 e | d4 d'8 8 8 c' b a gis f e | 
