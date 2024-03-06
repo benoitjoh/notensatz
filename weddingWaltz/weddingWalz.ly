@@ -8,8 +8,8 @@
 
 
 \paper {
-  system-system-spacing.padding = #3 % spacer between the staff group
-  ragged-last-bottom = ##f
+  system-system-spacing.basic-distance = #15 % spacer between the staff group
+  ragged-last-bottom = ##t
 }
 
 \include "music.ily"

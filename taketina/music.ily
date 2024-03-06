@@ -15,7 +15,7 @@ voice_part_a = \fixed c' {
    \mark \box_a
    \repeat volta 2 {
      d4 cis'8 d' d'4 8 8 c' b a | c' b a gis gis f a g4 f8 e | 
-     d4 e8 f f d a gis4 f8 a | gis4 f8 e d f d e4 e |
+     d4 e8 f f d a gis4\prall f8 a | gis4 f8 e d f d e4\prall e |
      }
    \break
 }
@@ -27,8 +27,8 @@ chords_part_a =  \chordmode {
 voice_part_b = \fixed c' { 
    \mark \box_b
    \repeat volta 2 {
-     d4 e8 f f d a gis4 f8 e | d4 d'8 8 8 c' b a gis f e | 
-     d4 e8 f f d a gis4 f8 a | gis4 f8 e d f d e4 4
+     d4 e8 f f d a gis4\prall f8 e | d4 d'8 8 8 c' b a gis f e | 
+     d4 e8 f f d a gis4\prall f8 a | gis4 f8 e d f d e4 4
      }
    \break
 }

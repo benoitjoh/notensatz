@@ -5,7 +5,7 @@ piecename_footerline = "Taketina"
 version_date = "03.2023"
 
 \header {
-  title = \markup \caps  {"Taketina Balkan Fidle"}
+  title = \markup \caps  {"Taketina Balkan Fiddle"}
   composer = "unknown"
   copyright = ""
   arranger = " "
