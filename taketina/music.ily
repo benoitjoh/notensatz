@@ -14,7 +14,7 @@ voice_part_a = \fixed c' {
    \key a \minor
    \mark \box_a
    \repeat volta 2 {
-     d4 cis'8 d' d'4 8 8 c' b a | c' b a gis gis f a g4 f8 e | 
+      d4 cis'8 d' d'4 8 8 c' b a | c' b a gis gis f a g4 f8 e | 
      d4 e8 f f d a gis4\prall f8 a | gis4 f8 e d f d e4\prall e |
      }
    \break
