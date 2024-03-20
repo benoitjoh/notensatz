@@ -15,7 +15,7 @@ voice_a_repeat = {
   }
 
 chords_a_repeat = \chordmode {
-  f2.:m c:7 f:m f:7 bes:m es as c:7 f:7 bes:m c:7 f:m c c:7 f:m  s f:7 bes:m c:7 f:m 
+  f2.:m c:7 f:m f:7 bes:m es as c:7 f:7 bes,:m c:7 f:m c c:7 f:m  s f:7 bes:m c:7 f:m 
   }
 
 voice_part_a = \fixed c' { 
