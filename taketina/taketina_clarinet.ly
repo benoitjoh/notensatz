@@ -6,6 +6,7 @@
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
+\header { instrument = \markup \concat {"Clarinet in B" \flat }}
 
 \paper {
   %system-system-spacing.padding = #10 % spacer between the staff group
@@ -32,19 +33,23 @@
 
       \new Staff \with { instrumentName = "Terz" midiInstrument = "Violin"}
     { \global 
-      \voice_part_a_terz
-      \voice_part_b_terz
-      \voice_part_c_terz
-      \voice_part_d_terz
-      \voice_part_e_terz
+      \transpose d e {
+          \voice_part_a_terz
+          \voice_part_b_terz
+          \voice_part_c_terz
+          \voice_part_d_terz
+          \voice_part_e_terz
+      }
     }
-  \new Staff \with { instrumentName = "Vocal" midiInstrument = "Clarinet"}
+  \new Staff \with { instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } midiInstrument = "Clarinet"}
     { \global 
-      \voice_part_a
-      \voice_part_b
-      \voice_part_c
-      \voice_part_d
-      \voice_part_e
+      \transpose d e {
+          \voice_part_a
+          \voice_part_b
+          \voice_part_c
+          \voice_part_d
+          \voice_part_e
+      }
     }
 
   >>
