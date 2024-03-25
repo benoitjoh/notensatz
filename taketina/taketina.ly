@@ -18,6 +18,7 @@
 
 \markup \vspace #0 % space between header and score
 
+t={s1 s4.}
 
 \score 
 {
@@ -30,14 +31,6 @@
       \chords_part_e
     }
 
-      \new Staff \with { instrumentName = "Terz" midiInstrument = "Violin"}
-    { \global 
-      \voice_part_a_terz
-      \voice_part_b_terz
-      \voice_part_c_terz
-      \voice_part_d_terz
-      \voice_part_e_terz
-    }
   \new Staff \with { instrumentName = "Vocal" midiInstrument = "Clarinet"}
     { \global 
       \voice_part_a
@@ -45,6 +38,15 @@
       \voice_part_c
       \voice_part_d
       \voice_part_e
+    }
+
+  \new Staff % empty
+    { \clef "vaticana-do2"
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
     }
 
   >>

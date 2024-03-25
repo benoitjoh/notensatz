@@ -15,6 +15,7 @@
   bottom-margin = 7
 }
 \include "music.ily"
+t={ s1 s4.} % empty bar
 
 
 \markup \vspace #0 % space between header and score
@@ -31,16 +32,6 @@
       \chords_part_e
     }
 
-      \new Staff \with { instrumentName = "Terz" midiInstrument = "Violin"}
-    { \global 
-      \transpose d e {
-          \voice_part_a_terz
-          \voice_part_b_terz
-          \voice_part_c_terz
-          \voice_part_d_terz
-          \voice_part_e_terz
-      }
-    }
   \new Staff \with { instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } midiInstrument = "Clarinet"}
     { \global 
       \transpose d e {
@@ -51,6 +42,15 @@
           \voice_part_e
       }
     }
+  \new Staff % empty
+    { \clef "vaticana-do2"
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+     \repeat volta 2 {\t \t \t \t }
+    }
+
 
   >>
 
