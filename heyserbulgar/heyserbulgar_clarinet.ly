@@ -9,7 +9,7 @@
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #5 % spacer between the staff group
+  system-system-spacing.padding = #4 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #10
   top-margin = #8
@@ -24,6 +24,20 @@
 % -- container ---------------------------------------------
 \score {
   <<
+    \new ChordNames {
+      \override ChordName.font-size = #0
+      \voice_chords_a
+      \voice_chords_b
+      \voice_chords_c
+      \voice_chords_d
+    }
+    \new ChordNames \transpose d e{
+      \override ChordName.font-size = #-2
+      \voice_chords_a
+      \voice_chords_b
+      \voice_chords_c
+      \voice_chords_d
+    }
 
     
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  }  

@@ -18,7 +18,6 @@ voice_vocal_a = \fixed c' {
 
 voice_vocal_b = \fixed c' { 
   \mark \box_b 
-  \set Score.currentBarNumber = #17
   \repeat volta 2 {
     f8 f'4 e'8 f'4 c' | des'4. es'8 f'4 es'16 des' c' bes | a8 bes4.~8 a8 ges a | 
   }
@@ -31,7 +30,6 @@ voice_vocal_b = \fixed c' {
 
 voice_vocal_c = \fixed c' { 
   \mark \box_c 
-  \set Score.currentBarNumber = #17
   \repeat volta 2 {
     a1 | a1 | a8 bes c' a~a f ges es | f ges a bes c' f' c' bes f1| 
     bes2 r8 f des'16 c' bes8 | a8 bes c' a~a f ges es
@@ -44,7 +42,6 @@ voice_vocal_c = \fixed c' {
 
 voice_vocal_d = \fixed c' { 
   \mark \box_d 
-  \set Score.currentBarNumber = #17
   \repeat volta 2 {
     a8 bes c' a~a f8 ges16 f ges es | f8 ges a bes c' f' es'16 des' c' bes | a8 bes c' a~a f8 ges16 f ges es
   }

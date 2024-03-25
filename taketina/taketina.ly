@@ -18,12 +18,13 @@
 
 \markup \vspace #0 % space between header and score
 
-t={s1 s4.}
+t={ s1 s4.} % empty bar
 
 \score 
 {
   <<
   \new ChordNames {
+      \override ChordName.font-size = #0
       \chords_part_a   
       \chords_part_b   
       \chords_part_c  

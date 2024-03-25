@@ -31,6 +31,14 @@ t={ s1 s4.} % empty bar
       \chords_part_d 
       \chords_part_e
     }
+  \new ChordNames \transpose d e {
+    \override ChordName.font-size = #-2
+      \chords_part_a   
+      \chords_part_b   
+      \chords_part_c  
+      \chords_part_d 
+      \chords_part_e
+    }
 
   \new Staff \with { instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } midiInstrument = "Clarinet"}
     { \global 

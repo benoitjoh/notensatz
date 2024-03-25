@@ -31,6 +31,13 @@
       \voice_chords_c
       \voice_chords_d
     }
+    \new ChordNames \transpose d e{
+      \override ChordName.font-size = #-2
+      \voice_chords_a
+      \voice_chords_b
+      \voice_chords_c
+      \voice_chords_d
+    }
     
   \new Staff \with {
       midiInstrument = "Clarinet"

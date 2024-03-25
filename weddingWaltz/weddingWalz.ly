@@ -20,7 +20,9 @@
 {
 %\unfoldRepeats{
   <<
-  \new ChordNames {\chords_part_a \chords_part_b \chords_part_a_two}
+  \new ChordNames { 
+    \override ChordName.font-size = #0
+    \chords_part_a \chords_part_b \chords_part_a_two}
   
   \new Staff \with { instrumentName = "Vocal" }
     { \global 

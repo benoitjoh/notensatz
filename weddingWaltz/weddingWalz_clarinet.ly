@@ -21,7 +21,13 @@
 {
 %\unfoldRepeats{
   <<
-  \new ChordNames {\chords_part_a \chords_part_b \chords_part_a_two}
+  \new ChordNames { 
+    \override ChordName.font-size = #0
+    \chords_part_a \chords_part_b \chords_part_a_two}
+
+\new ChordNames \transpose d e { 
+    \override ChordName.font-size = #-2
+    \chords_part_a \chords_part_b \chords_part_a_two}
   
   \new Staff \with { instrumentName = \markup { \center-column { "Clarinet" \line { "in B" \tiny \flat } } }
                     midiInstrument = "acoustic guitar (nylon)" }
