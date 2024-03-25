@@ -2,10 +2,10 @@
 \version "2.20.0"
 
 piecename_footerline="Miserlou"
-\include "../_common/footers.ily"
-\footer_common_with_pagenum 
 
 \include "header.ily"
+\include "../_common/footers.ily"
+\footer_common_with_pagenum 
 
 
 \markup \vspace #1 % space between header and score

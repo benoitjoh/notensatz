@@ -1,12 +1,10 @@
 % tepmlate for a three parts Staff with lyrices and a repeat in it
 \version "2.20.0"
 
+\include "header.ily"
 piecename_footerline="Miserlou"
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
-
-\include "header.ily"
-
 
 \include "music.ily"
 

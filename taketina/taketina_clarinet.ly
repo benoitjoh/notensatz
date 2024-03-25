@@ -64,6 +64,6 @@ t={ s1 s4.} % empty bar
 
 
   \layout { }
-  \midi { \tempo 4=120 }
+  %\midi { \tempo 4=120 }
 }
 
