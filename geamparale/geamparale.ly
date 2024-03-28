@@ -8,8 +8,8 @@
 
 
 \paper {
-  %system-system-spacing.padding = #10 % spacer between the staff group
-  system-system-spacing.basic-distance = #11
+  system-system-spacing.padding = #5.8 % spacer between the staff group
+  %system-system-spacing.basic-distance = #15
   ragged-last-bottom = ##t
   bottom-margin = 7
 }
