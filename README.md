@@ -12,6 +12,13 @@ this shellscript can be used to build pdf and mp3 files for each .ly file
 
 the results are delivered in folder _out
 
-for each *.ly a pdf is generated if ther
+for each *.ly a pdf is generated. (the midi directive should be not set)
 
-only files *.midigen.ly are converted to a mp3. A eventually generated pdf is skiped
+Files *.midigen.ly are converted to a mp3. A eventually generated pdf is skiped
+
+Try out: 
+````commandline
+me@computer:~$ git clone https://github.com/benoitjoh/notensatz.git
+me@computer:~$ cd notensatz
+me@computer:~/notensatz$ ./engrave.sh .
+````
