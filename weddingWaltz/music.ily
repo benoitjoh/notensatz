@@ -19,7 +19,6 @@ chords_a_repeat = \chordmode {
   }
 
 voice_part_a = \fixed c' { 
-   \clef treble
    \set Score.currentBarNumber = #1
    \tempo "Slow Waltz"
    r2 c4   
