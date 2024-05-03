@@ -32,7 +32,9 @@
   \new Staff \with { instrumentName = \markup { \center-column { "Clarinet" \line { "in B" \tiny \flat } } }
                     midiInstrument = "acoustic guitar (nylon)" }
 
-     \transpose d e { \global 
+     \transpose d e { 
+      \global 
+      \clef treble
       \voice_part_a  
       \voice_part_b
       \voice_part_a_two

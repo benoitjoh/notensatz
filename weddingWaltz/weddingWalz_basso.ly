@@ -25,12 +25,14 @@
       \override ChordName.font-size = #0
       \chords_part_a \chords_part_b \chords_part_a_two}
     
-    \new Staff \with { instrumentName = "Vocal" }
-      { \global 
-        \clef treble
+    \new Staff \with { instrumentName = "Basso" }
+      { \transpose c' c,{
+        \global 
+        \clef bass
         \voice_part_a  
         \voice_part_b
         \voice_part_a_two
+        }
       }
     >>
   
