@@ -24,7 +24,7 @@ voice_vocal_a = \fixed c' {
     a g bes a g fis es d g g c4
     r8 c es g   
     c'16 d' es' d' c' bes a g a bes c' bes a g fis es 
-    fis g a g fis es d c  
+    fis g_\markup{\italic"end Intro" \raise #0.55 \large \musicglyph "arrowheads.close.01" "|" } a g fis es d c  
     d8 d fis g a g bes a g fis es d 
     
     g g c d es2^\markup\italic\bold"al fine" 
@@ -59,15 +59,16 @@ voice_chords_b = \chordmode {
   \repeat volta 2 {g2:m s s s d c:m d s g:m s s s d c:m d4 c:m}
   \alternative { {d4 d:7} {d2} }
 }
+%^\markup{\musicglyph "scripts.caesura.curved"}
 
 voice_vocal_c = \fixed c' { 
   \repeat volta 2 {
     \set Score.currentBarNumber = #44
-     \mark #3 d8 r8 r4^\straigt bes8 r^\straigt \triole{bes8 a g} 
+     \mark #3 d8 r8 r4 bes8 r \triole{bes8 a g} 
      \triole{fis8 g a} \triole{g8 fis es}   fis8 g gis a d8 r r4|
      d8 r \triole{bes8 a g} \triole{fis8 g a} \triole{bes a g}  
      \triole{a g fis} \triole{es d c } 
-     d8 r8 r4^\straigt d8 r^\straigt \triole{bes8 a g} fis8 g gis a   
+     d8 r8 r4 d8 r \triole{bes8 a g} fis8 g gis a   
      bes8 c'4.~  c'2~ c'2~ c'2 
      c'16 d' es' d' c' bes a g 
      a bes c' bes a g fis es  

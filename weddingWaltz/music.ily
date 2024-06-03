@@ -62,7 +62,7 @@ chords_part_b = \chordmode {
 voice_part_a_two = \fixed c'{ 
     \mark \box_as r2 c4  
     \voice_a_repeat 
-     g4. as8 bes des' c'4. as'8  g' es' f'2. ~2. \fermata \bar "|."
+     g4. as8 bes des' c'4. as'8  g' e' f'2. ~2. \fermata \bar "|."
     }
 
 chords_part_a_two = \chordmode {

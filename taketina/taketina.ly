@@ -40,7 +40,7 @@ t={ s1 s4.} % empty bar
       \voice_part_d
       \voice_part_e
     }
-
+%{
   \new Staff % empty
     { \clef "vaticana-do2"
      \repeat volta 2 {\t \t \t \t }
@@ -49,7 +49,7 @@ t={ s1 s4.} % empty bar
      \repeat volta 2 {\t \t \t \t }
      \repeat volta 2 {\t \t \t \t }
     }
-
+%}
   >>
 
 

@@ -26,7 +26,7 @@
       \chords_part_a \chords_part_b \chords_part_a_two}
     
     \new Staff \with { instrumentName = "Basso" }
-      { \transpose c' c,{
+      { \transpose c' c{
         \global 
         \clef bass
         \voice_part_a  
