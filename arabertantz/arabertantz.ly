@@ -40,7 +40,7 @@
      \voice_vocal_c
      \voice_vocal_d
     }
-    
+%{    
   \new Staff % empty
     { \clef "vaticana-do2"
      s1 *9
@@ -48,7 +48,7 @@
      \repeat volta 2 { s1 *7 } \alternative { { s1 }{ s1}  }
      \repeat volta 2 { s1 *3 } \alternative { { s1 }{ s1}  }
     }
-
+%}
   >>
   \layout { }
   %\midi { \tempo 4=90 }

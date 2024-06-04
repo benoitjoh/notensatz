@@ -3,6 +3,7 @@
 \include "../_common/makros.ily"
 
 \include "header.ily"
+\header { instrument = "Basso"}
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
 
