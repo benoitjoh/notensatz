@@ -14,10 +14,10 @@ voice_vocal =
     c'8 des' c'4 e'8 f' e'8. des'16 des'8 c'4.~ c'4. r8 e'8 f' g'4 as'8 g' as' f' \break
     g'8 e'4.~ e'4 r8 e'8 f' bes c' des' e' f' des' e' c'2~ c'8 \mark #2 c' f'^\mark_refrain  g' \break
     as'4 g'8. f'16 as'8 as' g' f' e' g'4.~ g'8 c'8 g' as'  bes'4 g' bes'8 bes' as' g'  \break
-    bes' as'4.~ as'8 f' as' bes' c''4  bes'8 as' c'' bes' des'' c'' bes'2~ bes'8 c' g' as' \break 
+    bes' as'4.~ as'8 f' as' bes' c''4  bes'8 a' c'' bes' des'' c'' bes'2~ bes'8 c' g' as' \break 
     bes'4 g'8. g'16 as'8 g' as' bes' c'' r8 bes' r as'-. c' (f' g') as'4 g'8. f'16 as'8 as' g' f' \break 
     e' 8 g'4.~ g'8 c' g' as' bes'4 g' bes'8 bes' as' g' bes' as'4.~ as'8 f' as' bes' \break 
-    c''4 bes'8 as' c'' es'' des'' c'' bes'2~ bes'8 f' g' as' bes'4 c'' bes'8 as' g' as' \break 
+    c''4 bes'8 a' c'' es'' des'' c'' bes'2~ bes'8 f' g' as' bes'4 c'' bes'8 as' g' as' \break 
     f'2~ f'4 \mark #3 r4 e'8^\markup\italic"Coda" (f' g'4) g'8 (f' e' f')  as'8 g'4.~ g'2 e'8 (f' g'4) g'8 ( f' e' des') \break
     c'2~ c' e'8 ( f' g'4) bes'8 (as' g' f') e'8 f'4.~ f'2 f'8 (bes c' des' ) e' (f' des' e') c'2~ c'4 r4  \bar "|." 
      }
