@@ -12,7 +12,7 @@ global = {
 voice_intro = \fixed c' { 
   g8^"Intro" 
      a bes bes a a g | bes c' d' d' c' c' bes | c' d' es' es' d' c' es' | d'2. r8 
-  g8 a bes bes a a g | bes c' d' d' c' c' bes | a bes c' c' bes a bes | g'2. r8 \break
+  g8 a bes bes a a g | bes c' d' d' c' c' bes | a bes c' c' bes a bes | g2. r8 \break
 }
 
 voice_chords = \chordmode {
