@@ -3,6 +3,16 @@
 global = {
   \key g \minor
   \time 7/8
+  \set Timing.baseMoment = #(ly:make-moment 1/8)
+  \set Timing.beatStructure = 3,2,2
+
+}
+
+
+voice_intro = \fixed c' { 
+  g8^"Intro" 
+     a bes bes a a g | bes c' d' d' c' c' bes | c' d' es' es' d' c' es' | d'2. r8 
+  g8 a bes bes a a g | bes c' d' d' c' c' bes | a bes c' c' bes a bes | g'2. r8 \break
 }
 
 voice_chords = \chordmode {
@@ -24,7 +34,12 @@ voice_ref_a_one = \fixed c' {
   d'4 c'8 bes4 a g2..}
 }
 
-voice_ref_a_two = {
+voice_ref_a_two =  \fixed c' {
+  \repeat volta 2 { 
+  g4.^"Refrain A2" a4 bes | c'8 bes d' d' c' c' bes | 
+  \once  \slurDashed f4 8 g4 a bes8 a c' c' bes bes a \break
+  c'4 8 d'4 es'4 
+  d'4 bes8 g4 4 a8 bes a fis4 a | g2..}
 }
 
 voice_ref_b = \fixed c' { 

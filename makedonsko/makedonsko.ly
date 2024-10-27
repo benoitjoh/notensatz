@@ -19,6 +19,19 @@
 
 % -- container ---------------------------------------------
 \score {
+    <<
+  \new Staff
+    {
+     \new Voice = "lead" { 
+     \oneVoice {\global 
+                \voice_intro                
+     }
+    }}
+  >>   
+  \layout { }
+  \midi {  \tempo 4=140 }
+ } 
+\score {
   <<
   \new ChordNames {
     \voice_chords
@@ -28,19 +41,21 @@
       midiInstrument = "acoustic guitar (nylon)"
       instrumentName = "Vocal" }
     {
-           \new Voice = "lead" { 
+     \new Voice = "lead" { 
      \oneVoice {\global 
                 \voice_vocal 
                 \voice_ref_a_one \break
+                \voice_ref_a_two \break
+                
      }  % stanza with one single voice
      
          << 
-              \new Voice  = "refr_b_first" {
+              \new Voice  = "refr_first" {
                   \voiceOne \voice_ref_b }  % refrain, 2 voices
-              \new Voice = "refr_b_second" {
+              \new Voice = "refr_second" {
                   \voiceTwo \magnifyMusic #0.8 
                   \voice_ref_b_second}  % second voice smaller notes
-            >> 
+         >> 
     }
     }
    
