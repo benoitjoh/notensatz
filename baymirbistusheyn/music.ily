@@ -7,33 +7,37 @@ global = {
   \time 2/4
   \set Score.markFormatter = #format-mark-box-alphabet
 }
+
 voice_prelude = \fixed c' { 
-  \repeat volta 2 {r4^"Prelude" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
-  \repeat volta 2 {r4^\markup\italic "Phrase 2" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  a8. a16 \triole{a8 g fis} | g8. g16 \triole{g8 fis e} fis2 }
-  \repeat volta 2 {r4 \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
-  r4^\markup\italic "Phrase 3" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  
-     a8. a16 \triole{a8 g fis} | bes8. bes16 \triole{bes8 g fis} b2 
+  \repeat volta 2 {r4^\markup\italic"phrase 1" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
+  \repeat volta 2 {r4^\markup\italic "phrase 2" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  a8. a16 \triole{a8 g fis} | g8. g16 \triole{g8 fis e} fis2 }
+  r4 \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. 
+  r4^\markup\italic "phrase 3" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  
+     a8. a16 \triole{a8 g fis} | bes8. bes16 \triole{bes8 g fis} b2\fermata 
 } 
 
 chords_prelude = \chordmode { 
-    \repeat volta 2 {s2 e2:m b2:7}
+    \repeat volta 2 {s2 e2:m a4:m b4:7 }
     \repeat volta 2 {s2 e2:m a2:m e2:m b2:7 }
-    \repeat volta 2 {s2 e2:m b2:7}
+    s2 e2:m a4:m b4:7
     s2 e2:m a2:m bes2 b2:7 
 }
 
-dididadi = {r8_"didi    da di"^"Bridge" r4. r8_"didi     da di" r4. r8_"didi     da da da daaa" r2}
+
+dididadi = \fixed c' {b16_"di di      da  di"^"Bridge" b | 
+                      a8 b r8 b16_"di di      da  di" b  | 
+                      a8 b r8 b16_"di di      da  da    di  da" b a8 fis dis16 b,8.}
 
 voice_vocal= {
    \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
    \tupletUp
-   s4.^"Intro" b16 b16 g'8 8 8  fis'16 e' 
-   b'8 fis' r16 b16 e' fis' g'8 8 8 fis'16 e'  \break
-   b'8 fis' r16 b e' fis' g'8 8 8 fis'16 e' 
+   s4. b16 b16 g'8 8 8  fis'16 e' 
+   a'8 fis' r16 b16 e' fis' g'8 8 8 fis'16 e'  \break
+   a'8 fis' r16 b e' fis' g'8 8 8 fis'16 e' 
    a'8 16 16 8 g'16 fis' b'8 8 ais' \triole{g'16 ais' g'} \break
    fis'4 r16 b16 e'fis' g'8 8 8 fis'16 e' 
-   b'8 fis' r16 b16 e'fis' g'8 8 8 fis'16 e' \break
-   b'8 fis' r16 b16 e'fis' \triole{g'8 g' g'} \triole{g'8 8 fis'16 e'}
+   a'8 fis' r16 b16 e'fis' g'8 8 8 fis'16 e' \break
+   a'8 fis' r16 b16 e'fis' \triole{g'8 g' g'} \triole{g'8 8 fis'16 e'}
    \triole{c''8 8 8} \triole{c''8 8 b'16 a'} \break
    g'8 e' fis' b e'2 a'8 8 a'16 g' fis' e' fis'2
    c''8 8 16 b' a' g' b'4. 

@@ -7,7 +7,7 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #3 % spacer between systems
+  system-system-spacing.padding = #5 % spacer between systems
   #(set-paper-size "a4")
 }
 
@@ -16,10 +16,10 @@
 \include "music.ily"
 \include "lyrics.ily"
 
-
-
 \score {
+   \header { piece =  "Prelude" }
 <<
+
   \new ChordNames \with { 
     \override ChordName.font-size = #-0
     }
@@ -36,7 +36,11 @@
 \midi { \tempo 4=60 }
 
 }
+
+
 \score {
+  \header { piece =  "Intro" }
+
 <<
   \new ChordNames \with { 
     \override ChordName.font-size = #-0
@@ -46,7 +50,6 @@
   \new Staff \with { instrumentName = "Vocal" } 
     { 
     \clef "treble" 
-    \tempo "Moderate"
     \global
     \voice_vocal
     }
