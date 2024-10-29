@@ -15,7 +15,7 @@ stanza_one = \lyricmode
   \triole{ vild8 vi in } -- di16. -- aner16.   "Bist "32  a32  
   \triole{ fi8 -- li -- ga } -- lits16. -- ya16. -- "ner "32  Sog32 
   ikh8 dos art mikh nit.2 Sog8 mir vi16 er -- klers du dos?2 
-  Vil8 dir so16 -- gn bald far -- vos.4. Bay8 
+  Vil8 dir so16 -- gn bald far -- vos.4. ""2*4 Bay8 
   \repeat volta 2 {
   mir4 bis8 -- tu sheyn4.  Bay8 mir4 hos8 -- tu kheyn4. bist8 
   ey -- ne4 bay8 mir4 oyf8 der velt2 4 8 Bay mir4 bis8 -- tu 

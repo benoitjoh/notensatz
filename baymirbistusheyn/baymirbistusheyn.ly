@@ -2,18 +2,40 @@
 
 \include "header.ily"
 \include "../_common/footers.ily"
+\include "../_common/makros.ily"
+
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #1 % spacer between systems
+  system-system-spacing.padding = #3 % spacer between systems
   #(set-paper-size "a4")
 }
 
-\markup \vspace #0 % space between header and score
+\markup \vspace #2 % space between header and score
 
 \include "music.ily"
 \include "lyrics.ily"
 
+
+
+\score {
+<<
+  \new ChordNames \with { 
+    \override ChordName.font-size = #-0
+    }
+  \chords_prelude
+  
+  \new Staff 
+    { 
+    \clef "treble" 
+    \global
+    \voice_prelude
+    }
+>>      
+ \layout { }
+\midi { \tempo 4=60 }
+
+}
 \score {
 <<
   \new ChordNames \with { 

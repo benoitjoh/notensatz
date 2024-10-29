@@ -6,12 +6,16 @@
   \unfoldRepeats { 
     <<
       \new ChordNames 
+      {
+        \chords_prelude
         \voice_chords
+      }
     
       \new Staff \with { midiInstrument = "acoustic guitar (nylon)" } 
         {
           \global
           \clef "treble" 
+          \voice_prelude
           \voice_vocal
         }
     >>

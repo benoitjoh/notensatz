@@ -7,11 +7,27 @@ global = {
   \time 2/4
   \set Score.markFormatter = #format-mark-box-alphabet
 }
+voice_prelude = \fixed c' { 
+  \repeat volta 2 {r4^"Prelude" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
+  \repeat volta 2 {r4^\markup\italic "Phrase 2" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  a8. a16 \triole{a8 g fis} | g8. g16 \triole{g8 fis e} fis2 }
+  \repeat volta 2 {r4 \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
+  r4^\markup\italic "Phrase 3" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  
+     a8. a16 \triole{a8 g fis} | bes8. bes16 \triole{bes8 g fis} b2 
+} 
+
+chords_prelude = \chordmode { 
+    \repeat volta 2 {s2 e2:m b2:7}
+    \repeat volta 2 {s2 e2:m a2:m e2:m b2:7 }
+    \repeat volta 2 {s2 e2:m b2:7}
+    s2 e2:m a2:m bes2 b2:7 
+}
+
+dididadi = {r8_"didi    da di"^"Bridge" r4. r8_"didi     da di" r4. r8_"didi     da da da daaa" r2}
 
 voice_vocal= {
    \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
    \tupletUp
-   s4.^"Stanza" b16 b16 g'8 8 8  fis'16 e' 
+   s4.^"Intro" b16 b16 g'8 8 8  fis'16 e' 
    b'8 fis' r16 b16 e' fis' g'8 8 8 fis'16 e'  \break
    b'8 fis' r16 b e' fis' g'8 8 8 fis'16 e' 
    a'8 16 16 8 g'16 fis' b'8 8 ais' \triole{g'16 ais' g'} \break
@@ -20,10 +36,13 @@ voice_vocal= {
    b'8 fis' r16 b16 e'fis' \triole{g'8 g' g'} \triole{g'8 8 fis'16 e'}
    \triole{c''8 8 8} \triole{c''8 8 b'16 a'} \break
    g'8 e' fis' b e'2 a'8 8 a'16 g' fis' e' fis'2
-   c''8 8 16 b' a' g' b'4. b8 \break
+   c''8 8 16 b' a' g' b'4. 
+   \dididadi
+   
+   r4. b8 \break
    \repeat volta 2 {
      \mark \box_a
-     g'4^"Refrain" fis'8 e' g'4.  b8 g'4 fis'8 e' g'4. 8 
+     g'4^"Stanza" fis'8 e' g'4.  b8 g'4 fis'8 e' g'4. 8 
      fis' dis'4 b8 fis'4 g'8 fis' e'4 r4r r8  b^\box_a g'4 fis'8 e' \break
      g'4. b8 g'4 fis'8 e' g'4. 8 fis' dis'4 b8 
      fis'4 g'8 fis'e'2~ 8 8 fis'^\box_b g' a' r e' a'~ \break
@@ -41,6 +60,7 @@ voice_vocal= {
 voice_chords = \chordmode { 
     s2 e:m a4:m b:7 e2:m a4:m b:7 e2:m a:m e:m b:7
     e2:m a4:m b:7 e2:m a4:m b:7 e2:m a:m e4:m b:7 e2:m a:m b:7 a:m b:7 
+    s2*4
     \repeat volta 2 {
        e2:m s e:m s b:7 s e:m s e:m s e:m s b:7 s e:m s a:m s e:m s a:m s b:7 s e:m s e:m s b:7 s
     }
