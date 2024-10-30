@@ -58,13 +58,13 @@ all_chords = {
 }
 
 stanza_one = \lyricmode {
-    \set stanza = "1.:" Ja8 u -- me -- ju ma8 -- la8 tit4 
+    \set stanza = "1. " Ja8 u -- me -- ju ma8 -- la8 tit4 
     u8 -- mje nu vy ma8  -- la8  tschni8 -- vat8 \break
       
     u -- me -- ju sha -- ri -- ki krutit',4
     kar8 -- man -- i vi -- vo -- rat -- ji -- vat'4
     
-    \set stanza = "Refr.:" 
+    \set stanza = "Refr. " 
     Aj4 li8 -- món4 -- chi8 -- ki,8 
     vi8. ma16 -- i8 li -- mon4 -- chi8 -- ki 
     ""8 Gdje4 ras8 -- döt4 -- je4  vi8. ai16  mön8 sa -- du2
@@ -74,7 +74,7 @@ stanza_one = \lyricmode {
 } 
 
 stanza_two = \lyricmode {   
-    \set stanza = "2.:"
+    \set stanza = "2. "
     Na8 kos -- tets -- koi ben -- ja zjil,4
     ben8 -- ja maij sva -- yu lju -- bil4
     jes8 -- li jest' u be -- ni matj4
@@ -83,7 +83,7 @@ stanza_two = \lyricmode {
     } 
     
 stanza_three = \lyricmode {   
-    \set stanza = "3.:"
+    \set stanza = "3. "
     ja u tjo -- ti no -- che -- val,4 
     u8 tjo -- ti bi -- li go -- sti4
     ja8 u tjo -- ti pa -- pra -- sil,4 
@@ -115,7 +115,9 @@ stanza_three = \lyricmode {
        }
     }
    
-  \new Lyrics 
+  \new Lyrics \with {    
+      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
+      }
     \stanza_one
   \new Lyrics 
     \stanza_two

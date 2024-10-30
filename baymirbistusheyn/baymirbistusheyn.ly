@@ -9,7 +9,9 @@
 \paper {
   system-system-spacing.padding = #5 % spacer between systems
   #(set-paper-size "a4")
+  last-bottom-spacing.basic-distance = #12
 }
+% finetuning
 
 \markup \vspace #2 % space between header and score
 
@@ -39,7 +41,7 @@
 
 
 \score {
-  \header { piece =  "Intro" }
+  \header { piece =  "Intro / Stanza" }
 
 <<
   \new ChordNames \with { 

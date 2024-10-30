@@ -7,6 +7,7 @@
 \paper {
   %system-system-spacing.padding = #1.2
   ragged-last-bottom = ##f
+   last-bottom-spacing.basic-distance = #8
 }
 
 \include "music.ily"

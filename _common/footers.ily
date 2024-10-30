@@ -40,6 +40,9 @@ footer_common_with_pagenum = \paper {
                        (padding . 1)
                        (stretchability . 40))
 
+% spacing at the bottom of the page
+   bottom-margin = #8
+   last-bottom-spacing.basic-distance = #10
 
    % footer / head line
    print-page-number = ##t %suppress the regular page number

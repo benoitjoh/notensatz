@@ -24,9 +24,9 @@ chords_prelude = \chordmode {
 }
 
 
-dididadi = \fixed c' {b16_"di di      da  di"^"Bridge" b | 
-                      a8 b r8 b16_"di di      da  di" b  | 
-                      a8 b r8 b16_"di di      da  da    di  da" b a8 fis dis16 b,8.}
+dididadi = \fixed c' {b16^"Bridge" b | 
+                      a8 b r8 b16 b  | 
+                      a8 b r8 b16 b a8 fis dis16 b,8.}
 
 voice_vocal= {
    \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
