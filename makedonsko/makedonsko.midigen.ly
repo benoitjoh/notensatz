@@ -13,26 +13,30 @@
  \unfoldRepeats { 
    <<
      \new ChordNames {
-        \voice_chords
-        \voice_chords_ref_b
+        \intro_chords
+        \stanza_chords
+        \ref_a_one_chords
+        \ref_a_two_chords
+        \ref_b_chords
       }
       \new Staff \with {
           midiInstrument = "acoustic guitar (nylon)"
           instrumentName = "Vocal" }
         {
          \global
-         \voice_vocal \break
-         \voice_ref_a_one \break
-         
-         \voice_ref_b
+         \intro \break
+         \stanza_voice \break
+         \ref_a_one_voice \break
+         \ref_a_two_voice \break     
+         \ref_b_voice \break
         }
      \new Staff \with {
           midiInstrument = "grand Piano"
           instrumentName = "Second" }
         {
          \global
-         s1 * 21
-         \voice_ref_b_second
+         s1 * 42
+         \ref_b_voice_second
         }
     >>
   }

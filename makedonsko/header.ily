@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-version_date = "07.2023"
+version_date = "11.2024"
 piecename_footerline = "Makedonsko"
 
 \header {

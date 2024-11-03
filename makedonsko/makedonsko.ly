@@ -7,7 +7,7 @@
 \footer_common_with_pagenum 
 
 
-\markup \vspace #2 % space between header and score
+\markup \vspace #0 % space between header and score
 
 % -- music and text ------------------------------------------------
 \include "music.ily"
@@ -20,11 +20,15 @@
 % -- container ---------------------------------------------
 \score {
     <<
-  \new Staff
+     \new ChordNames {
+       \intro_chords
+     }
+
+   \new Staff
     {
      \new Voice = "lead" { 
      \oneVoice {\global 
-                \voice_intro                
+                \intro                
      }
     }}
   >>   
@@ -34,8 +38,10 @@
 \score {
   <<
   \new ChordNames {
-    \voice_chords
-    \voice_chords_ref_b
+    \stanza_chords
+    \ref_a_one_chords
+    \ref_a_two_chords
+    \ref_b_chords
   }
   \new Staff \with {
       midiInstrument = "acoustic guitar (nylon)"
@@ -43,18 +49,18 @@
     {
      \new Voice = "lead" { 
      \oneVoice {\global 
-                \voice_vocal 
-                \voice_ref_a_one \break
-                \voice_ref_a_two \break
+                \stanza_voice
+                \ref_a_one_voice \break
+                \ref_a_two_voice \break
                 
      }  % stanza with one single voice
      
          << 
               \new Voice  = "refr_first" {
-                  \voiceOne \voice_ref_b }  % refrain, 2 voices
+                  \voiceOne \ref_b_voice }  % refrain, 2 voices
               \new Voice = "refr_second" {
                   \voiceTwo \magnifyMusic #0.8 
-                  \voice_ref_b_second}  % second voice smaller notes
+                  \ref_b_voice_second}  % second voice smaller notes
          >> 
     }
     }
