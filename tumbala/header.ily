@@ -2,7 +2,7 @@
 
 piecename_footerline = "Tumbalalaika"
 
-version_date = "10.20222"
+version_date = "11.2024"
 
 \header {
   title = \markup \caps  {"Tumbalalaika"}

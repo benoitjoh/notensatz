@@ -23,19 +23,22 @@ piecename_footerline = "Makedonsko Refrain b"
 \score {
   <<
   \new ChordNames {
-    \voice_chords_ref_b
+    \ref_b_chords
   }
   \new Staff \with {
       midiInstrument = "acoustic guitar (nylon)"
-      instrumentName = "Clarinet" }
+      instrumentName = "Accordeon" }
     {
-       \global \voice_ref_b  % refrain, 2 voices
+       \global \ref_b_voice  % refrain, 2 voices
     }
   \new Staff \with {
-      midiInstrument = "acoustic guitar (nylon)"
-      instrumentName = "Viola" }
+      midiInstrument = "Grand Piano"
+      instrumentName = "Violin" 
+            midiMinimumVolume = #1.5
+          midiMaximumVolume = #1.5
+}
     {
-       \transpose	g g' {\voice_ref_b_second}  % refrain, 2 voices
+       \transpose	g g' {\ref_b_voice_second}  % refrain, 2 voices
     }
     
    

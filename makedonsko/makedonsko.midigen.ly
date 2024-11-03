@@ -31,8 +31,11 @@
          \ref_b_voice \break
         }
      \new Staff \with {
-          midiInstrument = "grand Piano"
-          instrumentName = "Second" }
+          midiInstrument = "Grand Piano"
+          instrumentName = "Second" 
+          midiMinimumVolume = #1.5
+          midiMaximumVolume = #1.5
+     }
         {
          \global
          s1 * 42

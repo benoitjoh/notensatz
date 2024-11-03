@@ -15,7 +15,10 @@
 
 \include "lyrics.ily"
 
-% %\paper { annotate-spacing = ##t }
+\paper {% annotate-spacing = ##t 
+   system-system-spacing = #'((basic-distance . 15)
+)
+}
 
 % -- container ---------------------------------------------
 \score {
