@@ -4,6 +4,7 @@
 piecename_footerline = "Lemonchiki"
 version_date = "10.2022"
 \include "../_common/footers.ily"
+\include "../_common/makros.ily"
 \footer_common_with_pagenum 
 
 \paper {
@@ -29,12 +30,12 @@ global = {
 d_m = { d,8 <a, d f >8}
 
 voice_vocal_stanza =  \fixed c' { 
-  c e g c' b16 c'8. g4 bes8 as g f e16 f8. g4
+  c^"Stanza" e g c' b16 c'8. g4 bes8 as g f e16 f8. g4
   c8 e g c' b16 c'8. g4 bes8 as g f e2 
 }
 
 voice_refrain =  \fixed c' { 
-  r8 c'4 b8 c'4 as8 f as8. g16 as8 bes8 c'4 as8 f \break
+  r8^"Refr" c'4 b8 c'4 as8 f as8. g16 as8 bes8 c'4 as8 f \break
   r8 bes4 as8 g4 f e8. f16 e8 des c2 \break
   r8 c'4 b8 c'4 as8 f as8. g16 as8 bes8 c'4 as8 f 
   r8 bes4 as8 g4 f8 f  e8. f16 e8 des c8 c c4 \bar "|."
@@ -57,7 +58,10 @@ all_chords = {
   \chords_refrain \chords_refrain 
 }
 
+stanza_spacer = \lyricmode { ""1*4 }
+
 stanza_one = \lyricmode {
+    \stanza_spacer 
     \set stanza = "1. " Ja8 u -- me -- ju ma8 -- la8 tit4 
     u8 -- mje nu vy ma8  -- la8  tschni8 -- vat8 \break
       
@@ -74,6 +78,7 @@ stanza_one = \lyricmode {
 } 
 
 stanza_two = \lyricmode {   
+    \stanza_spacer 
     \set stanza = "2. "
     Na8 kos -- tets -- koi ben -- ja zjil,4
     ben8 -- ja maij sva -- yu lju -- bil4
@@ -83,6 +88,7 @@ stanza_two = \lyricmode {
     } 
     
 stanza_three = \lyricmode {   
+    \stanza_spacer 
     \set stanza = "3. "
     ja u tjo -- ti no -- che -- val,4 
     u8 tjo -- ti bi -- li go -- sti4
@@ -91,19 +97,25 @@ stanza_three = \lyricmode {
       
     } 
 
+intro = \fixed c' { 
+  c2^"Intro" e8 f g16 f e f g f e f g8 g g2 \triole{g8 as bes }  \triole{as8 g f} g g e4 ~e2 r2\break
+}
 
 % -- container ---------------------------------------------
 \score {
   <<
     
     \new ChordNames {
-      \all_chords
+      s1*4 \all_chords
     }
     
-  \new Staff 
+  \new Staff \with {
+    midiInstrument = "Acoustic Guitar (nylon)"
+    instrumentName = "Vocal" }
     {
     \new Voice = "lead" { 
            \oneVoice {\global 
+                      \intro
                       \voice_vocal_stanza }  % stanza with one single voice
             << 
               \new Voice  = "refr_one" {
@@ -118,7 +130,7 @@ stanza_three = \lyricmode {
   \new Lyrics \with {    
       \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1  %spacer before textlines
       }
-    \stanza_one
+     \stanza_one
   \new Lyrics 
     \stanza_two
   \new Lyrics 

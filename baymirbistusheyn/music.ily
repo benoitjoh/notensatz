@@ -20,13 +20,13 @@ chords_prelude = \chordmode {
     \repeat volta 2 {s2 e2:m a4:m b4:7 }
     \repeat volta 2 {s2 e2:m a2:m e2:m b2:7 }
     s2 e2:m a4:m b4:7
-    s2 e2:m a2:m bes2 b2:7 
+    s2 e2:m a2:m fis2 b2:7 
 }
 
 
-dididadi = \fixed c' {b16^"Bridge" b | 
+dididadi = \fixed c' \magnifyMusic #0.7 {b16^\markup \fontsize #+3 "Bridge" b | 
                       a8 b r8 b16 b  | 
-                      a8 b r8 b16 b a8 fis dis16 b,8.}
+                      a8 b r8 b16 b | a8 fis dis16 b,8.}
 
 voice_vocal= {
    \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
