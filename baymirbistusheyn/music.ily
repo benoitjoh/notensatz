@@ -11,7 +11,7 @@ global = {
 voice_prelude = \fixed c' { 
   \repeat volta 2 {r4^\markup\italic"phrase 1" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
   \repeat volta 2 {r4^\markup\italic "phrase 2" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  a8. a16 \triole{a8 g fis} | g8. g16 \triole{g8 fis e} fis2 }
-  r4 \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. 
+  \repeat volta 2 {r4 \triole{b,8 e fis} | g8. g16 \triole{g8 fis e} | a8 fis4. }
   r4^\markup\italic "phrase 3" \triole{b,8 e fis} | g8. g16 \triole{g8 fis e}|  
      a8. a16 \triole{a8 g fis} | bes8. bes16 \triole{bes8 g fis} b2\fermata 
 } 
