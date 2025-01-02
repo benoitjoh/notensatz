@@ -1,6 +1,6 @@
 \version "2.20.0"
 piecename_footerline = "Hörst Du Mein Rufen"
-version_date = "12.2024"
+version_date = "01.2025"
 
 
 \include "../_common/footers.ily"
@@ -18,10 +18,11 @@ version_date = "12.2024"
 
 \header {
   title = \markup \caps  {"Hörst Du Mein Heimliches Rufen"}
-  composer = "Herbert Ernst Groh"
+  composer = "Gerald Plato (Musik), Erich Stöcklein (Text), 1940"
+  
 }
 
-\markup \vspace #2 % space between header and score
+\markup \vspace #4 % space between header and score
 
 global = {
   \key c \major
@@ -41,6 +42,22 @@ voice_vocal = \fixed c' {
   a4 (c' a) | f f a | g2. ~2. |\break
   a4 (~8 g f e) d2 a4 g4 (~8 f e d) c2.
   g4 (c'2) b4 (d'2) c'2.~2.
+
+  \bar "|."
+}
+
+voice_second = \fixed c' {
+  \clef "treble"
+  e4 ( g c') | f4 r2 | e4 g2 ~2. |
+  f2.  | f4 f a | e2. ~2. |
+  f4 (~8 e d c) b,2 f4 e4 (~8 d c b,) c2 e4 
+  d (g c') d d c b,2. r2 r4 \break
+  
+  e4 ( g c') | f2. | e4 g2 ~2. |
+  f2.  | f4 f a | e2. ~2. |\break
+
+  f4 (~8 e d c) b,2 f4 e4 (~8 d c b,) c2.  
+  e2. f2. e2.~2.
 
   \bar "|."
 }
@@ -71,18 +88,19 @@ schla4 -- fe,2 schla4 -- fe2 ein.2. ""2.
 \score {
 <<
   \new ChordNames
-    \voice_chords
+     \transpose c g, 
+     \voice_chords
     
   \new Staff \with {
     midiInstrument = "Acoustic Guitar (nylon)"
-    instrumentName = "" } 
+    instrumentName = "Vokal" } 
     { 
      \global
+     \transpose c g, 
      \voice_vocal 
 
     }
     
-
   \new Lyrics { \stanza_one }
 
 >>
@@ -92,3 +110,29 @@ schla4 -- fe,2 schla4 -- fe2 ein.2. ""2.
 } 
 
 
+\markup \vspace #2 % space between header and score
+
+\score {
+
+\header { piece =  "Zweite Stimme"}
+  
+<<
+  \new ChordNames
+     \transpose c g, 
+     \voice_chords
+    
+  \new Staff \with {
+    midiInstrument = "Acoustic Guitar (nylon)"
+    instrumentName = "Violine" } 
+    { 
+     \global
+     \transpose c g 
+     \voice_second 
+
+    }
+
+>>
+
+\layout { }
+\midi { \tempo 4=120 }
+} 
