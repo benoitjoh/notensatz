@@ -25,7 +25,7 @@ version_date = "01.2025"
 \markup \vspace #4 % space between header and score
 
 global = {
-  \key c \major
+  \key g \major
   \time 3/4
 }
 
