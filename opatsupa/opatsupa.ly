@@ -89,9 +89,9 @@ voice_vocal_a = \fixed c'' {
   \new Staff \with {instrumentName = "Violin" }
     {
      \global
-     \key f \minor
+     \key d \minor
 
-     \voice_vocal_a
+     \transpose es c \voice_vocal_a
     }
     
 
