@@ -43,14 +43,14 @@
     
     \new ChordNames {
       \override ChordName.font-size = #-2
-      \transpose es bes
+      \transpose es d
       \voice_chords
     }
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } }
     {
      \global
-     \key c \minor
-     \transpose es bes
+     \key e \minor
+     \transpose es d
      \voice_clarinet
     }
     
@@ -74,5 +74,5 @@
 
   >>
   \layout { }
-  \midi { \tempo 4=95 }
+  %\midi { \tempo 4=95 }
 }
