@@ -11,30 +11,47 @@
 % -- music  ------------------------------------------------
 
 \include "music.ily"
+\include "music_violin.ily"
+\include "music_clarinet.ily"
+\include "music_vocal.ily"
 
 
 % -- container ---------------------------------------------
 \score {
-
-\unfoldRepeats 
-  <<
-    
+\unfoldRepeats  
+<<
     \new ChordNames {
-      \voice_chords_a
-      \voice_chords_b
-      \voice_chords_c
-      \voice_chords_d
+      \override ChordName.font-size = #1
+      \transpose es c
+      \voice_chords
     }
     
   \new Staff \with {instrumentName = "Violin" }
     {
      \global
-     \voice_vocal_a
-     \voice_vocal_b
-     \voice_vocal_c
-     \voice_vocal_d
-     
+     \key d \minor
+
+     \transpose es c
+     \voice_violin
     }
+    
+  \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } }
+    {
+     \global
+     \key c \minor
+     \transpose es c
+     \voice_clarinet
+    }
+    
+  \new Staff \with {instrumentName = "Vocal" }
+    {
+     \global
+     \key d \minor
+
+     \transpose es c
+     \voice_vocal
+    }
+    
   >>
   \layout { }
   \midi { \tempo 4=95 }

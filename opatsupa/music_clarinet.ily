@@ -34,5 +34,7 @@ voice_clarinet = \fixed c' {
   c2 ~2 c4 4 f2 ~4 e d des b,2 c
 
   %line 6
-  r2 r2 r2 r2 r2 r2 r2 r2
+  \repeat volta 2 {
+    r2 r2 r2 r2 r2 r2 r2 r2
+  }
 }

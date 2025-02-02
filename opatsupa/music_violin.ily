@@ -40,12 +40,15 @@ voice_violin = \fixed c'' {
   g2 (2) \break
    
   %line 5
+  \mark #3 
   r2 r2 r2 r2
   r8 <f,c> r8 <f,c> |
   r8 <f,c> r8 <f,c> |
   r8 <g,d> r8 <g,d> |
   r8 <e,c> r8 <e,bes,> | \break
   
+  \mark #4
+  \repeat volta 2{ 
   r8 <f,c> r8 <f,c> |
   r8 <f,c> r8 <f,c> |
   r8 <g,d> r8 <g,d> |
@@ -55,5 +58,5 @@ voice_violin = \fixed c'' {
   r8 <f,c> r8 <f,c> |
   r8 <g,d> r8 <g,d> |
   r8 <e,c> r8 <e,c> | 
-
+  }
 }
