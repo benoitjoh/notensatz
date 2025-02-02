@@ -12,12 +12,5 @@ global = {
 
 straigt = \markup {\musicglyph "scripts.caesura.straight"} 
 
-voice_vocal_a = \fixed c' { 
-  \mark #1 r8 d8 fis g 
-
-}
-
-voice_chords_a = \chordmode {
-  }
 
 
