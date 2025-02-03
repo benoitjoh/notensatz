@@ -27,7 +27,7 @@ voice_violin_a = \fixed c'' {
 voice_violin_b = \fixed c'' { 
   %line 3
   \mark #2 
-  c'2_"Accordeon: tacet" |
+  c'2 |
   as8. f16 b4|
   c'4 ~8. b16 |
   as8. g16 as4 |\break
