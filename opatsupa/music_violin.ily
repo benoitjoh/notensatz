@@ -1,6 +1,6 @@
 \version "2.20.0"
 
-voice_violin = \fixed c'' { 
+voice_violin_a = \fixed c'' { 
   \mark #1 
   %line1
   as16 16 8 f8 as16 16 |
@@ -22,10 +22,12 @@ voice_violin = \fixed c'' {
   as16 f g as b4  | 
   f16 g as b  f16 g as b |
   as8 g g4 \break
- 
+}
+
+voice_violin_b = \fixed c'' { 
   %line 3
   \mark #2 
-  c'2 |
+  c'2_"Accordeon: tacet" |
   as8. f16 b4|
   c'4 ~8. b16 |
   as8. g16 as4 |\break
