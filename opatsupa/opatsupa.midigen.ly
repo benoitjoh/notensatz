@@ -14,6 +14,7 @@
 \include "music_violin.ily"
 \include "music_clarinet.ily"
 \include "music_vocal.ily"
+\include "music_accordion.ily"
 
 
 % -- container ---------------------------------------------
@@ -22,35 +23,61 @@
 <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \transpose es c
       \voice_chords
     }
     
-  \new Staff \with {instrumentName = "Violin" }
+  \new Staff \with {instrumentName = "Violin" 
+                    shortInstrumentName="Viol "
+                    midiInstrument = "violin"}
     {
+      \set Staff.midiMaximumVolume = #0.8
      \global
-     \key d \minor
+     \key f \minor
 
-     \transpose es c
-     \voice_violin
+    \voice_violin_a
+    \voice_violin_b
     }
     
-  \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } }
+  \new Staff \with {instrumentName = "Accordion"  
+                    shortInstrumentName="Acc "
+                    midiInstrument = "accordion"}
     {
      \global
-     \key c \minor
-     \transpose es c
+     \key f \minor
+     \voice_accordeon
+    }
+    
+  \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
+                    shortInstrumentName="Cla "
+                    midiInstrument = "clarinet"}
+    {
+     \set Staff.midiMaximumVolume = #0.2
+     \global
+     \key f \minor
      \voice_clarinet
     }
     
-  \new Staff \with {instrumentName = "Vocal" }
+    
+  \new Staff \with {instrumentName = "Vocal"   
+                    shortInstrumentName="Voc "}
     {
      \global
-     \key d \minor
-
-     \transpose es c
+     \key f \minor
      \voice_vocal
     }
+    
+   
+  \new Staff \with {instrumentName = "Basso"   
+                    shortInstrumentName="B"
+                    midiInstrument = "contrabass"}
+    {     
+     \set Staff.midiMaximumVolume = #0.6
+     \global
+     \clef bass
+     \key f \minor
+     \voice_basso
+    }
+
     
   >>
   \layout { }
