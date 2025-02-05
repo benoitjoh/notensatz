@@ -97,7 +97,7 @@
      \set Staff.midiMaximumVolume = #0.6
      \global
      \clef bass
-     \key f \minor
+     \key d \minor
      \voice_basso
     }
   
