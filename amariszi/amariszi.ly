@@ -56,8 +56,9 @@ voice_chords_a = \chordmode {
 }
 
 stanza_one = \lyricmode {
+  \align_syllables_left	
   ""2 A8 -- ma -- ri szi, a -- ma -- ri,4 a8 -- ma -- ri ci -- ni bó -- ri4
-Aj,4 la  -- la -- la -- la -- la la la la laj.
+Aj,4 la-la-la4  -- la8  -- la la la la laj.4. s2 
   
 }
 % -- container ---------------------------------------------
