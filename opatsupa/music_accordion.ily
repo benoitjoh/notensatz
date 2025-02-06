@@ -2,12 +2,15 @@
 
 voice_accordeon = \fixed c' { 
   \transpose c' c \voice_violin_a
-  r2 r2 r2 r2 r2 r2 r2 r2 
-  r2 r2 r2 r2 r2 r2 r2 r2
+  \mark #2
+  r2 r2 r2 r2 r2 r2 r2 r2 \break
+  r2 r2 r2 r2 r2 r2 r2 r2 \break
   %33
-  g2 bes4 as8 g f4 as c'8 as g f f f' es'8 8 d' c' ~4 r2 r2
-  r8 <f as c'>4. ~<f as c'>2 r8 <g bes d'>4. r8 <g bes>8 <f as> <e g>
-  r8 <f as c'>4. ~<f as c'>2 r8 <g bes d'>4. r8 <e g>8 <f as> <g bes> 
+  \mark #3
+  e2 g4 f8 e d4 f a8 f e d d d' c'8 8 b a ~4 r2 r2 \break
+  \mark #4
+  r8 <d f a>4. ~<d f a>2 r8 <e gis b>4. r8 <e g>8 <d f> <cis e>
+  r8 <d f a>4. ~<d f a>2 r8 <e gis b>4. r8 <cis e>8 <d f> <e g> 
 
 
 }

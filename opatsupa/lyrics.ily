@@ -8,6 +8,22 @@
  Sa8 -- mo jekh chaj ni man -- gel, voj4 man8 -- da nas -- hel.2
  }
  
+  stanza_two = \lyricmode { 
+ "" 2*16 
+ Sa8 o cha -- ja ke -- le -- nav,4 a8 Ruiz -- ha -- va ro -- me -- la*,4
+ ""8  da8 -- le4 man8 -- da -- le,4 an8 bo -- bo ki as -- ta -- rel.4
+  Sa8 o cha -- ja ke -- le -- nav,4 a8 Ruiz -- ha -- va ro -- me -- la,4
+ da8 -- le man8 -- da -- le,4 an8 bo -- bo ki as -- ta -- rel.4
+  }
+ 
+   stanza_three = \lyricmode { 
+ "" 2*16 
+ Es8 i   r -- ja -- cha     kha chem,4 voj8    ni   man -- dzhel8    te she -- lel,4
+ ""8  da8 -- le4 man8 -- da -- le,4 mu8 -- da -- rel a o de -- vel.4
+ Av8 a Ruz -- ha a -- va khel4 pa8 i ti -- ro mek a -- vel,4
+ da8 -- le man -- dal -- e e svi -- rach -- a bash -- al -- esh.
+ }
+ 
  opa = \lyricmode {
   O2 ""8 opa tsu -- pa ""8 so16 te man8 -- da cha -- je mu8 -- ka,8
   Ti daj4. ka8 -- me -- rel4. ak8 -- o ni che -- le,4.

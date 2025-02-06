@@ -30,7 +30,6 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \transpose es c
       \voice_chords
     }
     
@@ -39,7 +38,6 @@
     {
      \global
      \key d \minor
-     \transpose es c
      \voice_violin_a
      \voice_violin_b
      
@@ -50,13 +48,12 @@
     {
      \global
      \key d \minor
-     \transpose es c
      \voice_accordeon
     }
 
   \new ChordNames {
       \override ChordName.font-size = #-2
-      \transpose es d
+      \transpose bes c
       \voice_chords
     }
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  
@@ -64,7 +61,7 @@
     {
      \global
      \key e \minor
-     \transpose es d
+     \transpose bes c'
      \voice_clarinet
     }
     
@@ -73,9 +70,7 @@
     {
      \global
      \key d \minor
-
-     \transpose es c
-     \voice_vocal
+    \voice_vocal
     }
     
   \new Lyrics {
@@ -86,8 +81,7 @@
     }
   \new Lyrics {
       \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #1
-      \stanza_one
-
+      \stanza_two
     }
     
     \new Staff \with {instrumentName = "Basso"   
@@ -104,5 +98,5 @@
 
   >>
   \layout { }
-  %\midi { \tempo 4=95 }
+  \midi { \tempo 4=95 }
 }

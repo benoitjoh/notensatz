@@ -13,26 +13,26 @@ global = {
 straigt = \markup {\musicglyph "scripts.caesura.straight"} 
 
 voice_chords = \chordmode {
-  f2:m s2 g2:m s2 f2:m s2 g2:7 c2:7 
-  f2:m s2 g2:m s2 f2:m s2 g2:7 c2:7 
-  f2:m s2 f2:m s2 f2:m s2 g2:7 c2:7 
-  f2:m s2 f2:m s2 f2:m s2 g2:7 c2:7 
-  c2:7 s2 f2:m s2 f2:m s2 g2:7 c2:7 
-  f2:m s2 g2:7 c2:7 f2:m s2 g2:7 c2:7 
+  d2:m s2 e2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 e2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 d2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 d2:m s2 d2:m s2 e2:7 a2:7 
+  a2:7 s2 d2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 e2:7 a2:7 d2:m s2 e2:7 a2:7 
 }
 
 
 voice_basso = \fixed c { 
-  f4 c f c8 f g4 d g d f c f d g d e c
+  d4 a, d a,8 d e4 b, e b, d a, d b, e b, cis a,
   %9
-  f4 c f c8 f g4 d g d f c f d g d e c
+  d4 a, d a,8 d e4 b, e b, d a, d b, e b, cis a,
   %17
-  f4 c f c f c f c f c f c g d e c
+  d4 a, d a, d a, d a, d a, d a, e b, cis a,
   %25
-  f4 c f c f c f c f c f c g d e c
+  d4 a, d a, d a, d a, d a, d a, e b, cis a,
   %33
-  g c g c f c f c f c f c g d e c
+  e a, e a, d a, d a, d a, d a, e b, cis a,
   %41
-  f c f c g d e c f c f c g d e c
+  d a, d a, e b, cis a, d a, d a, e b, cis a,
   
 }

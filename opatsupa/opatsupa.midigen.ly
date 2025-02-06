@@ -32,7 +32,7 @@
     {
       \set Staff.midiMaximumVolume = #0.8
      \global
-     \key f \minor
+     \key d \minor
 
     \voice_violin_a
     \voice_violin_b
@@ -43,17 +43,17 @@
                     midiInstrument = "accordion"}
     {
      \global
-     \key f \minor
+     \key d \minor
      \voice_accordeon
     }
     
-  \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
+  \new Staff \with {instrumentName =  "Clarinet" 
                     shortInstrumentName="Cla "
                     midiInstrument = "clarinet"}
     {
      \set Staff.midiMaximumVolume = #0.2
      \global
-     \key f \minor
+     \key d \minor
      \voice_clarinet
     }
     
@@ -62,7 +62,7 @@
                     shortInstrumentName="Voc "}
     {
      \global
-     \key f \minor
+     \key d \minor
      \voice_vocal
     }
     
@@ -74,7 +74,7 @@
      \set Staff.midiMaximumVolume = #0.6
      \global
      \clef bass
-     \key f \minor
+     \key d \minor
      \voice_basso
     }
 

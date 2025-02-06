@@ -22,19 +22,25 @@ voice_clarinet = \fixed c' {
   f16 16 8 c8 f16 16 |
   f16 c e f g4   | 
   d16 e f g d e f g |
-  f8 e e4
+  f8 e e4 \break
   
   %line 3
-  f2 ~2 ~2 ~2 ~4 es d des b,2 c2
+  \mark #2
+
+  f2 ~2 ~2 ~2 ~4 es d des b,2 c2\break
  
   %line 4
-  f2 ~2 ~2 ~2 ~4 es d des b,2 c2
+  f2 ~2 ~2 ~2 ~4 es d des b,2 c2 \break
 
   %line 5
-  c2 ~2 c4 4 f2 ~4 e d des b,2 c
+    \mark #3
+
+  c2 ~2 c4 4 f2 ~4 e d des b,2 c \break
 
   %line 6
   \repeat volta 2 {
+      \mark #4
+
     r2 r2 r2 r2 r2 r2 r2 r2
   }
 }

@@ -3,62 +3,63 @@
 voice_violin_a = \fixed c'' { 
   \mark #1 
   %line1
-  as16 16 8 f8 as16 16 |
-  as16 f as f as4 |
-  bes16 16 8 g8 bes 16 16|
-  bes16 g bes g bes4 |
-  as16 16 8 f8 as16 16 |
-  as16 f g as b4  | 
-  f16 g as b  f16 g as b |
-  as8 g g4 \break
+  f16 16 8 d8 f16 16 |
+  f16 d f d f4 |
+  g16 16 8 e8 g 16 16|
+  g16 e g e g4 |\break
+  
+  f16 16 8 d8 f16 16 |
+  f16 d e f gis4  | 
+  d16 e f gis  d16 e f gis |
+  f8 e e4 \break
  
   %line 2
-  as16 16 8 f8 as16 16 |
-  as16 f as f as4 |
+  f16 16 8 d8 f16 16 |
+  f16 d f d f4 |
  
-  bes16 g bes g bes g bes g  |
-  bes16 g bes g bes4 |\break
-  as16 16 8 f8 as16 16 |
-  as16 f g as b4  | 
-  f16 g as b  f16 g as b |
-  as8 g g4 \break
+  g16 e g e g e g e  |
+  g16 e g e g4 |\break
+  f16 16 8 d8 f16 16 |
+  f16 d e f gis4  | 
+  d16 e f gis  d16 e f gis |
+  f8 e e4 \break
 }
 
 voice_violin_b = \fixed c'' { 
   %line 3
   \mark #2 
-  c'2 |
-  as8. f16 b4|
-  c'4 ~8. b16 |
-  as8. g16 as4 |\break
-  as4 e16 f g as |
-  b8 as g f |
-  g2 ~2  \break
+  a2 |
+  f8. d16 gis4|
+  a4 ~8. gis16 |
+  f8. e16 f4 |\break
+  f4 cis16 d e f |
+  gis8 f e d |
+  e2 ~2  \break
 
   %line 4
-  as2  ~8 b b as |
-  c' b b4 (b2) (b4) e16 f g as |
-  b8 as g f |
-  g2 (2) \break
+  f2  ~8 gis gis f |
+  a gis gis4 (gis2) (gis4) cis16 d e f |
+  gis8 f e d |
+  e2 (2) \break
    
   %line 5
   \mark #3 
   r2 r2 r2 r2
-  r8 <f,c> r8 <f,c> |
-  r8 <f,c> r8 <f,c> |
-  r8 <g,d> r8 <g,d> |
-  r8 <e,c> r8 <e,bes,> | \break
+  r8 <d,a,> r8 <d,a,> |
+  r8 <d,a,> r8 <d,a,> |
+  r8 <e,b,> r8 <e,b,> |
+  r8 <cis,a,> r8 <cis,g,> | \break
   
   \mark #4
-  \repeat volta 2{ 
-  r8 <f,c> r8 <f,c> |
-  r8 <f,c> r8 <f,c> |
-  r8 <g,d> r8 <g,d> |
-  r8 <e,c> r8 <e,bes,> | 
+  \repeat volta 2{     
+  r8 <d,a,> r8 <d,a,> |
+  r8 <d,a,> r8 <d,a,> |
+  r8 <e,b,> r8 <e,b,> |
+  r8 <cis,a,> r8 <cis,g,> | 
 
-  r8 <f,c> r8 <f,c> |
-  r8 <f,c> r8 <f,c> |
-  r8 <g,d> r8 <g,d> |
-  r8 <e,c> r8 <e,c> | 
+  r8 <d,a,> r8 <d,a,> |
+  r8 <d,a,> r8 <d,a,> |
+  r8 <e,b,> r8 <e,b,> |
+  r8 <cis,a,> r8 <cis,a,> | 
   }
 }

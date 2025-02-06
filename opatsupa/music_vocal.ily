@@ -1,29 +1,48 @@
 \version "2.20.0"
 
+voice_vocal_a = \fixed c' {
+  \mark #1 
+  r2 r2 r2 r2 r2 r2 r2 r2 
+  r2 r2 r2 r2 r2 r2 r2 r2 \break
+
+  }
+
+voice_vocal_b = \fixed c' {
+  \mark #2 
+  c'8 8 8 8 8b a4 a8 8 8 8 8 gis f4
+  r8 f8 8 8 g f f4 e8 d e e f e e 4
+  d 8 8 e f e4 d8 r8 
+  d 8 8 e f e4 d8 r8 
+  d'16 c'16 8 c' b b8 a a g ~g8 f16 16 e8 8 e4 r4\break
+}
+
+voice_vocal_c = \fixed c' {
+  \mark #3
+  <cis g>2 ~<cis g>8 <cis f> <cis e> d
+  r8 f16 16 8 8  g f e d 
+  d <f d'> <f c'> <f c'>
+  <e b> <f a> <f a>4 ~<f a>8 <d e> <d e> <d e> <d f> <cis e> ~<cis e>4 \break
+}
+
+voice_vocal_d = \fixed c' {
+  \mark #4
+  r8 <f a> <f a> <f a>  
+  <f a> <f a>16 <f a>16  <f a>8 r8
+  r8<e gis> <e gis>16 <e gis>16  <e gis>8 
+  <f a>4 <e a>8 r8 
+  r8 <f a> <f a> <f a>  
+  <e gis> <e gis d'>16 <e gis d'>16  <e gis d'>8 r8
+  r8<e gis> <e gis b>16 <e gis b>16  <e gis b>8 
+  <f a cis'>4 <e a cis'>8 r8
+  }
 
 voice_vocal = \fixed c' { 
   %line1
-  r2 r2 r2 r2 r2 r2 r2 r2 
-  r2 r2 r2 r2 r2 r2 r2 r2 
-  es'8 8 8 8 8d' c'4 c'8 8 8 8 8 b as4
-  r8 as8 8 8 bes as as4 g8 f g g as g g 4
-  f 8 8 g as g4 f8 r8 
-  f 8 8 g as g4 f8 r8 
-  f'16 es'16 8 es' d' d'8 c' c' bes ~bes8 as16 16 g8 8 g4 r4
-  <e bes>2 ~<e bes>8 <e as> <e g> f
-  r8 as16 16 8 8  bes as g f 
-  f <as f'> <as es'> <as es'>
-  <g d'> <as c'> <as c'>4 ~<as c'>8 <f g> <f g> <f g> <f as> <e g> ~<e g>4 
-  
+  \voice_vocal_a
+  \voice_vocal_b
+  \voice_vocal_c
   \repeat volta 2 {
-  r8 <as c'> <as c'> <as c'>  
-  <as c'> <as c'>16 <as c'>16  <as c'>8 r8
-  r8<g b> <g b>16 <g b>16  <g b>8 
-  <as c'>4 <g c'>8 r8 
-  r8 <as c'> <as c'> <as c'>  
-  <g b> <g b f'>16 <g b f'>16  <g b f'>8 r8
-  r8<g b> <g b d'>16 <g b d'>16  <g b d'>8 
-   <as c' e'>4 <g c' e'>8 r8
+    \voice_vocal_d
   }
  }
  
