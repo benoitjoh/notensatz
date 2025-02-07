@@ -2,7 +2,7 @@
 \version "2.20.0"
 
 \include "header.ily"
-\header { instrument = \markup \concat {"Clarinet in B" \flat }}
+\header { instrument = "Violin"}
 
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
@@ -35,7 +35,7 @@
     
 
     
-  \new Staff \with {instrumentName = "Violin}
+  \new Staff \with {instrumentName = "Violin"}
     {
      \global
      \key d \minor
@@ -46,5 +46,5 @@
 
   >>
   \layout { }
-  \midi { \tempo 4=95 }
+  %\midi { \tempo 4=95 }
 }

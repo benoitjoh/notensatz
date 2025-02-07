@@ -26,14 +26,16 @@ voice_vocal_c = \fixed c' {
 
 voice_vocal_d = \fixed c' {
   \mark #4
-  r8 <f a> <f a> <f a>  
-  <f a> <f a>16 <f a>16  <f a>8 r8
-  r8<e gis> <e gis>16 <e gis>16  <e gis>8 
-  <f a>4 <e a>8 r8 
-  r8 <f a> <f a> <f a>  
-  <e gis> <e gis d'>16 <e gis d'>16  <e gis d'>8 r8
-  r8<e gis> <e gis b>16 <e gis b>16  <e gis b>8 
-  <f a cis'>4 <e a cis'>8 r8
+  \repeat volta 2 {
+    r8 <f a> <f a> <f a>  
+    <f a> <f a>16 <f a>16  <f a>8 r8
+    r8<e gis> <e gis>16 <e gis>16  <e gis>8 
+    <f a>4 <e a>8 r8 
+    r8 <f a> <f a> <f a>  
+    <e gis> <e gis d'>16 <e gis d'>16  <e gis d'>8 r8
+    r8<e gis> <e gis b>16 <e gis b>16  <e gis b>8 
+    <f a cis'>4 <e a cis'>8 r8
+    }
   }
 
 voice_vocal = \fixed c' { 
@@ -41,8 +43,6 @@ voice_vocal = \fixed c' {
   \voice_vocal_a
   \voice_vocal_b
   \voice_vocal_c
-  \repeat volta 2 {
-    \voice_vocal_d
-  }
+  \voice_vocal_d
  }
  

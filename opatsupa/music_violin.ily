@@ -55,7 +55,7 @@ voice_violin_b = \fixed c'' {
   r8 <d,a,> r8 <d,a,> |
   r8 <d,a,> r8 <d,a,> |
   r8 <e,b,> r8 <e,b,> |
-  r8 <cis,a,> r8 <cis,g,> | 
+  r8 <cis,a,> r8 <cis,g,> |  \break
 
   r8 <d,a,> r8 <d,a,> |
   r8 <d,a,> r8 <d,a,> |

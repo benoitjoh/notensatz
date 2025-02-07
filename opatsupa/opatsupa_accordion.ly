@@ -44,5 +44,5 @@
 
   >>
   \layout { }
-  \midi { \tempo 4=95 }
+  %\midi { \tempo 4=95 }
 }
