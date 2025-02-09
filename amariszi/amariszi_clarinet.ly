@@ -9,7 +9,7 @@
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #5 % spacer between the staff group
+  system-system-spacing.padding = #2 % spacer between the staff group
   %last-bottom-spacing.basic-distance = #10
   top-margin = #8
   bottom-margin = #6
@@ -18,6 +18,7 @@
 % -- music  ------------------------------------------------
 \include "music.ily"
 
+\markup \vspace #2 % space between header and score
 
 
 
@@ -26,17 +27,11 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \voice_chords_a
-      \voice_chords_b
-      \voice_chords_c
-      \voice_chords_d
+      \transpose f bes, \voice_chords_a
     }
-    \new ChordNames \transpose d e{
+    \new ChordNames {
       \override ChordName.font-size = #-2
-      \voice_chords_a
-      \voice_chords_b
-      \voice_chords_c
-      \voice_chords_d
+     \transpose f c,  \voice_chords_a
     }
     
   \new Staff \with {
@@ -46,20 +41,9 @@
      \transpose d e {
        \global
        \voice_vocal_a
-       \voice_vocal_b
-       \voice_vocal_c
-       \voice_vocal_d 
       }
     }
-  %{  
-  \new Staff % empty
-    { \clef "vaticana-do2"
-     s1 *9
-     \repeat volta 2 { s1 *3 } \alternative { { s1 }{ s1}  }
-     \repeat volta 2 { s1 *7 } \alternative { { s1 }{ s1}  }
-     \repeat volta 2 { s1 *3 } \alternative { { s1 }{ s1}  }
-    }
-  %}
+
   >>
   \layout { }
   %\midi { \tempo 4=90 }

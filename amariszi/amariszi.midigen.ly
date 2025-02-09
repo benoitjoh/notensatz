@@ -21,9 +21,6 @@
     \new ChordNames {
       \override ChordName.font-size = #0
       \voice_chords_a
-      \voice_chords_b
-      \voice_chords_c
-      \voice_chords_d
     }
     
   \new Staff \with {instrumentName = "Violin"
@@ -31,9 +28,6 @@
     {
      \global
      \voice_vocal_a
-     \voice_vocal_b
-     \voice_vocal_c
-     \voice_vocal_d
     }
 
   
