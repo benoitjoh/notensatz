@@ -36,7 +36,6 @@ stanza_one = \lyricmode {
 } 
 
 bridge_one = \lyricmode { 
-  \set stanza = "br. "
   ""4 Per -- haps I hold your8 hand2 too8 tigh8 -- tly4. 
   ""4 but4 who4 am8 I2 to8 say2. 
   if4 I  should hold it ligh -- tly2 it4 might sur2. -- vive1
