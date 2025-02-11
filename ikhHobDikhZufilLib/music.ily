@@ -25,7 +25,7 @@ voice_vocal_stanza =  \fixed c' {
 
 voice_refrain =  \fixed c' {
   \mark #2
-  r4 c d es | f f8 f2 f8 | g8  f4. es4 f| as g8 g2 f8  | g2. g4  \break
+  r4^\markup \italic "bridge" c d es | f f8 f2 f8 | g8  f4. es4 f| as g8 g2 f8  | g2. g4  
   a4 a a a b a g a c'  b b bes b1 \break
 
 }

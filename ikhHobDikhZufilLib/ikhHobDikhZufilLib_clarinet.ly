@@ -23,7 +23,7 @@
 \score {
   <<
     \new ChordNames {
-      \override ChordName.font-size = #-1
+      \override ChordName.font-size = #1
       \chords_stanza
       \chords_refrain
     }

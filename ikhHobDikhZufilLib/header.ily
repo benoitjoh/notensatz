@@ -6,5 +6,5 @@
   copyright = ""
   arranger = ""
   }
-piecename_footerline = "ikh Hob Dikh.."
+piecename_footerline = "Ikh Hob Dikh.."
 version_date = "02.2025"
