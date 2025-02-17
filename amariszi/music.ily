@@ -20,10 +20,10 @@ voice_vocal_a = \fixed c'' {
   a, a, f,4g, \triole{g, 8 a, bes,} c8 a, e,8. cis,16 d,8 d,4. r2 f4 f \break
   g8 g f4 a16 a a4 f8 d d a,4 bes, \triole{a,8 bes, c} d8 d e d cis cis4. \break
   r4 e4 f4 g8 (f) d d bes,4 d8 d e d a, a, f,4 g, r16 a, bes, b, \break
-  c8 a, e,8. cis,16 d,8 4. r2 r2^"32T"_\markup \italic"Solo Violin" 
+  c8 a, e,8. cis,16 d,8 4. r2 r2^"32T"_\markup \italic"Solo Violin" \break
   \mark #2
   \set Score.currentBarNumber = #65
-  f8^"65" 8 8 8 g8 8 f4 a8 8 8 f d d a,4 \break 
+  f8 8 8 8 g8 8 f4 a8 8 8 f d d a,4 \break 
   bes, \triole{a,8 bes, c} 
   d8 d e d a, a,4.
   r4 f4 f8 f g f d d bes,4 d8 d e d \break
@@ -56,7 +56,7 @@ chords_b = \chordmode {
    
 chords_c = \chordmode {
    d:m s d:m s g:m s a:7 s d:m g:m c f g:m a:7 d:m s
-   d:m s2 d d:7 g:m s a:7 s
+   d:m s2 d:m d:m g:m s a:7 s
    d:m g:m c f g:m a:7 d:m
 }
 

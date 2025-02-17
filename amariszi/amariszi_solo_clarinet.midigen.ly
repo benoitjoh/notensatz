@@ -2,7 +2,7 @@
 \version "2.20.0"
 
 \include "header.ily"
-\header { instrument = "Sol0 #2 (Clarinet)" }
+\header { instrument = "Sol0 #2 MIDI ONLY" }
 
 \include "../_common/footers.ily"
 \footer_common_with_pagenum 
@@ -27,7 +27,7 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes, \transpose bes c\chords_a
+      \transpose f bes, \chords_a
     }
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
                     midiInstrument = "electric piano 1" }
@@ -35,11 +35,11 @@
      \global
      \key e \minor
 
-     \transpose bes, c 
+      
      \voice_solo_b
     }
     
   >>
   \layout { }
-  %\midi { \tempo 4=120 }
+  \midi { \tempo 4=120 }
 }
