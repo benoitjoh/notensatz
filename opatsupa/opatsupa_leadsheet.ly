@@ -8,7 +8,7 @@
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #2 % spacer between the staff group
+  system-system-spacing.padding = #1 % spacer between the staff group
   ragged-right = ##f
   last-bottom-spacing.basic-distance = #10
   top-margin = #8

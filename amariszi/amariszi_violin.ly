@@ -8,7 +8,7 @@
 
 % finetuning
 \paper {
-  system-system-spacing.padding = #2 % spacer between the staff group
+  system-system-spacing.padding = #4 % spacer between the staff group
   %last-bottom-spacing.basic-distance = #10
   top-margin = #8
   bottom-margin = #6
@@ -38,11 +38,6 @@ voice_vocal_a = \fixed c'' {
 % -- container ---------------------------------------------
 \score {
   <<
-    \new ChordNames {
-      \override ChordName.font-size = #0
-      \transpose f bes,
-      a
-    }
     
   \new Staff \with {instrumentName = "Violin"
                     midiInstrument = "electric piano 1" }
