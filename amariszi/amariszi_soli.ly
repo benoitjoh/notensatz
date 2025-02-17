@@ -5,6 +5,7 @@
 \header { instrument = "Violin Solo" }
 
 \include "../_common/footers.ily"
+\footer_common_with_pagenum 
 
 % finetuning
 \paper {
@@ -38,7 +39,10 @@ voice_vocal_a = \fixed c'' {
 % -- container ---------------------------------------------
 \score {
   <<
-    
+    \new ChordNames {
+      \override ChordName.font-size = #0
+      \transpose f bes, \voice_chords_a
+    }
   \new Staff \with {instrumentName = "Violin"
                     midiInstrument = "electric piano 1" }
     {

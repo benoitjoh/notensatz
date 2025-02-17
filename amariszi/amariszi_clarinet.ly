@@ -38,7 +38,7 @@
       midiInstrument = "Clarinet"
       instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  } 
     {
-     \transpose d e {
+    \transpose f c {
        \global
        \voice_vocal_a
       }

@@ -9,7 +9,7 @@ global = {
 voice_vocal_a = \fixed c'' { 
   %\set Score.currentBarNumber = #1
   \clef violin
-  r2^"12T"_"Intro" f8 8 8 8 g8 8 f4 a8 8 8 fis d d a,4 bes, \triole{a,8 bes, c} \break
+  r2^"12T"_"Intro" f8 8 8 8 g8 8 f4 a8 8 8 f d d a,4 bes, \triole{a,8 bes, c} \break
   d8 d e d a, a,4.
   
   r2 f8 f g f d d bes,4 d8 d e d \break
@@ -17,7 +17,7 @@ voice_vocal_a = \fixed c'' {
   g8 g f4 a16 a a4 f8 d d a,4 bes, \triole{a,8 bes, c} d8 d e d cis cis4. \break
   r4 e4 f4 g8 (f) d d bes,4 d8 d e d a, a, f,4 g, r16 a, bes, b, \break
   c8 a, e,8. cis,16 d,8 4. r2 r2^"32T"_" Solo" 
-  f8 8 8 8 g8 8 f4 a8 8 8 fis d d a,4 \break 
+  f8 8 8 8 g8 8 f4 a8 8 8 f d d a,4 \break 
   bes, \triole{a,8 bes, c} 
   d8 d e d a, a,4.
   r4 f4 f8 f g f d d bes,4 d8 d e d \break
@@ -35,13 +35,13 @@ voice_vocal_a = \fixed c'' {
 
 voice_chords_a = \chordmode {
    s2 
-   d2:m s d:7 s g:m s a:7  s d:m s2 c2 f g:m a:7 d:m s
-   d:m s  d:m7 s g:m s a:7 s d:m s c f g:m a:7 d:m s
-   s d:m s2 d d:7 g:m s d:m s d:m s c f g:m a:7 d:m s
-   d:m s d:m s g:m s a:7 s d:m s c f g:m a:7 d:m s s s s s 
-   d:m s d:m s g:m s a:7 s d:m s c f g:m a:7 d:m s
+   d2:m s d:m s g:m s a:7  s d:m g:m c2 f g:m a:7 d:m s
+   d:m s  d:m7 s g:m s a:7 s d:m g:m c f g:m a:7 d:m s
+   s d:m s2 d:m s g:m s d:m s d:m g:m c f g:m a:7 d:m s
+   d:m s d:m s g:m s a:7 s d:m g:m c f g:m a:7 d:m s s s s s 
+   d:m s d:m s g:m s a:7 s d:m g:m c f g:m a:7 d:m s
    d:m s2 d d:7 g:m s a:7 s
-   d:m s g:m d:m g:m a:7 d:m
+   d:m g:m c f g:m a:7 d:m
 }
 
 
