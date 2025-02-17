@@ -27,11 +27,19 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes, \voice_chords_a
+      \transpose f bes, {
+         s2 \chords_a 
+         s2 \chords_b
+         s2 \chords_c
+      }
     }
     \new ChordNames {
       \override ChordName.font-size = #-2
-     \transpose f c,  \voice_chords_a
+     \transpose f c, {
+      s2 \chords_a
+      s2 \chords_b
+      s2 \chords_c
+     }
     }
     
   \new Staff \with {

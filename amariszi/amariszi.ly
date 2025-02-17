@@ -32,8 +32,11 @@ Aj,4 la-la-la4  -- la8  -- la la la la laj.4. ""2
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes,
-      \voice_chords_a
+      \transpose f bes, {
+      s2 \chords_a
+      s2 \chords_b
+      s2 \chords_c
+      }
     }
     
   \new Staff \with {instrumentName = "Vocal"
