@@ -34,13 +34,13 @@
                     midiInstrument = "electric piano 1" }
     {
      \global
-     \key d \minor
+     \key g \minor
 
      \voice_solo_a
     }
     
   >>
   \layout { }
-  \midi { \tempo 4=120 }
+  \midi { \tempo 4=90 }
 }
 
