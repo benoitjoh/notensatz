@@ -27,15 +27,15 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes, {
-         s2 \chords_a 
-         s2 \chords_b
-         s2 \chords_c
+      {
+        s2 \chords_a 
+        s2 \chords_b
+        s2 \chords_c
       }
     }
     \new ChordNames {
       \override ChordName.font-size = #-2
-     \transpose f c, {
+     \transpose bes, c {
       s2 \chords_a
       s2 \chords_b
       s2 \chords_c
@@ -46,7 +46,7 @@
       midiInstrument = "Clarinet"
       instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  } 
     {
-    \transpose f c {
+     \transpose bes, c {
        \global
        \voice_vocal_a
       }

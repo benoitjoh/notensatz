@@ -27,19 +27,17 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes, \chords_a
+      \chords_a
     }
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
                     midiInstrument = "electric piano 1" }
     {
      \global
      \key e \minor
-
-      
      \voice_solo_b
     }
     
   >>
   \layout { }
-  \midi { \tempo 4=120 }
+  \midi { \tempo 4=90 }
 }

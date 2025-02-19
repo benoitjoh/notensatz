@@ -26,16 +26,13 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes,, 
-      
       \chords_a
     }
   \new Staff \with {instrumentName = "Violin"
                     midiInstrument = "electric piano 1" }
     {
      \global
-     \key d \minor
-
+     \key g \minor
      \voice_solo_a
     }
     

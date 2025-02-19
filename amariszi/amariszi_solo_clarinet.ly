@@ -27,7 +27,8 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #0
-      \transpose f bes, \transpose bes c\chords_a
+      \transpose bes c
+      \chords_a
     }
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } } 
                     midiInstrument = "electric piano 1" }
