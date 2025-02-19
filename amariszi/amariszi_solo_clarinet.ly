@@ -34,7 +34,7 @@
                     midiInstrument = "electric piano 1" }
     {
      \global
-     \key e \minor
+     \key a \minor
 
      \transpose bes, c 
      \voice_solo_b
@@ -42,5 +42,5 @@
     
   >>
   \layout { }
-  %\midi { \tempo 4=120 }
+  \midi { \tempo 4=120 }
 }
