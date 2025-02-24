@@ -30,7 +30,7 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \voice_chords
+      \transpose a a, \voice_chords
     }
     
   \new Staff \with {instrumentName = "Violin"  
@@ -42,34 +42,40 @@
      \voice_violin_b
      
     }
-    
-  \new Staff \with {instrumentName = "Accordion"  
-                    shortInstrumentName="Acc "}
-    {
-     \global
-     \key d \minor
-     \voice_accordeon
+  
+    \new Staff \with {
+      instrumentName = "Accordion"
+      shortInstrumentName="Acc "
     }
-
+    {
+      \global
+      \voice_accordeon
+    }
+  
   \new ChordNames {
-      \override ChordName.font-size = #-2
+      \override ChordName.font-size = #-3
       \transpose bes c
       \voice_chords
     }
-  \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  
-                    shortInstrumentName="Cla "}
+   
+    \new Staff \with {
+      instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }
+      shortInstrumentName="Cla "
+      midiInstrument = "clarinet"
+    }
     {
-     \global
      \key e \minor
-     \transpose bes c'
-     \voice_clarinet
+     \transpose bes c' 
+     {
+       \voice_clarinet_a
+       \voice_clarinet_b
+     }
     }
     
   \new Staff \with {instrumentName = "Vocal"  
                     shortInstrumentName="Voc "}
     {
      \global
-     \key d \minor
     \voice_vocal
     }
     
@@ -91,12 +97,11 @@
      \set Staff.midiMaximumVolume = #0.6
      \global
      \clef bass
-     \key d \minor
      \voice_basso
     }
   
 
   >>
   \layout { }
-  %\midi { \tempo 4=95 }
+  %\midi { \tempo 4=80 }
 }

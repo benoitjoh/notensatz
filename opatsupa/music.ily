@@ -4,6 +4,7 @@
 
 global = {
   \time 2/4
+  \key d \minor
   \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
   \set Score.markFormatter = #format-mark-box-alphabet
 

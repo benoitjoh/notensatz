@@ -16,8 +16,11 @@
 
 voice_vocal_stanza =  \fixed c'' { 
   \mark #1
-  d4 c c c | c c c c | c b, b, b, | b,1 |
-   d4 c c c | e e d c |  c b, b, b, | b,1 | \break
+  d4 c c8 c4. | d8 d4. d4 c | c b, b,8 a,4. | b,1 |
+  d4 c c8 c4. | e4 e d c |  c b, b,8 a,4. | b,1 | \break
+  d4 c2 c8 c  | e8 e4. d4 c |c b, b,8 a,4. | b,1 
+  b,4 a,2 a,8 a, | b,2  a, | e,1 r\break
+  
 }
 
 voice_refrain =  \fixed c'' {
@@ -30,7 +33,8 @@ voice_refrain =  \fixed c'' {
 % -- music and text ------------------------------------------------
 
 chords_stanza = \chordmode { 
-  a1:m s e:m s a:m s e:m e:m
+  a1:m s e:m s a:m s e:m e:m	
+  a1:m s e:m s b:7 s e:m	s
   
 }
 chords_refrain = \chordmode { 

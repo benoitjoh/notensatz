@@ -33,12 +33,12 @@ voice_violin_b = \fixed c'' {
   a4 ~8. gis16 |
   f8. e16 f4 |\break
   f4 cis16 d e f |
-  gis8 f e d |
+  g8 f e d |
   e2 ~2  \break
 
   %line 4
   f2  ~8 gis gis f |
-  a gis gis4 (gis2) (gis4) cis16 d e f |
+  a gis gis4 (gis2) (gis4) c16 d e f |
   gis8 f e d |
   e2 (2) \break
    

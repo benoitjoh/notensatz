@@ -51,10 +51,11 @@
                     shortInstrumentName="Cla "
                     midiInstrument = "clarinet"}
     {
-     \set Staff.midiMaximumVolume = #0.2
+     \set Staff.midiMaximumVolume = #0.7
      \global
      \key d \minor
-     \voice_clarinet
+     \voice_clarinet_a
+     \voice_clarinet_b
     }
     
     

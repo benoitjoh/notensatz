@@ -7,7 +7,7 @@ voice_accordeon = \fixed c' {
   r2 r2 r2 r2 r2 r2 r2 r2 \break
   %33
   \mark #3
-  e2 g4 f8 e d4 f a8 f e d d d' c'8 8 b a ~4 r2 r2 \break
+  e2 g4 f8 e d4 f g8 f e d d d' c'8 8 b a ~4 r2 r2 \break
   
   \mark #4
   \repeat volta 2{
