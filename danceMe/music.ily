@@ -9,31 +9,35 @@ global = {
 
 }
 
-voice_vocal_stanza =  \fixed c' { 
+voice_vocal_stanza =  \fixed c'' { 
   \mark #1
-  r4 r8 g,8 g8 f r8 es16 d | f1 |
-  r4 r8 g,8 f8 es r8 d16 c | es1 | \break
-  r4 r8 g,8 es8 d r8 c16 b, | d1 |
-  r4 r8 g,8 d8 d r8 d16 c | c8 g8~2. | \break
+  d4 c c8 c4. | d8 d4. d4 c | c b, b,8 a,4. | b,1 | \break
+  d4 c c8 c4. | e8 e4. d4 c |  c b, b,8 a,4. | b,1 | \break
+  d4 c2 c8 c  | e8 e4. d4 c |c b, b,8 a,4. | b,1 \break
+  b,4 a,2 a,8 a, | b,2  c | b,1 r
+  b,4 a,2 a,8 a, | b,2.  dis,4 | e,1 r \break
   
-  r4 r8 g,8 g8 f r8 es16 d | f1 |
-  r4 r8 f8 f8 es r8 d16 c | es1 | \break
-  r4 r8 es8 es4 c | d2. r8 g,8| 
-  d2. r8 d8| es4 b, c8 g4.~g1 | \break
-
 }
 
-voice_refrain =  \fixed c' {
+voice_bridge =  \fixed c'' {
   \mark #2
-  r4^\markup \italic "bridge" c d es | f f8 f2 f8 | g8  f4. es4 f| as g8 g2 f8  | g2. g4  
-  a4 a a a b a g a c'  b b bes b1 \break
-
+  \repeat volta 2 {
+  d4 c2. d4 c d c | c4 b,2. | c4 b, c b, | b,4 a,2. | }
+  \alternative { { b,2 c | b,1 } {b,2 dis, | e,1} } \bar "|."
 }
+
+\markup \vspace #3 % space between header and score
+
+% -- music and text ------------------------------------------------
 
 chords_stanza = \chordmode { 
-  s1 f1:m g:7 c:m s g:7 s c:m 
-  s1 f1:m g:7 c:m s g s s2 c:m s1
+  a1:m s e:m s a:m s e:m e:m	
+  a1:m s e:m s 
+  b:7 s e:m	s
+  b:7 s e:m	s
+  
 }
-chords_refrain = \chordmode {  
-  s bes bes es s a a g g:7
- }
+chords_bridge = \chordmode { 
+  \repeat volta 2 {a1:m s e:m s b:7 }
+  \alternative { {s e:m } {s e:m} }
+}
