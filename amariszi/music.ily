@@ -38,7 +38,7 @@ voice_vocal_a = \fixed c'' {
   
   bes,8 r r bes,8 c c bes,4 \triole{d8 d4} d8 bes, g, g, d,4 es, \triole{d,8 es, f,} g,8 g, a, g, \break
   d,8 d,4.  r2 bes,4. bes,8 g, g, es,4 \triole{g,8 g,4} a,8 g, d, d, bes,,4 \break
-  c,4 \triole{c,8 d, es,} f,8 d, a,,8. fis,,16 g,,8 g,,4. r2 bes,16 bes, bes,4 bes,8 \break
+  c,4 \triole{c,8 d, es,} f,8 d, a,,8. fis,,16 g,,8 g,,4. r2 bes,16^\markup\italic"slowly..." bes, bes,4 bes,8 \break
   c8 c bes,4 d8 d d bes, g, g, d,4 es, \triole{es,8 8 f,} g,8 g, a, g, fis, fis, 4. r2 \break
   bes,8 bes, c bes, g, g, es,4 g,8 g, a, g, d, d, bes,,4\fermata c,\fermata 
     bes,,16 c, d, f, d,4\fermata r8 fis,,16 16 g,,2\fermata \bar "."
@@ -50,7 +50,7 @@ chords_a = \chordmode {
 }
    
 chords_b = \chordmode {
-   g:m s2 g:m s c:m s g:m s g:m c:m f bes c:m d:7 g:m s
+   g:m s2 g:m s c:m s d:7 s g:m c:m f bes c:m d:7 g:m s
    g:m s g:m s c:m s d:7 s g:m c:m f bes c:m d:7 g:m s 
 }
    

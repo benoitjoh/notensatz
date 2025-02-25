@@ -2,7 +2,7 @@
 
 % -- music and text ------------------------------------------------
 global = {
-  \key a \minor
+  \key b \minor
   \time 4/4
   \override TupletBracket.bracket-visibility = ##t % make "triolen" brackets visible
   \set Score.markFormatter = #format-mark-box-alphabet

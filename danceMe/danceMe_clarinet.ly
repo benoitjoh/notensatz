@@ -43,6 +43,7 @@
   \new Staff \with  {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  
                     }
     {
+      \key cis \minor
       \transpose d a, 
       \transpose bes c' {
         \global 

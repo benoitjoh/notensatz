@@ -92,7 +92,7 @@
     
     \new Staff \with {instrumentName = "Basso"   
                     shortInstrumentName="B"
-                    midiInstrument = "contrabass"}
+                    midiInstrument = "marimba"}
     {     
      \set Staff.midiMaximumVolume = #0.6
      \global

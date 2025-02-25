@@ -34,6 +34,8 @@ voice_basso = \fixed c {
   %33
   e a, e a, d a, d a, d a, d a, e b, cis a,
   %41
+  \repeat volta 2 {
   d a, d a, e b, cis a, d a, d a, e b, cis a,
+  }
   
 }

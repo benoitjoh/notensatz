@@ -26,7 +26,7 @@ voice_vocal_stanza =  \fixed c' {
 voice_refrain =  \fixed c' {
   \mark #2
   r4^\markup \italic "bridge" c d es | f f8 f2 f8 | g8  f4. es4 f| as g8 g2 f8  | g2. g4  
-  a4 a a a b a g a c'  b b bes b1 \break
+  a4 a a a b a g a c'  b b bes b1 \bar "|." \break
 
 }
 
@@ -35,5 +35,5 @@ chords_stanza = \chordmode {
   s1 f1:m g:7 c:m s g s s2 c:m s1
 }
 chords_refrain = \chordmode {  
-  s bes bes es s a a g g:7
+  s bes bes es s d:7 d:7 g g:7
  }
