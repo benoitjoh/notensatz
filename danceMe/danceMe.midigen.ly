@@ -14,11 +14,12 @@
 \include "music.ily"
 \include "lyrics.ily"
 
- 
+\header { instrument = \markup\bold "- only for midigeneration -" }
 % -- container ---------------------------------------------
 
 
 \score {
+\unfoldRepeats { 
   <<
     \new ChordNames \with {midiInstrument = "acoustic grand"} {
       \override ChordName.font-size = #1
@@ -36,33 +37,17 @@
       \voice_bridge
       }
     }
-
-  \new Lyrics \with {    
-      \override VerticalAxisGroup.nonstaff-relatedstaff-spacing.padding = #2  %spacer before textlines
+  \new Staff \with {instrumentName = "cla" midiInstrument = "marimba"}
+    {
+      \global 
+      {
+      \clarinet_stanza
+      \clarinet_bridge
       }
-    {  
-    \stanza_one 
-    \refrain
-    \lala
-    }
-    
-    \new Lyrics
-    {
-      \stanza_two
-    }
-   
-    \new Lyrics
-    {
-      \stanza_three
-    }
-    
-    \new Lyrics 
-    {
-      \stanza_four
-    }
-
+    }  
   
   >>
+}
   \layout { }
-  %\midi { \tempo 4=120 }
+  \midi { \tempo 4=120 }
 }

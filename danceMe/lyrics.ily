@@ -23,8 +23,8 @@ lala = \lyricmode {
     \set stanza = ""
     La4 la2. la4 la la la la la2.
     la4 la la la la la 2.  
-      la2 la la,1
-       la2 la la.1
+      la2 la la,1 ""1
+       la2 la la.1 ""1
 } 
 
 stanza_two = \lyricmode {   

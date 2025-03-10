@@ -24,7 +24,7 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \transpose d a, {
+      {
       \chords_stanza
       \chords_bridge
        }
@@ -33,7 +33,6 @@
     \new ChordNames {
       \override ChordName.font-size = #-3
       
-      \transpose d a, 
       \transpose bes c {
         \chords_stanza
         \chords_bridge
@@ -44,11 +43,10 @@
                     }
     {
       \key cis \minor
-      \transpose d a, 
       \transpose bes c' {
         \global 
-        \voice_vocal_stanza 
-        \voice_bridge
+        \clarinet_stanza 
+        \clarinet_bridge
       }
     }
   >>
