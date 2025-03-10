@@ -23,7 +23,7 @@ voice_clarinet_a = \fixed c'' {
   d16 16 8 a,8 d16 16 |
   d16 a, cis d eis4   | 
   b,16 cis d eis b, cis d eis |
-  d8 cis cis4 \break
+  d8 b, b,4 \break
 }
 
 voice_clarinet_b = \fixed c'' { 

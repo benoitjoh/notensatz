@@ -44,6 +44,7 @@
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  
                     }
     {
+     \time 2/4
      \key e \minor
      \transpose bes c' 
      {

@@ -30,6 +30,6 @@
  }
  
  lumbaj = \lyricmode {
-  ""8 Lum8 -- baj, lum -- baj, lum16 -- ba16 -- laj4 ""8 aj8 -- de16 aj -- de8 aj4 -- de,4
-  ""8 Lum8 -- baj, lum -- baj, lum16 -- ba16 -- laj4 ""8 aj8 -- de16 aj -- de8 aj4 -- de,4
+  Lum8 -- baj, lum -- baj, lum8. -- ba16 -- laj8 ""4 aj8 -- de16 aj -- de8 aj4 -- de,4
+  Lum8 -- baj, lum -- baj, lum8. -- ba16 -- laj8 ""4 aj8 -- de16 aj -- de8 aj4 -- de,4
  }
