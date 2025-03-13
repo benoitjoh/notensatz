@@ -23,7 +23,10 @@
 <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \voice_chords
+      \transpose a a, {
+          \chords_a
+          \chords_b_c_d
+      }
     }
     
   \new Staff \with {instrumentName = "Violin" 

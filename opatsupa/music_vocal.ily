@@ -13,7 +13,7 @@ voice_vocal_b = \fixed c' {
   r8 f8 8 8 g f f4 e8 d e e f e e 4
   d 8 8 e f e4 d8 r8 
   d 8 8 e f e4 d8 r8 
-  d'16 c'16 8 c' bes bes8 a a g ~g8 f16 16 e8 8 e4 r4\break
+  d'16 c'16 8 c' bes bes8 a a gis ~gis8 f16 16 e8 8 e4 r4\break
 }
 
 voice_vocal_c = \fixed c' {
@@ -29,11 +29,11 @@ voice_vocal_d = \fixed c' {
   \repeat volta 2 {
     <f a>8 <f a> <f a>  
     <f a> <f a>8. <f a>16  <f a>8 r8
-    r8<e gis> <e gis>16 <e gis>16  <e gis>8 
+    r8 <e gis>16 <e gis>16 <e gis>8  <e gis>8 
     <f a>4 <e a>8 r8 
     <f a>8 <f a> <f a>  <e gis>
     <e gis d'>8. <e gis d'>16  <e gis d'>8 r8
-    r8<e gis> <e gis b>16 <e gis b>16  <e gis b>8 
+    r8 <e gis>16 <e gis b>16 <e gis b>8  <e gis b>8 
     <f a cis'>4 <e a cis'>8 r8
     }
   }

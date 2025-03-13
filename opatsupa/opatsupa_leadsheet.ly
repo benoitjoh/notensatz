@@ -29,7 +29,8 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \voice_chords
+      \chords_a
+      \chords_b_c_d
     }
     
 

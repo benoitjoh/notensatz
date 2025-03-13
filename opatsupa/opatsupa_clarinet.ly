@@ -31,15 +31,18 @@
   <<
     \new ChordNames {
       \override ChordName.font-size = #1
-      \voice_chords
+      \chords_a
+      \chords_b_c_d
     }
     
 
     
   \new ChordNames {
       \override ChordName.font-size = #-3
-      \transpose bes c
-      \voice_chords
+      \transpose bes c {
+        \chords_a
+        \chords_b_c_d
+      }
     }
   \new Staff \with {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  
                     }
