@@ -18,8 +18,8 @@ voice_vocal_stanza =  \fixed c' {
   
   r4 r8 g,8 g8 f r8 es16 d | f1 |
   r4 r8 f8 f8 es r8 d16 c | es1 | \break
-  r4 r8 es8 es4 c | d2. r8 g,8| 
-  d2. r8 d8| es4 b, c8 g4.~g1 | \break
+  r4 r8 es8 es4 c | d4. g,8 d2| 
+   r4 r8 d8 es4 b, c8 (g2..) | \break
 
 }
 
@@ -32,7 +32,7 @@ voice_refrain =  \fixed c' {
 
 chords_stanza = \chordmode { 
   s1 f1:m g:7 c:m s g:7 s c:m 
-  s1 f1:m g:7 c:m s g s s2 c:m s1
+  s1 f1:m g:7 c:m s g s c:m 
 }
 chords_refrain = \chordmode {  
   s bes bes es s d:7 d:7 g g:7

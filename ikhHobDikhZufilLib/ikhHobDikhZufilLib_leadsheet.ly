@@ -30,8 +30,8 @@ stanza_one = \lyricmode {
   ""4. Ikh8 hob dikh4 tsu16 -- fil lib,1
   ""4. su8 zayn oyf4 dir16 gor beyz,1
   
-  ""4. a8 nar4 ikh heyz,2.. ikh8 veyz,2.. ikh8
-  hob4 dikh lib.1.
+  ""4. a8 nar4 ikh heyz,4. ikh8 veyz,2.. ikh8
+  hob4 dikh lib.1
   
 } 
 
@@ -51,8 +51,8 @@ stanza_two = \lyricmode {
     ""4.  I8 can’t be4 -- tray16 my heart.1
     ""4.  I8 love you4 much16 too much.1
     ""4.  I8 ask my4 -- self16 what16 for.1
-    ""4.  Then8 dar -- ling4 when16 we touch1
-    ""2..    I8 love4 you more1.
+    ""4.  Then8 dar4 -- ling4 when4. we8 touch2..
+        I8 love4 you more1
     
     } 
     
