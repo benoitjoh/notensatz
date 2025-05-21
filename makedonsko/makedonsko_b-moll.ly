@@ -19,12 +19,18 @@
    system-system-spacing = #'((basic-distance . 15)
 )
 }
+global = {
+  \key b \minor
+  \time 7/8
+  \set Timing.baseMoment = #(ly:make-moment 1/8)
+  \set Timing.beatStructure = 3,2,2
 
+}
 % -- container ---------------------------------------------
 \score {
     <<
      \new ChordNames {
-       \intro_chords
+       \transpose g b {\intro_chords}
      }
 
    \new Staff
@@ -32,13 +38,14 @@
     <<
      \new Voice = "second" \magnifyMusic #0.9  { 
         {\global
+         
          \stemUp
-         \intro_second                
+         \transpose g b { \intro_second}             
         } 
       }    \new Voice = "lead" { 
         { 
          \stemDown
-         \intro                
+         \transpose g b {\intro  }              
         } 
       }
 
@@ -47,34 +54,36 @@
     }
   >>   
   \layout { }
-  \midi {  \tempo 4=140 }
  } 
+ 
+ 
 \score {
   <<
   \new ChordNames {
-    \stanza_chords
+    \transpose g b {\stanza_chords
     \ref_a_one_chords
     \ref_a_two_chords
-    \ref_b_chords
+    \ref_b_chords}
   }
   \new Staff \with {
       midiInstrument = "acoustic guitar (nylon)"
       instrumentName = "Vocal" }
     {
      \new Voice = "lead" { 
-     \oneVoice {\global 
-                \stanza_voice
+     \oneVoice {\global
+       
+                \transpose g b {\stanza_voice
                 \ref_a_one_voice \break
-                \ref_a_two_voice \break
+                \ref_a_two_voice \break}
                 
      }  % stanza with one single voice
      
          << 
               \new Voice  = "refr_first" {
-                  \voiceOne \ref_b_voice }  % refrain, 2 voices
+                 \transpose g b { \voiceOne \ref_b_voice }}  % refrain, 2 voices
               \new Voice = "refr_second" {
                   \voiceTwo \magnifyMusic #0.8 
-                  \ref_b_voice_second}  % second voice smaller notes
+                 \transpose g b {\ref_b_voice_second} } % second voice smaller notes
          >> 
     }
     }
@@ -90,5 +99,4 @@
   
   >>
   \layout { }
-  \midi { \tempo 4=140 }
 }

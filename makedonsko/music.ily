@@ -11,8 +11,13 @@ global = {
 
 intro = \fixed c' { 
   g8^"Intro" 
-     a bes bes a a g | bes c' d' d' c' c' bes | c' d' es' es' d' c' es' | d'2. r8 
-  g8 a bes bes a a g | bes c' d' d' c' c' bes | a bes c' c' bes a bes | g2. r8 \break
+     a bes bes a a g | bes c' d' d' c' c' bes | c' d' es' es' d' c' es' | d'2.. 
+  g8 a bes bes a a g | bes c' d' d' c' c' bes | a bes c' c' bes a bes | g2.. \break
+}
+
+intro_second = \fixed c' { 
+  bes8 c' d' d' c' c' bes | d' es' f' f' es' es' d' | es' f' g' g' f' es' g' | f'2.. 
+  bes8 c' d' d' c' c' bes | d' es' f' f' es' es' d' | c' d' es' es' d' c' d' | bes2.. \break
 }
 
 intro_chords = \chordmode {
