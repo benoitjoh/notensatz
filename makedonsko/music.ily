@@ -16,7 +16,7 @@ intro = \fixed c' {
 }
 
 intro_second = \fixed c' { 
-  bes8 c' d' d' c' c' bes | d' es' f' f' es' es' d' | es' f' g' g' f' es' g' | f'2.. 
+  bes8 c' d' d' c' c' bes | d' es' f' f' es' es' d' | es' f' g' g' f' es' g' | d'2.. 
   bes8 c' d' d' c' c' bes | d' es' f' f' es' es' d' | c' d' es' es' d' c' d' | bes2.. \break
 }
 
