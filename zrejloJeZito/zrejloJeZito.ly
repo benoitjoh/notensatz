@@ -19,7 +19,7 @@
 
 \include "music.ily"
 
-intro = {r2^\markup \italic "Intro" r2 r2}
+intro = {r2^\markup \bold \italic "Intro" r2 r2}
 intro_chords = \chordmode {g2:m g2:m g2:m}
 
 line_a = {
@@ -44,12 +44,14 @@ line_b_b_b = {
 line_b_b_a_chords = \chordmode { c2:m g2:m }
 line_b_b_b_chords = \chordmode { d:7 g:m }
 
-viol_bridge = {r2 r2 r2}
+viol_bridge = {r2^\markup \bold \italic Viol r2 r2}
+
+  
 
 voice_vocal_one = \fixed c' { 
   \intro
-  ^\markup \italic "        Stanza 1"
-  \set Score.currentBarNumber = #1
+  ^\markup \bold \italic "        Stanza 1"
+  %\set Score.currentBarNumber = #1
   \line_a \break
   \line_b_a 
   \repeat volta 2 {
@@ -68,8 +70,8 @@ chords_one = \chordmode {
 
 voice_vocal_two = \fixed c' { 
   \viol_bridge
-  ^\markup \italic "           Stanza 2"
-  \set Score.currentBarNumber = #1
+  ^\markup \bold \italic "           Stanza 2"
+  %\set Score.currentBarNumber = #1
   \line_a \break
    
   \repeat volta 2 {
@@ -96,6 +98,22 @@ chords_two = \chordmode {
   
 }
 
+voice_solo_clarinet = \fixed c'{ 
+  r8 d'8^\markup \bold \italic "Clarinet" cis' d' s2 * 7
+}
+chords_solo_clarinet = \chordmode { s2 c2:m d g:m es c:m d g:m}
+
+voice_solo_git = { s2^\markup \bold \italic "Guitar" s2 * 15}
+chords_solo_clarinet = \chordmode { s2 c2:m d g:m es c:m d g:m}
+
+
+% kla: 8t git 16t
+
+clarinet = \fixed c' \transpose c bes {
+  r2 r2 r2 r2 r2 r2 r2 r2r2 r2 r2 
+  c2 a,2 d2 e4 \triole {dis8 d cis} 
+  d2 c b, a,4 a,4 b, cis d2 c2
+}
 % -- container ---------------------------------------------
 \score {
   <<
@@ -103,6 +121,7 @@ chords_two = \chordmode {
       \override ChordName.font-size = #0
       \chords_one
       \chords_two
+      \chords_solo_clarinet
     }
     
   \new Staff \with {instrumentName = "Vocal" }
@@ -111,11 +130,17 @@ chords_two = \chordmode {
      \key g \minor
 
      \voice_vocal_one \break
-     
-     \voice_vocal_two
-     
-     
+     \voice_vocal_two \break
+     \voice_solo_clarinet \break
+     \voice_solo_git
     }
+    
+%  \new Staff \with {instrumentName = "Kla" }
+%    {
+%     \global
+%     \key g \minor
+%     \clarinet
+%    }
     
 
   >>
