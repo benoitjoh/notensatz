@@ -64,7 +64,7 @@ stanza_one = \lyricmode
   {\set fontSize = #-2 
    Eyns4 zwei drai vier Ar8 -- beits -- los -- e sin -- nen mir4
    Nisht8 ge -- hert kha -- do -- shim lang4 in 8 fa -- brik den ha -- mer klang,4
-   zli8 --gn key -- lim kalt far -- ge -- zn, znemt der sha -- ver zey shoyn fre -- zn. 
+   zli8 -- gn key -- lim kalt far -- ge -- zn, znemt der sha -- ver zey shoyn fre -- zn. 
    Ge -- yn mir a -- rum in gaz,4 vi8 di gvi -- rim puzt un paz,4 
    vi 8 di gvi -- rim puzt 4 un paz.
    
