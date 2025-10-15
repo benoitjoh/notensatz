@@ -2,7 +2,7 @@
 \version "2.20.0"
 
 piecename_footerline = "Arbetslosemarsh"
-version_date = "10.2022"
+version_date = "10.2025"
 
 \header {
   title = \markup \caps  {"Arbetslosemarsh"}
@@ -36,19 +36,20 @@ global = {
 
 d_m = { d,8 <a, d f >8->}
 
-voice_vocal = \fixed c'' { 
-  d4^\markup \small \italic"Stanza:  (chords on 1,2,3,4)" a, d f e8 f g a  f e d4
-  d8 e f g a bes a4 \break
-  a8 d' c' bes a bes a4
+voice_vocal = \fixed c' { 
+  d4^\markup \small \italic"Stanza:  (chords on 1,2,3,4)" a, d f e8 f g a  f e d4 \break
+  
+  d8 e f g a bes a4 
+  a8 d' c' bes a bes a4\break
   g8 a bes g f g a f 
   e f g a g f e d 
   cis d e a, d f a4
   g8 a16 bes a8 g f e d4
-  cis8 d e a, f4 e \break
+  cis8 d e a, f8 r e r \break
 }
 
 voice_git_interlude = \fixed c''{
-  <d, d>8^\markup \small \italic"Interlude  (atacca, 3 or 4 bars)" <a, d f >->
+  d,8^\markup \small \italic"Interlude  (atacca, 3 or 4 bars)" <a, d f >->
   \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m \d_m  \bar ".|"
   
 }
@@ -61,7 +62,12 @@ voice_chords = \chordmode {
 
 stanza_one = \lyricmode 
   {\set fontSize = #-2 
-   Eyns4 zwei drai vier Ar8 -- beits -- los -- e sin -- nen wir4 
+   Eyns4 zwei drai vier Ar8 -- beits -- los -- e sin -- nen mir4
+   Nisht8 ge -- hert kha -- do -- shim lang4 in 8 fa -- brik den ha -- mer klang,4
+   zli8 --gn key -- lim kalt far -- ge -- zn, znemt der sha -- ver zey shoyn fre -- zn. 
+   Ge -- yn mir a -- rum in gaz,4 vi8 di gvi -- rim puzt un paz,4 
+   vi 8 di gvi -- rim puzt 4 un paz.
+   
     } 
 
 
