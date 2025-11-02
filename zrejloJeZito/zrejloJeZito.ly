@@ -144,8 +144,15 @@ chords_solo_clarinet = \chordmode { s2 g2:m d g:m bes c:m d:7 g:m}
 voice_solo_git = \fixed c'{ 
   g16^\markup \bold \italic "Guitar"  r
   
-  \triole {cis'16 d' d'}  d'8. bes16 |cis' d'8 d'32 cis' d'4
-  s2 * 6 \break s2 * 8
+  \triole {cis'16 d' d'}  d'8. bes16 |cis' d'8 d'32 cis' d' 8 8 |
+  r16 bes c' des' d'16 bes' a'16. g'32 | d'16 d'8 d'32 cis' d'8 8  |
+   c'8. c'16 d'8 es' | c'8. c'16 d'8 es' 
+   r2 | r2 |
+   r2 | r2 |
+   r2 | r2 |
+   c'8.bes16 c' bes a g | a8. g16 a a bes a  |
+    fis8. g 16 a8 8  | a8. bes16 c' 8 es' |
+   \break 
 }
 chords_solo_git = \chordmode {
   g2:m g2:m g2:m g2:m c2:m c2:m g2:m g2:m c2:m c2:m g2:m g2:m c2:m c2:m d:7 d:7
@@ -193,5 +200,5 @@ clarinet = \fixed c' \transpose c bes {
 
   >>
   \layout { }
-  \midi { \tempo 4=80 }
+  \midi { \tempo 4=40 }
 }
