@@ -17,7 +17,13 @@
 
 % -- music  ------------------------------------------------
 
-\include "music.ily"
+%\include "music.ily"
+
+global = {
+  \time 2/4
+  \key g \minor
+}
+
 
 intro = {r2^\markup \bold \italic "Intro" r2 r2}
 intro_chords = \chordmode {g2:m g2:m g2:m}
@@ -181,7 +187,6 @@ clarinet = \fixed c' \transpose c bes {
   \new Staff \with {instrumentName = "Vocal" }
     {
      \global
-     \key g \minor
 
      \voice_vocal_one \break
      \voice_vocal_two \break
