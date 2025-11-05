@@ -205,5 +205,5 @@ clarinet = \fixed c' \transpose c bes {
 
   >>
   \layout { }
-  \midi { \tempo 4=40 }
+  \midi { \tempo 4=100 }
 }
