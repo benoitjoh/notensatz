@@ -36,9 +36,9 @@ line_a = {
 line_a_chords = \chordmode {s1 g1:m  c1:m g1:m}
 
 line_b_a = {
-  d4 g8 a | bes4 a8 g | f f c es | d4 r |
+  d4 g8 a | bes4 a8 g | f f c es | d4 r^"B°" |
 }
-line_b_a_chords = \chordmode { g2:m es f bes4 b:dim}
+line_b_a_chords = \chordmode { g2:m es f bes4 d:7}
 
 line_b_b_a = {
   g4 c8 es | d4 g,8 d |
