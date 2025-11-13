@@ -18,7 +18,7 @@ voice_vocal_b = \fixed c' {
 
 voice_vocal_c = \fixed c' {
   \mark #3
-  <cis g>2 ~<cis g>8 <cis f> <cis e> d
+  <cis g>2\accent ~<cis g>8 <cis f> <cis e> d
   r8 f16 16 8 8  g f e d 
   d <f d'> <f c'> <f c'>
   <e b> <f a> <f a>4 ~<f a>8 <d e> <d e> <d e> f <cis e> ~<cis e>4 \break

@@ -5,8 +5,8 @@ voice_violin_a = \fixed c'' {
   %line1
   f16 16 8 d8 f16 16 |
   f16 d f d f4 |
-  g16 16 8 e8 g 16 16|
-  g16 e g e g4 |\break
+  e16 16 8 c8 e 16 16|
+  e16 c e c e4 |\break
   
   f16 16 8 d8 f16 16 |
   f16 d e f gis4  | 
@@ -17,8 +17,8 @@ voice_violin_a = \fixed c'' {
   f16 16 8 d8 f16 16 |
   f16 d f d f4 |
  
-  g16 e g e g e g e  |
-  g16 e g e g4 |\break
+  e16 c e c e c e c  |
+  e16 c e c e4 |\break
   f16 16 8 d8 f16 16 |
   f16 d e f gis4  | 
   d16 e f gis  d16 e f gis |

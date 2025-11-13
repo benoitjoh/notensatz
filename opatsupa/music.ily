@@ -14,15 +14,15 @@ global = {
 straigt = \markup {\musicglyph "scripts.caesura.straight"} 
 
 chords_a = \chordmode {
-  d2:m s2 e2:m s2 d2:m s2 e2:7 a2:7 
-  d2:m s2 e2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 a2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 a2:m s2 d2:m s2 e2:7 a2:7 
 }  
   
 chords_b_c_d = \chordmode {
   d2:m s2 d2:m s2 d2:m s2 e2:7 a2:7 
   d2:m s2 d2:m s2 d2:m s2 e2:7 a2:7 
-  a2:7 s2 d2:m s2 d2:m s2 e2:7 a2:7 
-  d2:m s2 e2:7 a2:7 d2:m s2 e2:7 a2:7 
+  g2:m g2:m d2:m s2 d2:m s2 e2:7 a2:7 
+  d2:m s2 e2:7 a2:7 bes2 s2 e2:7 a2:7 
 }
 
 
