@@ -32,3 +32,6 @@ triole = #(define-music-function
     \tuplet 3/2 { #my-notes } 
   #}
 )
+
+set_maj_seven = <<
+\set majorSevenSymbol = \markup { maj-7 } >>
