@@ -25,7 +25,7 @@
     \new ChordNames {
       \override ChordName.font-size = #1
       
-      \transpose d a, {
+      \transpose d e {
          \chords_stanza
        }
        
@@ -33,7 +33,7 @@
     
     \new ChordNames {
       \override ChordName.font-size = #-3
-      \transpose d g, {
+      {
         \chords_stanza
       }
     }
@@ -41,7 +41,7 @@
   \new Staff \with  {instrumentName = \markup { \center-column { "Clarinet"\line { "in B" \tiny \flat } } }  
                     }
     {
-      \transpose d g, {
+      \transpose d e {
        \global 
        \voice_vocal_stanza 
        
