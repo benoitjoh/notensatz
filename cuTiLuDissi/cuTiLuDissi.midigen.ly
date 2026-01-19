@@ -23,14 +23,14 @@
   <<
     \new ChordNames \with {midiInstrument = "acoustic grand"} {
       \override ChordName.font-size = #1
-      \transpose d a, {
+       {
       \chords_stanza
        }
     }
     
   \new Staff \with {instrumentName = "Vocal" midiInstrument = "electric piano 1"}
     {
-      \transpose d a, {
+      {
       \global 
       \voice_vocal_stanza 
       }
