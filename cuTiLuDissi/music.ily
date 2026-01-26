@@ -26,16 +26,28 @@ voice_vocal_stanza =  \fixed c' {
   a,8 b, c d e f | d2. | a4 f d | c2. | a,8 b, c d e f |e2. | 
   e8 f e d c d | e2. 
   a,8 b, c d e f | d2. | a4 f d | c2. | a,8 b, c d e f |e2. | 
-  e8 f e d c b, | a,2.~ | a,4 r2 
+  e8 f e d c b, | a,2.~ | a,4 r2 \break
+
 }
 
-
+voice_vocal_stanza_d =  \fixed c' {  
+  \mark #4
+  r8 e8 dis e g f | e4 d8 cis d4| r8 d cis d f e | d4 c8 b, 8c4 |
+  r8 c b, c e d | c4  b,8 a, b,4 | r8  b, ais, b, d c | b,4 a,4 ~8 gis,8 |
+  a,4 cis e | a2. | a4 g f | e2. | e4 f8 e dis e | a2. | b4 a gis8 a | b2.   
+} 
+voice_vocal_stanza_d_basso =  \fixed c' {  
+  \mark #4
+  s2.*9 | d4_basso  cis c |b,2.
+} 
 \markup \vspace #3 % space between header and score
 
 % -- music and text ------------------------------------------------
 
 chords_stanza = \chordmode { 
-  a2.:m a:m a:m e:7 e:7 e:7 e:7 a:m a:7 d:m d:m a:m a:m e:7 e:7 a:m a:7 d:m d:m a:m a:m e:7 e:7 a:m
+  a2.:m a:m a:m e:7 e:7 e:7 e:7 a:m a:m d:m d:m a:m a:m e:7 e:7 a:m a:m d:m d:m a:m a:m e:7 e:7 a:m
   
-  s2. d:m s a:m s e:7 s a:m s d:m s a:m s e:7 s a:m
+  s2. d:m s a:m s e:7 s a:m s d:m s a:m s e:7 s a:m s 
+  
+  s2. d:m  s a:m s e:7 s a:m a:7 d:m s a:m s d:m s e:7
 }

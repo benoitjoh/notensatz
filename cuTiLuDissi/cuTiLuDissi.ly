@@ -7,7 +7,7 @@
 \footer_common_with_pagenum 
 
 \paper {
-  system-system-spacing.padding = #6
+  system-system-spacing.padding = #1
   %systems-per-page = 6  % force nr. of systems
   }
 
@@ -33,6 +33,13 @@
       \global 
 
       \voice_vocal_stanza 
+           << 
+              \new Voice  = "refr_one" {
+                  \voiceOne \voice_vocal_stanza_d } 
+              \new Voice = "refr_second" {
+                  \voiceTwo \magnifyMusic #0.7 
+                  \voice_vocal_stanza_d_basso}  % second voice smaller notes
+            >>     
       }
     }
 
@@ -56,5 +63,5 @@
   
   >>
   \layout { }
-  %\midi { \tempo 4=150 }
+  \midi { \tempo 4=150 }
 }
