@@ -7,4 +7,4 @@
   arranger = ""
   }
 piecename_footerline = "Entre chèz moi"
-version_date = "11.2026"
+version_date = "17.11.2026"
